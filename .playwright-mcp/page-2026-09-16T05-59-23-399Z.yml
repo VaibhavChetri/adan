@@ -1,0 +1,431 @@
+- generic [active] [ref=f4e1]:
+  - img "Loading..." [ref=f4e3]
+  - navigation [ref=f4e4]:
+    - generic [ref=f4e5]:
+      - generic [ref=f4e6]:
+        - button "Toggle navigation" [expanded] [ref=f4e7] [cursor=pointer]
+        - link [ref=f4e12] [cursor=pointer]:
+          - /url: ../home/index.html
+          - img "Adan Corporate - Logo" [ref=f4e13]
+      - text:                        
+  - generic [ref=f4e22]:
+    - generic [ref=f4e23]:
+      - heading "Deal Strategy" [level=4] [ref=f4e24]
+      - separator [ref=f4e25]
+      - heading "Always start at the end before you begin." [level=6] [ref=f4e26]
+      - separator [ref=f4e27]
+    - img "Deal Strategy" [ref=f4e29]
+    - generic [ref=f4e30]:
+      - paragraph [ref=f4e31]: "In M&A deals, there are typically two types of acquirers: strategic and financial. Strategic acquirers are other companies, often direct competitors or companies operating in adjacent industries, such that the target company would fit in nicely with the acquirer's core business. Financial buyers are institutional buyers such as private equity firms that are looking to own, but not directly operate the acquisition target. Financial buyers will often use leverage to finance the acquisition, performing a leveraged buyout (LBO)."
+      - paragraph [ref=f4e32]: The vast majority of acquisitions are competitive or potentially competitive. Companies normally have to pay a premium to acquire the target company, and this means having to offer more than rival bidders. To justify paying more than rival bidders, the acquiring company needs to be able to do more with the acquisition than the other bidders in the M&A process can (i.e., generate more synergies or have a greater strategic rationale for the transaction).
+      - paragraph [ref=f4e33]: In today's highly competitive market, spotting value creation opportunities as well as understanding risk pre acquisition is key to driving value on completion and under ownership. Our Private Equity team works with our specialist sector teams which enables us to provide insights across all business sectors. This in turn helps facilitate the identification of strategic opportunities for buyouts.
+      - paragraph [ref=f4e34]: Deal Structuring One of the most complicated steps in the M&A process is properly structuring the deal. There are many factors to be considered, such as antitrust laws, securities regulations, corporate law, rival bidders, taxes, accounting issues, contacts, market conditions, forms of financing, and specific negotiation points in the M&A deal itself.
+      - paragraph [ref=f4e35]: We help identify key risks and rewards throughout the acquisition life cycle, even for the most complex deals. We help you align deals with your strategic business objectives, maintain compliance and enhance value from integration and potential upside opportunity. Our team of specialists helps you focus on the key questions during the critical stages of planning and executing an acquisition.
+      - paragraph [ref=f4e36]: We blend sophisticated capital markets expertise, with local market presence to negotiate customized financing packages that allow our clients to achieve their goals.
+      - paragraph [ref=f4e37]:
+        - img "M&A process" [ref=f4e38]
+      - paragraph [ref=f4e39]: Our experienced team build robust, transparent financial models covering all circumstances and across a wide range of sectors. Our approach is to start with a clear understanding of the situation and design a bespoke model using proven methodologies and techniques. The advantages of our models include creating outputs and usability that are designed specifically for the user, as well as providing the flexibility of assumptions to perform sensitivity analysis.
+      - paragraph [ref=f4e40]: This insight into current market practice ensures we negotiate the best deal for you throughout your transaction. Our team has the experience to help guide and support management teams through the process. We advise management teams on structuring, valuation, financing and tax planning and assist them to approach the vendor with a credible bid.
+      - paragraph [ref=f4e41]: "Our team can engage with you to:"
+      - list [ref=f4e42]:
+        - listitem [ref=f4e43]: Smokejump into the situation and perform the business valuation, due diligence, tax diligence
+        - listitem [ref=f4e44]: Conduct a feasibility study for the management team, key sensitivities and how these may impact the business.
+        - listitem [ref=f4e45]: Produce and update business plans
+        - listitem [ref=f4e46]: Manage negotiations with other promoters, advisors, creditors and investors
+        - listitem [ref=f4e47]: Assist you with the legal documentation, agreements, and other important documentation.
+        - listitem [ref=f4e48]: Post deal support - complete accounts, deferred considerations and directors tax planning.
+      - paragraph [ref=f4e49]
+      - paragraph [ref=f4e50]: Our experts partner with clients on corporate planning, providing perspective not only on immediate value and impact, but on long-term implications. We work closely with management and other advisers to leverage and complement their knowledge and ensure maximum impact, and actively support implementation and skill building.
+  - generic [ref=f4e53]:
+    - generic [ref=f4e54]:
+      - heading "Featured Experts - Deal Strategy" [level=2] [ref=f4e55]
+      - generic [ref=f4e56]: Senior multi-disciplinary corporate and finance professionals with diverse geographic, sector and transaction focuses
+    - generic [ref=f4e57]:
+      - generic [ref=f4e58]:
+        - generic [ref=f4e59]:
+          - img "Ajay Mavinkurve" [ref=f4e60]
+          - generic [ref=f4e61]: Ajay is a seasoned senior-level corporate finance executive with 30+ years of diversified experience in Global Corporate Finance, IPOs, Corporate and Tax structuring, Deal structuring, Commercial Negotiation, Valuations, Venture and Private Equity syndication, M&A, Growth Strategy, Distressed Asset Management, Working Capital and Buy-outs for Small & Mid-sized Enterprises (SMEs).
+        - generic [ref=f4e63]:
+          - heading "Ajay Mavinkurve" [level=4] [ref=f4e64]
+          - generic [ref=f4e66]: Managing Partner
+          - generic [ref=f4e67]: Corporate Advisory
+          - generic [ref=f4e68]: London
+          - list [ref=f4e69]:
+            - listitem [ref=f4e70]:
+              - link "" [ref=f4e71] [cursor=pointer]:
+                - /url: mailto:ajay.mavinkurve@adancorporate.com
+            - listitem [ref=f4e73]:
+              - link "" [ref=f4e74] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/ajay-mavinkurve
+            - link [ref=f4e76] [cursor=pointer]:
+              - /url: ../team/ajay-mavinkurve.html
+              - button "Full Profile" [ref=f4e77]
+      - separator [ref=f4e78]
+      - separator [ref=f4e79]
+    - generic [ref=f4e80]:
+      - generic [ref=f4e81]:
+        - generic [ref=f4e82]:
+          - img "Chennakeshav (Keshav) Adya" [ref=f4e83]
+          - generic [ref=f4e84]: Chennakeshav (Keshav) is a seasoned business, marketing and technology executive with 20+ years of global corporate and entrepreneurial experience in building global companies from a concept and in leadership roles spanning M&A execution, deal origination, marketing, brand-building, market research and technology delivery.
+        - generic [ref=f4e86]:
+          - heading "Chennakeshav (Keshav) Adya" [level=4] [ref=f4e87]
+          - generic [ref=f4e89]: Managing Partner
+          - generic [ref=f4e90]: Corporate Finance, M&A, Growth
+          - generic [ref=f4e91]: Dubai & London
+          - list [ref=f4e92]:
+            - listitem [ref=f4e93]:
+              - link "" [ref=f4e94] [cursor=pointer]:
+                - /url: mailto:ck.adya@adancorporate.com
+            - listitem [ref=f4e96]:
+              - link "" [ref=f4e97] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/cadya/
+            - link [ref=f4e99] [cursor=pointer]:
+              - /url: ../team/keshav-adya.html
+              - button "Full Profile" [ref=f4e100]
+      - separator [ref=f4e101]
+      - separator [ref=f4e102]
+    - generic [ref=f4e103]:
+      - generic [ref=f4e104]:
+        - generic [ref=f4e105]:
+          - img "Mike Kemball" [ref=f4e106]
+          - generic [ref=f4e107]: Mike is a sales transformation expert with 30+ years as an accomplished interim Sales Director and Managing Director in 15+ organisations across Telecom, Technology and Industrial sectors in Europe, India, Africa and the Middle East. Client companies and subsidiaries managed were typically $10m - $300m in revenue with sales teams from 10 up to 250 people.
+        - generic [ref=f4e109]:
+          - heading "Mike Kemball" [level=4] [ref=f4e110]
+          - generic [ref=f4e112]: Partner
+          - generic [ref=f4e113]: Turnaround and Growth
+          - generic [ref=f4e114]: London
+          - list [ref=f4e115]:
+            - listitem [ref=f4e116]:
+              - link "" [ref=f4e117] [cursor=pointer]:
+                - /url: mailto:mike.kemball@adancorporate.com
+            - listitem [ref=f4e119]:
+              - link "" [ref=f4e120] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/mikekemball/
+            - link [ref=f4e122] [cursor=pointer]:
+              - /url: ../team/mike-kemball.html
+              - button "Profile" [ref=f4e123]
+      - separator [ref=f4e124]
+      - separator [ref=f4e125]
+    - generic [ref=f4e126]:
+      - generic [ref=f4e127]:
+        - generic [ref=f4e128]:
+          - img "Sabapaty (Saba) Suryanarayanan" [ref=f4e129]
+          - generic [ref=f4e130]: Saba is a seasoned commercial and finance professional with 30+ years of experience in in C-suite roles spanning varied geographies and multiple industry segments, including Manufacturing, Trading, Media and Financial Services in areas such as Deal structuring, Commercial Negotiation, Growth Strategy, Distressed Asset Management, Working Capital Funding, and Buyouts.
+        - generic [ref=f4e132]:
+          - heading "Sabapaty (Saba) Suryanarayanan" [level=4] [ref=f4e133]
+          - generic [ref=f4e135]: Managing Partner
+          - generic [ref=f4e136]: Commercial and Finance
+          - generic [ref=f4e137]: Mumbai, India
+          - list [ref=f4e138]:
+            - listitem [ref=f4e139]:
+              - link "" [ref=f4e140] [cursor=pointer]:
+                - /url: mailto:sabapatys@adancorporate.com
+            - listitem [ref=f4e142]:
+              - link "" [ref=f4e143] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/sabapaty-suryanarayanan-96a31b4
+            - link [ref=f4e145] [cursor=pointer]:
+              - /url: ../team/sabapaty-suryanarayanan.html
+              - button "Full Profile" [ref=f4e146]
+      - separator [ref=f4e147]
+      - separator [ref=f4e148]
+    - generic [ref=f4e149]:
+      - generic [ref=f4e150]:
+        - generic [ref=f4e151]:
+          - img "Kieran Bourke" [ref=f4e152]
+          - generic [ref=f4e153]: Kieran is a Financial Risk Management expert with 25+ years of broad global Financial Services experience across Market, Traded Credit, Operational, Regulatory, and Enterprise Risk Management protocols across 4 continents. He was a Managing Director at Standard Chartered Bank at London & Singapore, where he established the commodities market risk function from scratch.
+        - generic [ref=f4e155]:
+          - heading "Kieran Bourke" [level=4] [ref=f4e156]
+          - generic [ref=f4e158]: Advisor
+          - generic [ref=f4e159]: Risk Management
+          - generic [ref=f4e160]: Singapore
+          - list [ref=f4e161]:
+            - listitem [ref=f4e162]:
+              - link "" [ref=f4e163] [cursor=pointer]:
+                - /url: mailto:kieran.bourke@adancorporate.com
+            - listitem [ref=f4e165]:
+              - link "" [ref=f4e166] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/kieran-bourke-006a511a/
+            - link [ref=f4e168] [cursor=pointer]:
+              - /url: ../team/kieran-bourke.html
+              - button "Full Profile" [ref=f4e169]
+      - separator [ref=f4e170]
+      - separator [ref=f4e171]
+    - generic [ref=f4e172]:
+      - generic [ref=f4e173]:
+        - generic [ref=f4e174]:
+          - img "Marco Salvini" [ref=f4e175]
+          - generic [ref=f4e176]: Marco is a senior executive with 25+ years of experience in C-suite roles spanning Real Estate leadership, delivering strategy, transformational change and turnaround of underperforming portfolios, assets and companies. Previously, he was the CEO for AIG/Lincoln - AIG Global Real Estate (Italy), where he successfully navigated the 2008 financial crisis and following global recession
+        - generic [ref=f4e178]:
+          - heading "Marco Salvini" [level=4] [ref=f4e179]
+          - generic [ref=f4e181]: Partner
+          - generic [ref=f4e182]: Real Estate
+          - generic [ref=f4e183]: Milan & London
+          - list [ref=f4e184]:
+            - listitem [ref=f4e185]:
+              - link "" [ref=f4e186] [cursor=pointer]:
+                - /url: mailto:marco.salvini@adancorporate.com
+            - listitem [ref=f4e188]:
+              - link "" [ref=f4e189] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/marcosalvini/
+            - link [ref=f4e191] [cursor=pointer]:
+              - /url: ../team/marco-salvini.html
+              - button "Full Profile" [ref=f4e192]
+      - separator [ref=f4e193]
+      - separator [ref=f4e194]
+    - generic [ref=f4e195]:
+      - generic [ref=f4e196]:
+        - generic [ref=f4e197]:
+          - img "Freddie Tshiaba" [ref=f4e198]
+          - generic [ref=f4e199]: Freddie Tshiaba is a senior business leader with 20+ years of significant experience helping investment banks, financial institutions, enterprise software companies and multi-national corporates with strategic initiatives, business development, digital transformation, product management, liquidity risk and treasury management.
+        - generic [ref=f4e201]:
+          - heading "Freddie Tshiaba" [level=4] [ref=f4e202]
+          - generic [ref=f4e204]: Partner
+          - generic [ref=f4e205]: Corporate Finance
+          - generic [ref=f4e206]: London
+          - list [ref=f4e207]:
+            - listitem [ref=f4e208]:
+              - link "" [ref=f4e209] [cursor=pointer]:
+                - /url: mailto:freddie.tshiaba@adancorporate.com
+            - listitem [ref=f4e211]:
+              - link "" [ref=f4e212] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/tshiaba/
+            - link [ref=f4e214] [cursor=pointer]:
+              - /url: ../team/freddie-tshiaba.html
+              - button "Profile" [ref=f4e215]
+      - separator [ref=f4e216]
+      - separator [ref=f4e217]
+    - generic [ref=f4e218]:
+      - generic [ref=f4e219]:
+        - generic [ref=f4e220]:
+          - img "Thomas Peutz" [ref=f4e221]
+          - generic [ref=f4e222]: Thomas is an innovative entrepreneurial leader with 25+ years of experience in in C-suite roles spanning international management and organisational strategy, gained within the cultural sector and the creative industries. As a social entrepreneur, he has in-depth knowledge and passion for new venture development serving on executive and non-executive boards.
+        - generic [ref=f4e224]:
+          - heading "Thomas Peutz" [level=4] [ref=f4e225]
+          - generic [ref=f4e227]: Partner
+          - generic [ref=f4e228]: Sustainable Energy
+          - generic [ref=f4e229]: Amsterdam
+          - list [ref=f4e230]:
+            - listitem [ref=f4e231]:
+              - link "" [ref=f4e232] [cursor=pointer]:
+                - /url: mailto:thomas.peutz@adancorporate.com
+            - listitem [ref=f4e234]:
+              - link "" [ref=f4e235] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/thomas-peutz-a7a44116/
+            - link [ref=f4e237] [cursor=pointer]:
+              - /url: ../team/thomas-peutz.html
+              - button "Full Profile" [ref=f4e238]
+      - separator [ref=f4e239]
+      - separator [ref=f4e240]
+    - generic [ref=f4e241]:
+      - generic [ref=f4e242]:
+        - generic [ref=f4e243]:
+          - img "Thu Nga Haskovcova" [ref=f4e244]
+          - generic [ref=f4e245]: Thu Nga is a Czech qualified lawyer with 20 years of international experience in M&A, Market Entry (Start-ups), Real Estate, Financing, Private Equity and Corporate law matters. Thu has in-depth local knowledge of the Central Eastern European (CEE) region and working experience in and in-depth knowledge of South East Asia.
+        - generic [ref=f4e247]:
+          - heading "Thu Nga Haskovcova" [level=4] [ref=f4e248]
+          - generic [ref=f4e250]: Partner
+          - generic [ref=f4e251]: Central Eastern Europe, Law
+          - generic [ref=f4e252]: Prague, Czech Rep.
+          - list [ref=f4e253]:
+            - listitem [ref=f4e254]:
+              - link "" [ref=f4e255] [cursor=pointer]:
+                - /url: mailto:thu.nga@adancorporate.com
+            - listitem [ref=f4e257]:
+              - link "" [ref=f4e258] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/thu-nga-haskovcova-32431110/
+            - link [ref=f4e260] [cursor=pointer]:
+              - /url: ../team/thu-nga-haskovcova.html
+              - button "Full Profile" [ref=f4e261]
+      - separator [ref=f4e262]
+      - separator [ref=f4e263]
+    - generic [ref=f4e264]:
+      - generic [ref=f4e265]:
+        - generic [ref=f4e266]:
+          - img "Craig Tingle" [ref=f4e267]
+          - generic [ref=f4e268]: "Craig is a board-certified real estate attorney with 25+ years of legal experience and has closed billions of dollars in transactions. His expertise includes: shopping centers, shopping malls, apartment buildings, assisted living facilities, subdivisions, medical campuses and portfolios acquisitions of each of these."
+        - generic [ref=f4e270]:
+          - heading "Craig Tingle" [level=4] [ref=f4e271]
+          - generic [ref=f4e273]: Partner
+          - generic [ref=f4e274]: Real Estate
+          - generic [ref=f4e275]: Florida and Dubai
+          - list [ref=f4e276]:
+            - listitem [ref=f4e277]:
+              - link "" [ref=f4e278] [cursor=pointer]:
+                - /url: mailto:craig.tingle@adancorporate.com
+            - listitem [ref=f4e280]:
+              - link "" [ref=f4e281] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/craig-tingle-tingleandassociatespa-a5b93135/
+            - link [ref=f4e283] [cursor=pointer]:
+              - /url: ../team/craig-tingle.html
+              - button "Profile" [ref=f4e284]
+      - separator [ref=f4e285]
+      - separator [ref=f4e286]
+    - generic [ref=f4e287]:
+      - generic [ref=f4e288]:
+        - generic [ref=f4e289]:
+          - img "Subhash Baliga" [ref=f4e290]
+          - generic [ref=f4e291]: Subhash is a seasoned senior-level corporate finance and private equity executive with 25+ years of experience in PE/VC Industry. For the past 16 years, he was a PE/VC Investor during which he made several investments with 3 private equity / venture capital funds. Besides the PE/VC Industry, he also worked in a senior role for Tata Steel and was Group CFO of the Essel Group of Companies.
+        - generic [ref=f4e293]:
+          - heading "Subhash Baliga" [level=4] [ref=f4e294]
+          - generic [ref=f4e296]: Partner
+          - generic [ref=f4e297]: Private Equity
+          - generic [ref=f4e298]: Mumbai
+          - list [ref=f4e299]:
+            - listitem [ref=f4e300]:
+              - link "" [ref=f4e301] [cursor=pointer]:
+                - /url: mailto:subhash.baliga@adancorporate.com
+            - listitem [ref=f4e303]:
+              - link "" [ref=f4e304] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/subhash-baliga-558939a/
+            - link [ref=f4e306] [cursor=pointer]:
+              - /url: ../team/subhash-baliga.html
+              - button "Full Profile" [ref=f4e307]
+      - separator [ref=f4e308]
+      - separator [ref=f4e309]
+    - generic [ref=f4e310]:
+      - generic [ref=f4e311]:
+        - generic [ref=f4e312]:
+          - img "Priya Shah" [ref=f4e313]
+          - generic [ref=f4e314]: Priya is a senior finance executive with 17+ years of global experience in top tier banks and private equity firm advising C-suite and Board members towards multi-million dollar projects across sectors, corporate strategy, corporate turnaround, M&A, investment appraisals, deal structuring, corporate finance, valuations, risk management, iquidity management and stress testing.
+        - generic [ref=f4e316]:
+          - heading "Priya Shah" [level=4] [ref=f4e317]
+          - generic [ref=f4e319]: Partner
+          - generic [ref=f4e320]: Private Equity
+          - generic [ref=f4e321]: London
+          - list [ref=f4e322]:
+            - listitem [ref=f4e323]:
+              - link "" [ref=f4e324] [cursor=pointer]:
+                - /url: mailto:priya.shah@adancorporate.com
+            - listitem [ref=f4e326]:
+              - link "" [ref=f4e327] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/priya-shah-b706692a/
+            - link [ref=f4e329] [cursor=pointer]:
+              - /url: ../team/priya-shah.html
+              - button "Full Profile" [ref=f4e330]
+      - separator [ref=f4e331]
+      - separator [ref=f4e332]
+    - generic [ref=f4e333]:
+      - generic [ref=f4e334]:
+        - generic [ref=f4e335]:
+          - img "Suryadeep Nain" [ref=f4e336]
+          - generic [ref=f4e337]: Suryadeep is an experienced investment professional with 8+ years of experience across capital markets, investment banking, and private equity in India in areas such as fund raising, due-diligence, transaction structuring and implementation across number of industry segments such as construction, real-estate, infrastructure, industrials, and financial institutions.
+        - generic [ref=f4e339]:
+          - heading "Suryadeep Nain" [level=4] [ref=f4e340]
+          - generic [ref=f4e342]: Director
+          - generic [ref=f4e343]: Private Equity
+          - generic [ref=f4e344]: Delhi
+          - list [ref=f4e345]:
+            - listitem [ref=f4e346]:
+              - link "" [ref=f4e347] [cursor=pointer]:
+                - /url: mailto:suryadeep.nain@adancorporate.com
+            - listitem [ref=f4e349]:
+              - link "" [ref=f4e350] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/suryadeep-nain-cfa-31b928a/
+            - link [ref=f4e352] [cursor=pointer]:
+              - /url: ../team/suryadeep-nain.html
+              - button "Full Profile" [ref=f4e353]
+      - separator [ref=f4e354]
+      - separator [ref=f4e355]
+  - generic [ref=f4e359]:
+    - heading "A selection of completed transactions" [level=2] [ref=f4e360]
+    - generic [ref=f4e361]: Our team has facilitated a variety of successful transactions across sectors, geographies and complexities.
+  - list [ref=f4e378]:
+    - listitem [ref=f4e379]:
+      - link [ref=f4e380] [cursor=pointer]:
+        - /url: ../legal/legal.html
+        - strong [ref=f4e381]: Legal
+    - listitem [ref=f4e382]:
+      - link [ref=f4e383] [cursor=pointer]:
+        - /url: ../legal/privacy-policy.html
+        - strong [ref=f4e384]: Privacy Policy
+    - listitem [ref=f4e385]:
+      - link [ref=f4e386] [cursor=pointer]:
+        - /url: ../legal/gdpr-policy.html
+        - strong [ref=f4e387]: GDPR
+    - listitem [ref=f4e388]:
+      - link [ref=f4e389] [cursor=pointer]:
+        - /url: ../legal/diversity-policy.html
+        - strong [ref=f4e390]: Diversity Policy
+    - listitem [ref=f4e391]:
+      - link [ref=f4e392] [cursor=pointer]:
+        - /url: ../legal/cookie-policy.html
+        - strong [ref=f4e393]: Cookie Policy
+    - listitem [ref=f4e394]:
+      - link [ref=f4e395] [cursor=pointer]:
+        - /url: ../legal/accessibility.html
+        - strong [ref=f4e396]: Accessibility
+    - listitem [ref=f4e397]:
+      - link [ref=f4e398] [cursor=pointer]:
+        - /url: ../legal/sitemap.html
+        - strong [ref=f4e399]: Sitemap
+  - generic:
+    - generic [ref=f4e400]:
+      - generic [ref=f4e401]: 
+      - link "Contact us" [ref=f4e402] [cursor=pointer]:
+        - /url: ../about-us/contact-us.html
+    - generic [ref=f4e403]:
+      - generic [ref=f4e404]: 
+      - text: Share on Linkedin
+    - generic [ref=f4e405]:
+      - generic [ref=f4e406]: 
+      - text: Share on Twitter
+    - generic [ref=f4e407]:
+      - generic [ref=f4e408]: 
+      - text: Share on Facebook
+    - generic [ref=f4e409]:
+      - generic [ref=f4e410]: 
+      - text: Share on WhatsApp
+    - generic [ref=f4e411]:
+      - generic [ref=f4e412]: 
+      - text: Print page
+  - list [ref=f4e416]:
+    - listitem [ref=f4e417]:
+      - link " Contact Us" [ref=f4e418] [cursor=pointer]:
+        - /url: ../about-us/contact-us.html
+        - generic [ref=f4e419]: 
+        - text: Contact Us
+    - listitem [ref=f4e420]:
+      - link " Linkedin" [ref=f4e421] [cursor=pointer]:
+        - /url: https://www.linkedin.com/company/11209203
+        - generic [ref=f4e422]: 
+        - text: Linkedin
+    - listitem [ref=f4e423]:
+      - link " Twitter" [ref=f4e424] [cursor=pointer]:
+        - /url: https://twitter.com/AdanCorpFinance
+        - generic [ref=f4e425]: 
+        - text: Twitter
+    - listitem [ref=f4e426]:
+      - link " Facebook" [ref=f4e427] [cursor=pointer]:
+        - /url: https://www.facebook.com/AdanCorpFinance
+        - generic [ref=f4e428]: 
+        - text: Facebook
+    - listitem [ref=f4e429]:
+      - link " A Done Deal Podcast" [ref=f4e430] [cursor=pointer]:
+        - /url: https://open.spotify.com/show/2LfRgivNsxvxsWmMU4Lj3r
+        - generic [ref=f4e431]: 
+        - text: A Done Deal Podcast
+    - listitem [ref=f4e432]:
+      - link " RSS Feed" [ref=f4e433] [cursor=pointer]:
+        - /url: https://feeds.buzzsprout.com/1408666.rss
+        - generic [ref=f4e434]: 
+        - text: RSS Feed
+  - generic [ref=f4e435]:
+    - paragraph [ref=f4e437]:
+      - text: We use cookies to ensure that we give you the best experience on our website. By continuing to browse this site, you agree to the use of cookies and understand our
+      - link [ref=f4e438] [cursor=pointer]:
+        - /url: ../legal/cookie-policy.html
+        - strong [ref=f4e439]: cookie policy
+      - text: .
+    - generic [ref=f4e440] [cursor=pointer]: I understand
+  - generic [ref=f4e443]:
+    - generic [ref=f4e444]: © Adan Corporate 2013 - 2021. Conceptualised, designed, and developed by CA
+    - link "To the top " [ref=f4e449] [cursor=pointer]:
+      - /url: "#page-top"
+      - text: To the top
+      - generic [ref=f4e450]: 
+  - generic:
+    - generic:
+      - generic:
+        - paragraph [ref=f4e452]: Quick chat?
+        - button [ref=f4e453] [cursor=pointer]
+      - iframe [ref=f4e457]

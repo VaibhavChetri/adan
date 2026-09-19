@@ -1,0 +1,160 @@
+- generic [active] [ref=f26e1]:
+  - link "Skip to content" [ref=f26e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f26e3]:
+    - generic [ref=f26e4]:
+      - link "ADAN Corporate" [ref=f26e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f26e6]: ADAN
+        - generic [ref=f26e7]: Corporate
+      - button "Menu" [ref=f26e8] [cursor=pointer]
+  - main [ref=f26e9]:
+    - generic [ref=f26e11]:
+      - generic [ref=f26e12]:
+        - heading "Corporate finance, M&A and risk advisory for mid-market firms." [level=1] [ref=f26e13]
+        - paragraph [ref=f26e14]: We advise owners, boards and funds trading across borders on raising capital, buying and selling businesses, and managing the risk that comes with both. Our partners ran companies before they advised them.
+        - generic [ref=f26e15]:
+          - link "Start a conversation" [ref=f26e16] [cursor=pointer]:
+            - /url: "#contact"
+          - link "See the record" [ref=f26e17] [cursor=pointer]:
+            - /url: "#record"
+      - generic [ref=f26e18]:
+        - generic [ref=f26e19]:
+          - generic [ref=f26e20]: TKTK
+          - generic [ref=f26e21]: completed engagements, from seed funding to IPO
+        - generic [ref=f26e22]:
+          - generic [ref=f26e23]: TKTK
+          - generic [ref=f26e24]: countries where partners are based
+        - generic [ref=f26e25]:
+          - generic [ref=f26e26]: $TK–$TK
+          - generic [ref=f26e27]: typical transaction range, mid-market
+        - generic [ref=f26e28]:
+          - generic [ref=f26e29]: TKTK
+          - generic [ref=f26e30]: partners, the majority former C-suite operators of listed firms
+        - paragraph [ref=f26e31]: Figures marked TKTK are held pending partner confirmation and a recorded source. Nothing is published until it is confirmed.
+    - generic [ref=f26e34]:
+      - heading "Who we are" [level=2] [ref=f26e35]
+      - paragraph [ref=f26e36]: Adan Corporate is an international advisory firm working with owner-managed and mid-market businesses, private equity, venture capital and family offices. We are UK-registered and work through a partner network rather than a head office.
+      - paragraph [ref=f26e37]: "The people advising you have sat on the other side of the table: as chief executives, finance directors and operators who have raised the money, done the deal and lived with the consequences. That is the whole proposition."
+    - generic [ref=f26e39]:
+      - heading "What we do" [level=2] [ref=f26e40]
+      - generic [ref=f26e41]:
+        - heading [level=3] [ref=f26e42]:
+          - link "Corporate Finance" [ref=f26e43] [cursor=pointer]:
+            - /url: /en-uk/corporate-finance/
+        - paragraph [ref=f26e44]: Debt and working capital, equity and private capital, project and infrastructure finance, IPO, restructuring and growth capital.
+      - generic [ref=f26e45]:
+        - heading [level=3] [ref=f26e46]:
+          - link "Mergers & Acquisitions" [ref=f26e47] [cursor=pointer]:
+            - /url: /en-uk/m-and-a/
+        - paragraph [ref=f26e48]: Buy-side and sell-side advisory, company valuation, deal strategy, post-merger integration, joint ventures and alliances.
+      - generic [ref=f26e49]:
+        - heading [level=3] [ref=f26e50]:
+          - link "Risk & Governance" [ref=f26e51] [cursor=pointer]:
+            - /url: /en-uk/risk/
+        - paragraph [ref=f26e52]: Risk strategy and frameworks, credit, market and treasury risk, operational and enterprise risk, internal audit, SOX and technology assurance.
+      - generic [ref=f26e53]:
+        - heading [level=3] [ref=f26e54]:
+          - link "Strategy & Board" [ref=f26e55] [cursor=pointer]:
+            - /url: /en-uk/strategy/
+        - paragraph [ref=f26e56]: Corporate and business strategy, international growth, decision support, non-executive directors and interim leadership.
+      - generic [ref=f26e57]:
+        - heading [level=3] [ref=f26e58]:
+          - link "Coaching & Programmes" [ref=f26e59] [cursor=pointer]:
+            - /url: /en-uk/coaching/
+        - paragraph [ref=f26e60]: Executive and team coaching, career transition, mentoring, leadership development and entrepreneur programmes.
+    - generic [ref=f26e62]:
+      - generic [ref=f26e63]:
+        - heading "AI and automation in risk and diligence" [level=2] [ref=f26e64]
+        - paragraph [ref=f26e65]: This is a description of method, not a claim about past work.
+        - paragraph [ref=f26e66]: "Diligence has always involved reading a great deal quickly: contracts, ledgers, policies, board minutes. We use automated tooling to widen what gets read and to flag anomalies for a person to examine — inconsistent terms across a contract set, gaps in a control narrative, figures that do not reconcile between documents."
+        - paragraph [ref=f26e67]: What it does not do is form the judgement. Every flag is reviewed by a partner, every conclusion is one a named individual will defend, and nothing reaches a client that has not been checked by someone accountable for it. Where we use these tools on an engagement, we say so in the engagement letter and we explain what was automated and what was not.
+      - link "How we apply it" [ref=f26e69] [cursor=pointer]:
+        - /url: /en-uk/risk/ai-and-automation-in-risk-and-diligence.html
+    - generic [ref=f26e71]:
+      - heading "The people who would advise you" [level=2] [ref=f26e72]
+      - paragraph [ref=f26e73]: Partners are named, reachable and accountable for the work. There are no stock photographs on this site and no invented profiles.
+      - generic [ref=f26e74]:
+        - article [ref=f26e75]:
+          - generic [aria-hidden] [ref=f26e77]: CA
+          - heading "Chennakeshav Adya" [level=3] [ref=f26e78]
+          - paragraph [ref=f26e79]: TKTK role
+          - paragraph [ref=f26e80]: TKTK outcome — a single named engagement and its result, confirmed and approved by the partner.
+        - article [ref=f26e81]:
+          - generic [aria-hidden] [ref=f26e83]: RV
+          - heading "Raju Venkataraman" [level=3] [ref=f26e84]
+          - paragraph [ref=f26e85]: TKTK role
+          - paragraph [ref=f26e86]: TKTK outcome — a single named engagement and its result, confirmed and approved by the partner.
+        - article [ref=f26e87]:
+          - generic [aria-hidden] [ref=f26e89]: MK
+          - heading "Mike Kemball" [level=3] [ref=f26e90]
+          - paragraph [ref=f26e91]: TKTK role
+          - paragraph [ref=f26e92]: TKTK outcome — a single named engagement and its result, confirmed and approved by the partner.
+        - article [ref=f26e93]:
+          - generic [aria-hidden] [ref=f26e95]: PS
+          - heading "Priya Shah" [level=3] [ref=f26e96]
+          - paragraph [ref=f26e97]: TKTK role
+          - paragraph [ref=f26e98]: TKTK outcome — a single named engagement and its result, confirmed and approved by the partner.
+      - link "All partners" [ref=f26e100] [cursor=pointer]:
+        - /url: /en-uk/about-us/team.html
+    - generic [ref=f26e102]:
+      - heading "Start a conversation" [level=2] [ref=f26e103]
+      - paragraph [ref=f26e104]: Tell us briefly what you are considering. A partner replies directly — this is not routed to a mailbox.
+      - generic [ref=f26e105]:
+        - generic [ref=f26e106]:
+          - generic [ref=f26e107]: Your name
+          - textbox "Your name" [ref=f26e108]:
+            - /placeholder: " "
+        - generic [ref=f26e109]:
+          - generic [ref=f26e110]: Email We reply here.
+          - textbox "Email We reply here." [ref=f26e111]:
+            - /placeholder: " "
+        - generic [ref=f26e112]:
+          - generic [ref=f26e113]: Organisation Optional.
+          - textbox "Organisation Optional." [ref=f26e114]:
+            - /placeholder: " "
+        - generic [ref=f26e115]:
+          - generic [ref=f26e116]: What are you considering? A sentence or two is enough.
+          - textbox "What are you considering? A sentence or two is enough." [ref=f26e117]:
+            - /placeholder: " "
+        - button "Send enquiry" [ref=f26e118] [cursor=pointer]
+        - status
+  - contentinfo [ref=f26e119]:
+    - generic [ref=f26e120]:
+      - generic [ref=f26e121]:
+        - generic [ref=f26e122]:
+          - paragraph [ref=f26e123]: Adan Corporate
+          - paragraph [ref=f26e124]: Corporate finance, M&A, strategy, risk and coaching for mid-market firms trading across borders.
+        - list [ref=f26e126]:
+          - listitem [ref=f26e127]:
+            - link "About" [ref=f26e128] [cursor=pointer]:
+              - /url: /en-uk/about-us/company-overview.html
+          - listitem [ref=f26e129]:
+            - link "Team" [ref=f26e130] [cursor=pointer]:
+              - /url: /en-uk/about-us/team.html
+          - listitem [ref=f26e131]:
+            - link "Clients" [ref=f26e132] [cursor=pointer]:
+              - /url: /en-uk/clients/clients.html
+          - listitem [ref=f26e133]:
+            - link "Careers" [ref=f26e134] [cursor=pointer]:
+              - /url: /en-uk/careers/careers.html
+        - list [ref=f26e136]:
+          - listitem [ref=f26e137]:
+            - link "Privacy" [ref=f26e138] [cursor=pointer]:
+              - /url: /en-uk/legal/privacy-policy.html
+          - listitem [ref=f26e139]:
+            - link "Legal" [ref=f26e140] [cursor=pointer]:
+              - /url: /en-uk/legal/legal.html
+          - listitem [ref=f26e141]:
+            - link "Accessibility" [ref=f26e142] [cursor=pointer]:
+              - /url: /en-uk/legal/accessibility.html
+          - listitem
+      - paragraph [ref=f26e143]: © 2026 Adan Corporate. Registered in the United Kingdom.
+  - region "Cookie choices" [ref=f26e144]:
+    - generic [ref=f26e145]:
+      - paragraph [ref=f26e146]:
+        - strong [ref=f26e147]: We would like to measure how this site is used.
+        - text: No measurement or marketing cookie is set unless you accept. Essential cookies keep the site working.
+      - generic [ref=f26e148]:
+        - button "Accept" [ref=f26e149] [cursor=pointer]
+        - button "Reject" [ref=f26e150] [cursor=pointer]

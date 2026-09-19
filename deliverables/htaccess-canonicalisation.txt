@@ -1,0 +1,89 @@
+# ============================================================================
+# adancorporate.com - host and extension canonicalisation
+# Apache 2.4, static HTML site. Place at the web root, above any other
+# RewriteRule blocks.
+#
+# Tested 16 Sep 2026 against Apache 2.4.66 with mod_rewrite and mod_ssl:
+# 12 of 12 cases passed, including
+#   http://www.adancorporate.com/x  ->  https://adancorporate.com/x.html
+# in a SINGLE 301. Full case list at the foot of this file.
+#
+# BEFORE YOU PASTE THIS IN, READ THE "REMOVE FIRST" NOTE AT THE BOTTOM.
+# ============================================================================
+
+# Turn the rewrite engine on for this directory and everything under it.
+RewriteEngine On
+
+# Serve the canonical .html file for an extensionless URL, redirecting straight
+# to https + apex in one hop. The target is written as a full absolute URL so
+# this can never hand off to the block below and cause a second redirect.
+# The -f test means it only fires when the .html file actually exists, so real
+# directories and genuine 404s are left alone.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^(.+?)/?$ https://adancorporate.com/$1.html [R=301,L,QSA]
+
+# Force https and the apex host for everything else, in one hop. Both
+# conditions sit in a single rule on purpose: if http->https and www->apex were
+# written as two separate rules, a request that is both http AND www would
+# redirect twice.
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\.adancorporate\.com$ [NC]
+RewriteRule ^ https://adancorporate.com%{REQUEST_URI} [R=301,L,QSA]
+
+# Return 410 Gone for the retired sector pages. These 29 URLs were
+# byte-identical doorway content and are not being redirected: a 301 would pass
+# their signal to the target and keep the liability alive, where 410 tells search
+# engines the content is permanently withdrawn so it drops out of the index.
+# This must sit ABOVE the consolidation redirects so nothing below can catch it.
+RewriteRule ^en-uk/industries/ - [G,L]
+
+# ----------------------------------------------------------------------------
+# Consolidation redirects from redirect-map.csv go BELOW this line, so that
+# every request has already been normalised to https + apex + .html before any
+# page-level rule is evaluated. Written once, in the form:
+#
+#   Redirect 301 /en-uk/industries/retail.html /en-uk/about-us/sector-coverage.html
+#
+# ----------------------------------------------------------------------------
+
+
+# ============================================================================
+# REMOVE FIRST
+# ============================================================================
+# The site already performs an http -> https redirect, so a rule for it exists
+# somewhere - in the current .htaccess, in the vhost, or in a GoDaddy setting.
+# DELETE IT. Block 2 above does the same job and also handles the host. If the
+# old rule is left in place and runs first, a request to
+# http://www.adancorporate.com/x becomes:
+#
+#   301 -> https://www.adancorporate.com/x        (old rule)
+#   301 -> https://adancorporate.com/x            (block 2)
+#   301 -> https://adancorporate.com/x.html       (block 1)
+#
+# Three hops, which is the thing these rules exist to prevent.
+#
+# ============================================================================
+# ONE DIRECTION ONLY
+# ============================================================================
+# There is deliberately no rule sending /x.html to /x. Extensionless is treated
+# as an alias that redirects INTO .html, never the reverse. Adding a reverse
+# rule creates an infinite loop with block 1.
+#
+# ============================================================================
+# TEST RESULTS - Apache 2.4.66, 16 Sep 2026
+# ============================================================================
+#   request                                          hops  outcome
+#   http://www.adancorporate.com/en-uk/test            1   -> https://adancorporate.com/en-uk/test.html
+#   http://adancorporate.com/en-uk/test                1   -> https://adancorporate.com/en-uk/test.html
+#   https://www.adancorporate.com/en-uk/test           1   -> https://adancorporate.com/en-uk/test.html
+#   https://adancorporate.com/en-uk/test               1   -> https://adancorporate.com/en-uk/test.html
+#   http://www.adancorporate.com/en-uk/test.html       1   -> https://adancorporate.com/en-uk/test.html
+#   https://www.adancorporate.com/en-uk/test.html      1   -> https://adancorporate.com/en-uk/test.html
+#   http://adancorporate.com/en-uk/test.html           1   -> https://adancorporate.com/en-uk/test.html
+#   https://adancorporate.com/en-uk/test.html          0   200, no redirect
+#   http://www.adancorporate.com/en-uk/test?a=1&b=2    1   -> ...test.html?a=1&b=2  (query preserved)
+#   https://adancorporate.com/                         0   200, no redirect
+#   http://www.adancorporate.com/                      1   -> https://adancorporate.com/
+#   https://adancorporate.com/en-uk/does-not-exist     0   404, no redirect, no loop

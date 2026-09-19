@@ -1,0 +1,287 @@
+- generic [active] [ref=f6e1]:
+  - img "Loading..." [ref=f6e3]
+  - navigation [ref=f6e4]:
+    - generic [ref=f6e5]:
+      - generic [ref=f6e6]:
+        - button "Toggle navigation" [expanded] [ref=f6e7] [cursor=pointer]
+        - link [ref=f6e12] [cursor=pointer]:
+          - /url: ../home/index.html
+          - img "Adan Corporate - Logo" [ref=f6e13]
+      - text:                         
+  - generic [ref=f6e14]:
+    - iframe [ref=f6e16]:
+      - generic "YouTube Video Player" [ref=f8e3]
+    - generic [ref=f6e18]:
+      - generic [ref=f6e20]:
+        - heading "Drop us a line." [level=2] [ref=f6e21]
+        - heading "We would be delighted to hear from you." [level=2] [ref=f6e23]
+        - link "Read More About How Adan Corporate (  ) Can Assist" [ref=f6e25] [cursor=pointer]:
+          - /url: ../about-us/company-overview.html
+          - text: Read More About How Adan Corporate (
+          - generic [ref=f6e26]: 
+          - text: ) Can Assist
+      - link "scroll down " [ref=f6e27] [cursor=pointer]:
+        - /url: "#services"
+        - generic [ref=f6e28]: scroll down
+        - generic [ref=f6e29]: 
+  - generic [ref=f6e36]:
+    - generic [ref=f6e39]:
+      - heading "Enquiries" [level=4] [ref=f6e40]
+      - separator [ref=f6e41]
+      - generic [ref=f6e42]:
+        - img "Enquiries" [ref=f6e43]
+        - link [ref=f6e44] [cursor=pointer]:
+          - /url: mailto:partners@adancorporate.com
+          - button "Contact a Partner" [ref=f6e45]
+    - generic [ref=f6e48]:
+      - heading "Careers" [level=4] [ref=f6e49]
+      - separator [ref=f6e50]
+      - generic [ref=f6e51]:
+        - img "Enquiries" [ref=f6e52]
+        - link [ref=f6e53] [cursor=pointer]:
+          - /url: mailto:careers@adancorporate.com
+          - button "Contact Careers Team" [ref=f6e54]
+    - generic [ref=f6e57]:
+      - heading "Alumni" [level=4] [ref=f6e58]
+      - separator [ref=f6e59]
+      - generic [ref=f6e60]:
+        - img "Enquiries" [ref=f6e61]
+        - link [ref=f6e62] [cursor=pointer]:
+          - /url: mailto:alumni@adancorporate.com
+          - button "Contact Alumni Team" [ref=f6e63]
+    - generic [ref=f6e66]:
+      - heading "Media" [level=4] [ref=f6e67]
+      - separator [ref=f6e68]
+      - generic [ref=f6e69]:
+        - img "Enquiries" [ref=f6e70]
+        - link [ref=f6e71] [cursor=pointer]:
+          - /url: mailto:info@adancorporate.com
+          - button "Contact Media Team" [ref=f6e72]
+  - generic [ref=f6e75]:
+    - heading "Global Locations" [level=2] [ref=f6e77]
+    - generic [ref=f6e78]:
+      - separator [ref=f6e79]
+      - heading "Europe" [level=2] [ref=f6e80]
+    - generic [ref=f6e82]:
+      - generic [ref=f6e85]:
+        - heading "United Kingdom" [level=4] [ref=f6e86]
+        - separator [ref=f6e87]
+        - generic [ref=f6e88]:
+          - text: "27 Old Gloucester Street London WC1N 3AX United Kingdom Tel: +44 7917 120849"
+          - link [ref=f6e89] [cursor=pointer]:
+            - /url: mailto:ajay.mavinkurve@adancorporate.com
+            - button "Contact a Partner" [ref=f6e90]
+      - generic [ref=f6e93]:
+        - heading "Switzerland" [level=4] [ref=f6e94]
+        - separator [ref=f6e95]
+        - generic [ref=f6e96]:
+          - text: "Glattbrugg Zurich 8152 Switzerland Tel: +41 779767674"
+          - link [ref=f6e97] [cursor=pointer]:
+            - /url: mailto:nitin.kumar@adancorporate.com
+            - button "Contact a Partner" [ref=f6e98]
+      - generic [ref=f6e101]:
+        - heading "The Netherlands" [level=4] [ref=f6e102]
+        - separator [ref=f6e103]
+        - generic [ref=f6e104]:
+          - text: "Herengracht 268 1016 BW Amsterdam The Netherlands Tel: +31 615 35 3660"
+          - link [ref=f6e105] [cursor=pointer]:
+            - /url: mailto:thomas.peutz@adancorporate.com
+            - button "Contact a Partner" [ref=f6e106]
+      - generic [ref=f6e109]:
+        - heading "Czech Republic" [level=4] [ref=f6e110]
+        - separator [ref=f6e111]
+        - generic [ref=f6e112]:
+          - text: "838/9, Vaclavske nam. Prague 110 00 The Czech Republic Tel: +420 226 807 069"
+          - link [ref=f6e113] [cursor=pointer]:
+            - /url: mailto:thu.nga@adancorporate.com
+            - button "Contact a Partner" [ref=f6e114]
+    - generic [ref=f6e116]:
+      - generic [ref=f6e119]:
+        - heading "Italy" [level=4] [ref=f6e120]
+        - separator [ref=f6e121]
+        - generic [ref=f6e122]:
+          - text: "Milan Tel: +44 7469 955740"
+          - link [ref=f6e123] [cursor=pointer]:
+            - /url: mailto:marco.salvini@adancorporate.com
+            - button "Contact a Partner" [ref=f6e124]
+      - generic [ref=f6e127]:
+        - heading "France" [level=4] [ref=f6e128]
+        - separator [ref=f6e129]
+        - generic [ref=f6e130]:
+          - text: "Paris Tel: +420 226 807 069"
+          - link [ref=f6e131] [cursor=pointer]:
+            - /url: mailto:jb.tanqueray@adancorporate.com
+            - button "Contact a Partner" [ref=f6e132]
+    - generic [ref=f6e133]:
+      - separator [ref=f6e134]
+      - heading "Asia" [level=2] [ref=f6e135]
+    - generic [ref=f6e137]:
+      - generic [ref=f6e140]:
+        - heading "India" [level=4] [ref=f6e141]
+        - separator [ref=f6e142]
+        - generic [ref=f6e143]:
+          - text: "2nd Floor, Lakshdeep Gulmohar Lane No. 5, Juhu JVPD Scheme Mumbai 400049 India Tel: +91 22 2628 6599"
+          - link [ref=f6e144] [cursor=pointer]:
+            - /url: mailto:sabapatys@adancorporate.com
+            - button "Contact a Partner" [ref=f6e145]
+      - generic [ref=f6e148]:
+        - heading "Dubai" [level=4] [ref=f6e149]
+        - separator [ref=f6e150]
+        - generic [ref=f6e151]:
+          - text: "Sheikh Zayed Road Dubai United Arab Emirates Tel: +971 55455 8146 Tel: +971 50819 2473"
+          - link [ref=f6e152] [cursor=pointer]:
+            - /url: mailto:ck.adya@adancorporate.com
+            - button "Contact a Partner" [ref=f6e153]
+      - generic [ref=f6e156]:
+        - heading "Abu Dhabi" [level=4] [ref=f6e157]
+        - separator [ref=f6e158]
+        - generic [ref=f6e159]:
+          - text: "Garden View Khalifa Street Abu Dhabi United Arab Emirates Tel: +971 56264 4124"
+          - link [ref=f6e160] [cursor=pointer]:
+            - /url: mailto:sp@adancorporate.com
+            - button "Contact a Partner" [ref=f6e161]
+      - generic [ref=f6e164]:
+        - heading "Singapore" [level=4] [ref=f6e165]
+        - separator [ref=f6e166]
+        - generic [ref=f6e167]:
+          - text: "Simei Rise #02-48 Singapore 528808"
+          - link [ref=f6e168] [cursor=pointer]:
+            - /url: mailto:kieran.bourke@adancorporate.com
+            - button "Contact a Partner" [ref=f6e169]
+    - generic [ref=f6e171]:
+      - generic [ref=f6e174]:
+        - heading "Kazakhstan" [level=4] [ref=f6e175]
+        - separator [ref=f6e176]
+        - generic [ref=f6e177]:
+          - text: "46 Valikhanov Str. Yasamal Office 4 Almaty 050046 Kazakhstan Tel: +994 50 278 7870"
+          - link [ref=f6e178] [cursor=pointer]:
+            - /url: mailto:almira@adancorporate.com
+            - button "Contact a Partner" [ref=f6e179]
+      - generic [ref=f6e182]:
+        - heading "Azerbaijan" [level=4] [ref=f6e183]
+        - separator [ref=f6e184]
+        - generic [ref=f6e185]:
+          - text: "574-2, Hagverdiyev St Yasamal district Baku Azerbaijan Tel: +994 50 278 7870"
+          - link [ref=f6e186] [cursor=pointer]:
+            - /url: mailto:almira@adancorporate.com
+            - button "Contact a Partner" [ref=f6e187]
+    - generic [ref=f6e188]:
+      - separator [ref=f6e189]
+      - heading "Africa" [level=2] [ref=f6e190]
+    - generic [ref=f6e192]:
+      - generic [ref=f6e195]:
+        - heading "South Africa" [level=4] [ref=f6e196]
+        - separator [ref=f6e197]
+        - generic [ref=f6e198]:
+          - text: "60 Arum St John's Avenue Senderwood Johannesburg South Africa Tel: +27 72 969 9865"
+          - link [ref=f6e199] [cursor=pointer]:
+            - /url: mailto:george.christelis@adancorporate.com
+            - button "Contact a Partner" [ref=f6e200]
+      - generic [ref=f6e203]:
+        - heading "Ivory Coast" [level=4] [ref=f6e204]
+        - separator [ref=f6e205]
+        - generic [ref=f6e206]:
+          - text: 26 BP 1028 Abidjan 26 Cote d'Ivoire
+          - link [ref=f6e207] [cursor=pointer]:
+            - /url: mailto:chris.king@adancorporate.com
+            - button "Contact a Partner" [ref=f6e208]
+  - list [ref=f6e216]:
+    - listitem [ref=f6e217]:
+      - link [ref=f6e218] [cursor=pointer]:
+        - /url: ../legal/legal.html
+        - strong [ref=f6e219]: Legal
+    - listitem [ref=f6e220]:
+      - link [ref=f6e221] [cursor=pointer]:
+        - /url: ../legal/privacy-policy.html
+        - strong [ref=f6e222]: Privacy Policy
+    - listitem [ref=f6e223]:
+      - link [ref=f6e224] [cursor=pointer]:
+        - /url: ../legal/gdpr-policy.html
+        - strong [ref=f6e225]: GDPR
+    - listitem [ref=f6e226]:
+      - link [ref=f6e227] [cursor=pointer]:
+        - /url: ../legal/diversity-policy.html
+        - strong [ref=f6e228]: Diversity Policy
+    - listitem [ref=f6e229]:
+      - link [ref=f6e230] [cursor=pointer]:
+        - /url: ../legal/cookie-policy.html
+        - strong [ref=f6e231]: Cookie Policy
+    - listitem [ref=f6e232]:
+      - link [ref=f6e233] [cursor=pointer]:
+        - /url: ../legal/accessibility.html
+        - strong [ref=f6e234]: Accessibility
+    - listitem [ref=f6e235]:
+      - link [ref=f6e236] [cursor=pointer]:
+        - /url: ../legal/sitemap.html
+        - strong [ref=f6e237]: Sitemap
+  - generic:
+    - generic [ref=f6e238]:
+      - generic [ref=f6e239]: 
+      - link "Contact us" [ref=f6e240] [cursor=pointer]:
+        - /url: ../about-us/contact-us.html
+    - generic [ref=f6e241]:
+      - generic [ref=f6e242]: 
+      - text: Share on Linkedin
+    - generic [ref=f6e243]:
+      - generic [ref=f6e244]: 
+      - text: Share on Twitter
+    - generic [ref=f6e245]:
+      - generic [ref=f6e246]: 
+      - text: Share on Facebook
+    - generic [ref=f6e247]:
+      - generic [ref=f6e248]: 
+      - text: Share on WhatsApp
+    - generic [ref=f6e249]:
+      - generic [ref=f6e250]: 
+      - text: Print page
+  - list [ref=f6e254]:
+    - listitem [ref=f6e255]:
+      - link " Contact Us" [ref=f6e256] [cursor=pointer]:
+        - /url: ../about-us/contact-us.html
+        - generic [ref=f6e257]: 
+        - text: Contact Us
+    - listitem [ref=f6e258]:
+      - link " Linkedin" [ref=f6e259] [cursor=pointer]:
+        - /url: https://www.linkedin.com/company/11209203
+        - generic [ref=f6e260]: 
+        - text: Linkedin
+    - listitem [ref=f6e261]:
+      - link " Twitter" [ref=f6e262] [cursor=pointer]:
+        - /url: https://twitter.com/AdanCorpFinance
+        - generic [ref=f6e263]: 
+        - text: Twitter
+    - listitem [ref=f6e264]:
+      - link " Facebook" [ref=f6e265] [cursor=pointer]:
+        - /url: https://www.facebook.com/AdanCorpFinance
+        - generic [ref=f6e266]: 
+        - text: Facebook
+    - listitem [ref=f6e267]:
+      - link " A Done Deal Podcast" [ref=f6e268] [cursor=pointer]:
+        - /url: https://open.spotify.com/show/2LfRgivNsxvxsWmMU4Lj3r
+        - generic [ref=f6e269]: 
+        - text: A Done Deal Podcast
+    - listitem [ref=f6e270]:
+      - link " RSS Feed" [ref=f6e271] [cursor=pointer]:
+        - /url: https://feeds.buzzsprout.com/1408666.rss
+        - generic [ref=f6e272]: 
+        - text: RSS Feed
+  - generic [ref=f6e273]:
+    - paragraph [ref=f6e275]:
+      - text: We use cookies to ensure that we give you the best experience on our website. By continuing to browse this site, you agree to the use of cookies and understand our
+      - link [ref=f6e276] [cursor=pointer]:
+        - /url: ../legal/cookie-policy.html
+        - strong [ref=f6e277]: cookie policy
+      - text: .
+    - generic [ref=f6e278] [cursor=pointer]: I understand
+  - generic [ref=f6e281]:
+    - generic [ref=f6e282]: © Adan Corporate 2013 - 2021. Conceptualised, designed, and developed by CA
+    - link "To the top " [ref=f6e287] [cursor=pointer]:
+      - /url: "#page-top"
+      - text: To the top
+      - generic [ref=f6e288]: 
+  - generic:
+    - generic:
+      - generic:
+        - paragraph [ref=f6e290]: Quick chat?
+        - button [ref=f6e291] [cursor=pointer]
+      - iframe [ref=f6e295]

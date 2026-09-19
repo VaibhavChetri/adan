@@ -1,0 +1,313 @@
+- generic [active] [ref=f14e1]:
+  - img "Loading..." [ref=f14e3]
+  - navigation [ref=f14e4]:
+    - generic [ref=f14e5]:
+      - generic [ref=f14e6]:
+        - button "Toggle navigation" [expanded] [ref=f14e7] [cursor=pointer]
+        - link [ref=f14e12] [cursor=pointer]:
+          - /url: ../home/index.html
+          - img "Adan Corporate - Logo" [ref=f14e13]
+      - text:                        
+  - generic [ref=f14e22]:
+    - generic [ref=f14e23]:
+      - heading "Privacy Policy" [level=4] [ref=f14e24]
+      - separator [ref=f14e25]
+    - img "Privacy Policy" [ref=f14e27]
+    - generic [ref=f14e28]:
+      - separator [ref=f14e29]
+      - 'heading "Last updated: 17 Oct 2019" [level=5] [ref=f14e30]'
+      - paragraph [ref=f14e31]
+      - heading "Introduction" [level=4] [ref=f14e32]
+      - text: Adan Corporate LLP and its subsidiaries and affiliates (collectively, "Adan", "us" or "we") understand that your privacy is important to you. We are committed to respecting your privacy and protecting your personal data, which is any information that is capable of identifying you as an individual person, collected via all websites or apps that post a link to this Privacy Policy (collectively, "the Sites"). Adan is dedicated to protecting the confidentiality and privacy of information entrusted to us.
+      - paragraph [ref=f14e33]
+      - paragraph [ref=f14e34]: This Privacy Policy describes how we handle and protect your personal data in connection with the Sites, in our capacity as "Data Controllers". This Privacy Policy also explains what personal data we collect and how it is used. This policy also explains what rights you have over your personal data and how you can use those rights. This Privacy Policy governs our data collection, processing and usage practices. It also describes your choices regarding use, access and correction of your information.
+      - paragraph [ref=f14e35]: You have the right to object to some of the processing which Adan carries out. More information about your rights and how to exercise these is set out in the "Your rights" section of this notice. Personal data is any information relating to an identified or identifiable living person. Adan processes company and personal data for numerous purposes, and the means of collection, lawful basis of processing, use, disclosure, and retention periods for each purpose may differ. When collecting and using personal data, our policy is to be transparent about why and how we process personal data. To find out more about our specific processing activities, please go to the relevant sections of this statement.
+      - paragraph [ref=f14e36]: "This Privacy Statement is divided into the sections listed below. Click on the links to navigate to the relevant topic:"
+      - list [ref=f14e37]:
+        - listitem [ref=f14e38]:
+          - link "Summary of how we collect data" [ref=f14e39] [cursor=pointer]:
+            - /url: "#Summary of how we collect data"
+        - listitem [ref=f14e40]:
+          - link "Information we collect from you" [ref=f14e41] [cursor=pointer]:
+            - /url: "#Information we collect from you"
+        - listitem [ref=f14e42]:
+          - link "Information we receive from third parties" [ref=f14e43] [cursor=pointer]:
+            - /url: "#Information we receive from third parties"
+        - listitem [ref=f14e44]:
+          - link "How we use information and the legal basis" [ref=f14e45] [cursor=pointer]:
+            - /url: "#How we use information and the legal basis"
+        - listitem [ref=f14e46]:
+          - link "Data sharing" [ref=f14e47] [cursor=pointer]:
+            - /url: "#Data sharing"
+        - listitem [ref=f14e48]:
+          - link "International transfers" [ref=f14e49] [cursor=pointer]:
+            - /url: "#International transfers"
+        - listitem [ref=f14e50]:
+          - link "Cookies and similar technologies" [ref=f14e51] [cursor=pointer]:
+            - /url: "#Cookies and similar technologies"
+        - listitem [ref=f14e52]:
+          - link "Data retention" [ref=f14e53] [cursor=pointer]:
+            - /url: "#Data retention"
+        - listitem [ref=f14e54]:
+          - link "Your rights" [ref=f14e55] [cursor=pointer]:
+            - /url: "#Your rights"
+        - listitem [ref=f14e56]:
+          - link "Information security and quality" [ref=f14e57] [cursor=pointer]:
+            - /url: "#Information security and quality"
+        - listitem [ref=f14e58]:
+          - link "Cookies" [ref=f14e59] [cursor=pointer]:
+            - /url: "#Cookies"
+        - listitem [ref=f14e60]:
+          - link "Third party links and websites from Business Relationships" [ref=f14e61] [cursor=pointer]:
+            - /url: "#Third party links and websites from Business Relationships"
+        - listitem [ref=f14e62]:
+          - link "Complaints procedure" [ref=f14e63] [cursor=pointer]:
+            - /url: "#Complaints procedure"
+        - listitem [ref=f14e64]:
+          - link "Contacting us" [ref=f14e65] [cursor=pointer]:
+            - /url: "#Contacting us"
+      - paragraph [ref=f14e66]
+      - separator [ref=f14e67]
+      - heading "1. Summary of how we collect data" [level=4] [ref=f14e68]
+      - paragraph [ref=f14e69]: "The personal data collected varies across the Sites and may include information that you provide, such as your name, mailing address, e-mail address, telephone number, fax number, and background information. We may also automatically collect information about the devices you use to interact with our Sites. The information we automatically collect may include IP address, device identifier, web browser, and browsing information collected through cookies, web beacons, pixels, clear gifs, and other similar technologies (collectively \"Cookies and Other Tracking Technologies\") on our Sites. The mechanisms used to collect data are as follows:"
+      - list [ref=f14e70]:
+        - listitem [ref=f14e71]: Directly. We obtain personal data directly from individuals in a variety of ways, including obtaining personal data from individuals who provide us their business card, complete our online forms, subscribe to our newsletters and preference centre, register for webinars, attend meetings or events we host, visit our offices or apply for open roles. We may also obtain personal data directly when, for example, we are establishing a business relationship, performing professional services through a contract, or through our hosted software applications.
+        - listitem [ref=f14e72]: Indirectly. We obtain personal data indirectly about individuals from a variety of sources, including recruitment services and our clients. We may attach personal data to our customer relationship management records to better understand and serve our business clients, subscribers and individuals, satisfy a legal obligation, or pursue our legitimate interests.
+        - listitem [ref=f14e73]: Public sources. Personal data may be obtained from public registers (such as Companies House), news articles, sanctions lists, and Internet searches.
+        - listitem [ref=f14e74]: Social and professional networking sites. If you register or login to our websites using social media (e.g., LinkedIn, Google, or Twitter) to authenticate your identity and connect your social media login information with us, we will collect information or content needed for the registration or login that you permitted your social media provider to share with us. That information may include your name and email address and depending on your privacy settings, additional details about you, so please review the privacy controls on the applicable service to set how much information you want shared with us.
+        - listitem [ref=f14e75]: Business clients. Our business clients may engage us to perform professional services which involves sharing personal data they control as part of that engagement. For example, we will review payroll data as part of an audit and we often need to use personal data to provide global mobility and pension services. Our services may also include processing personal data under our clients' control on our hosted software applications, which may be governed by different privacy terms and policies.
+        - listitem [ref=f14e76]: Recruitment services. We may obtain personal data about candidates from an employment agency, and other parties including former employers, and credit reference agencies.
+      - paragraph [ref=f14e77]
+      - separator [ref=f14e78]
+      - heading "2. Information we collect from you" [level=4] [ref=f14e79]
+      - paragraph [ref=f14e80]: "Adan processes personal data about contacts (existing and potential Adan clients and/or individuals associated with them) and stored them using a customer relationship management system (the \"Adan CRM - Andromeda\"). The collection of personal data about contacts and the addition of that personal data to the Adan CRM - Andromeda is initiated by a Adan user and will include:"
+      - list [ref=f14e81]:
+        - listitem [ref=f14e82]: First Name
+        - listitem [ref=f14e83]: Last Name
+        - listitem [ref=f14e84]: Company Name
+        - listitem [ref=f14e85]: Job Title
+        - listitem [ref=f14e86]: Company Email
+        - listitem [ref=f14e87]: Other Email
+        - listitem [ref=f14e88]: Industry
+        - listitem [ref=f14e89]: Mobile Number
+        - listitem [ref=f14e90]: City
+        - listitem [ref=f14e91]: State
+        - listitem [ref=f14e92]: Country
+        - listitem [ref=f14e93]: Website
+      - text: "In addition, the Adan CRM - Andromeda may collect data from Adan email (sender name, recipient name, date and time) and calendar (organiser name, participant name, date and time of event) systems concerning interactions between Adan users and contacts or third parties. We aspire to be transparent when we collect and use personal data and tell you why we need it, which typically includes:"
+      - list [ref=f14e94]:
+        - listitem [ref=f14e95]: Providing professional advice and delivering reports related to our advisory, fund-raising, turnarounds, restructuring, mergers and acquisitions and other professional services. Our services may include reviewing client files for quality assurance purposes, which may involve processing personal data for the relevant client.
+        - listitem [ref=f14e96]: Promoting our professional services, products and capabilities to existing and prospective business clients.
+        - listitem [ref=f14e97]: Sending invitations and providing access to guests attending our events and webinars or our sponsored events.
+        - listitem [ref=f14e98]: Personalising online landing pages and communications we think would be of interest based on interactions with us and Adan member firms.
+        - listitem [ref=f14e99]: Administering, maintaining and ensuring the security of our information systems, applications and websites.
+        - listitem [ref=f14e100]: Authenticating registered users to certain areas of our sites.
+        - listitem [ref=f14e101]: Seeking qualified candidates, and forwarding candidate career inquiries to our People team, which may be governed by different privacy terms and policies.
+        - listitem [ref=f14e102]: Processing online requests, including responding to communications from individuals or requests for proposals and quotations.
+        - listitem [ref=f14e103]: Contacting journalists regarding company press releases, invitations to annual press parties, highlighting messages that may be of interest on specific industry topics.
+        - listitem [ref=f14e104]: Travel arrangement assistance.
+        - listitem [ref=f14e105]: Helping support clients to run a series of development programs for education and learning purposes to inform leaders in the healthcare, civil service and other industries.
+        - listitem [ref=f14e106]: Complying with legal and regulatory obligations relating to countering money laundering, terrorist financing, fraud and other forms of financial crime.
+      - paragraph [ref=f14e107]
+      - separator [ref=f14e108]
+      - heading "3. Information we receive from third parties" [level=4] [ref=f14e109]
+      - paragraph [ref=f14e110]: "Adan processes personal data about contacts (existing and potential Adan clients and/or individuals associated with them) and stored them using a customer relationship management system (the \"Adan CRM - Andromeda\"). The collection of personal data about contacts and the addition of that personal data to the Adan CRM - Andromeda is initiated by a Adan user and will include name, employer name, contact title, phone, email and other business contact details. In addition, the Adan CRM - Andromeda may collect data from Adan email (sender name, recipient name, date and time) and calendar (organiser name, participant name, date and time of event) systems concerning interactions between Adan users and contacts or third parties. The mechanisms used to collect data are as follows:"
+      - list [ref=f14e111]:
+        - listitem [ref=f14e112]: Public sources. Personal data may be obtained from public registers (such as Companies House), news articles, sanctions lists, and Internet searches.
+        - listitem [ref=f14e113]: Social and professional networking sites. If you register or login to our websites using social media (e.g., LinkedIn, Google, or Twitter) to authenticate your identity and connect your social media login information with us, we will collect information or content needed for the registration or login that you permitted your social media provider to share with us. That information may include your name and email address and depending on your privacy settings, additional details about you, so please review the privacy controls on the applicable service to set how much information you want shared with us.
+        - listitem [ref=f14e114]: Business clients. Our business clients may engage us to perform professional services which involves sharing personal data they control as part of that engagement. For example, we will review payroll data as part of an audit and we often need to use personal data to provide global mobility and pension services. Our services may also include processing personal data under our clients' control on our hosted software applications, which may be governed by different privacy terms and policies.
+        - listitem [ref=f14e115]: Recruitment services. We may obtain personal data about candidates from an employment agency, and other parties including former employers, and credit reference agencies.
+      - paragraph [ref=f14e116]
+      - separator [ref=f14e117]
+      - heading "4. How we use information and the legal basis" [level=4] [ref=f14e118]
+      - paragraph [ref=f14e119]: "The personal data we collect may be used where we have your specific consent to do so, or where Adan has a legitimate interest in or other legal basis for processing such information. In some situations, the collection of personal data may be required for the operation of the Sites or to provide certain services or products. Adan uses your personal data to fulfill your requests for information, process your requests to participate in conferences and events, personalize content that you view or receive on the Sites, evaluate and improve our services, distribute newsletters and alerts to you, recruit and evaluate job applicants, analyze the Sites' performance and functioning, publish your letters to the editor or comments, prevent fraud, enforce our terms of use, comply with all applicable laws and corporate reporting obligations, enforce Adan's agreements, and accomplish other purposes you may initiate or request. We may keep any of your personal data on file and use it to contact you. Personal data relating to business contacts may be visible to and used by Adan users to learn more about an account, client or opportunity they have an interest in, and may be used for the following purposes:"
+      - list [ref=f14e120]:
+        - listitem [ref=f14e121]: Administering, managing and developing our businesses and services
+        - listitem [ref=f14e122]: Providing information about us and our range of services
+        - listitem [ref=f14e123]: Making contact information available to Adan users
+        - listitem [ref=f14e124]: Identifying clients/contacts with similar needs
+        - listitem [ref=f14e125]: Describing the nature of a contact's relationship with Adan
+        - listitem [ref=f14e126]: Performing analytics, including producing metrics for Adan leadership, such as on trends, relationship maps, sales intelligence and progress against account business goals
+        - listitem [ref=f14e127]: In addition, the Adan CRM - Andromeda uses an algorithm to evaluate the strength of interactions between a Adan user and a contact. This ranking is primarily based on interaction frequency, duration, recency and response time.
+        - listitem [ref=f14e128]: Adan member firms do not sell or otherwise release personal data contained in the Adan CRM - Andromeda to third parties for the purpose of allowing them to market their products and services without consent from individuals to do so.
+      - paragraph [ref=f14e129]
+      - separator [ref=f14e130]
+      - heading "5. Data sharing" [level=4] [ref=f14e131]
+      - paragraph [ref=f14e132]: "We will only share personal data with others when we are legally permitted to do so. When we share data with others, we put contractual arrangements and security mechanisms in place to protect the data and to comply with our data protection, confidentiality and security standards. In addition, we may disclose information about you:"
+      - list [ref=f14e133]:
+        - listitem [ref=f14e134]: If we are required to do so by law or legal process;
+        - listitem [ref=f14e135]: To law enforcement authorities or other government officials;
+        - listitem [ref=f14e136]: When we believe disclosure is necessary or appropriate to prevent physical harm or financial loss or in connection with an investigation of suspected or actual illegal activity;
+        - listitem [ref=f14e137]: If disclosure is necessary to protect the vital interests of a person;
+        - listitem [ref=f14e138]: To protect our property, services and legal rights;
+        - listitem [ref=f14e139]: To prevent fraud against Adan, our subsidiaries, affiliates and/or business partners;
+        - listitem [ref=f14e140]: To support auditing, compliance, and corporate governance functions; or
+        - listitem [ref=f14e141]: To comply with any and all applicable laws.
+        - listitem [ref=f14e142]: We maintain processes designed to ensure that any processing of personal data by third party service providers is consistent with this Privacy Policy and protects the confidentiality, availability, and integrity of your personal data.
+      - text: In addition, we may disclose or transfer your personal data in the event of a re-organization, merger, sale, joint venture, assignment, or other transfer or disposition of all or any portion of our businesses.
+      - paragraph [ref=f14e143]
+      - separator [ref=f14e144]
+      - heading "6. International transfers" [level=4] [ref=f14e145]
+      - paragraph [ref=f14e146]: "Personal data collected on the Sites may be transferred from time to time to Adan subsidiaries and affiliates and their personnel across our global organization, as well as to our third party service providers located throughout the world, including in countries where the local law may grant you fewer rights than you have in your own country. Additionally, the Sites may be viewed and hosted by Adan and our third party service providers anywhere in the world. Where required by law, we have put in place legal mechanisms designed to ensure adequate data protection of your personal data that is processed by Adan subsidiaries, affiliates and third- party service providers, including the transfer of your personal data to countries other than the one in which you reside. If you would like more information about these legal mechanisms, which may include the EU's Standard Contractual Clauses, please contact us at the address below. By using any of the Sites and providing information on any of them, you voluntarily consent to such trans-border transfer and hosting of such information. Adan will not intentionally disclose or transfer (and will take reasonable steps to prevent the unauthorized or accidental disclosure of your personal data to third parties. If we do transfer information outside of the EEA, we will make sure that it is protected by using one of these safeguards:"
+      - list [ref=f14e147]:
+        - listitem [ref=f14e148]: Transfer it to a non-EEA country with privacy laws that give the same protection as the EEA. Some countries have been deemed adequate by the EU.
+        - listitem [ref=f14e149]: Put in place a contract with the recipient that means they must protect it to the same standards as the EEA or use other mechanisms and measures to achieve adequate protection. We also may use the Standard Contractual Clauses published by the EU.
+        - listitem [ref=f14e150]: Binding corporate rules. These are internal rules adopted by group companies to allow international transfers of personal data to entities within the same corporate group located in countries which do not provide an adequate level of protection.
+      - paragraph [ref=f14e151]
+      - separator [ref=f14e152]
+      - heading "7. Cookies and similar technologies" [level=4] [ref=f14e153]
+      - paragraph [ref=f14e154]:
+        - text: Our website, apps and marketing emails use cookies and similar technology. All the relevant information is in our
+        - link "Cookie Policy." [ref=f14e156] [cursor=pointer]:
+          - /url: ../legal/cookie-policy.html
+        - text: This includes information on how to adjust your browser settings to accept or reject cookies.
+      - separator [ref=f14e157]
+      - heading "8. Data retention" [level=4] [ref=f14e158]
+      - paragraph [ref=f14e159]: Adan retains personal data, as necessary, for the duration of the relevant business relationship. We may also retain personal data for longer than the duration of the business relationship should we need to retain it to protect ourselves against legal claims, use it for analysis or historical record-keeping, or comply with our information management policies and schedules. If you request that we delete your personal data, Adan will make reasonable attempts to delete all instances of the information in their entirety. For requests for access, corrections, or deletion, please refer to the "Your Rights" section of this Privacy Policy.
+      - separator [ref=f14e160]
+      - heading "9. Your rights" [level=4] [ref=f14e161]
+      - paragraph [ref=f14e162]: "You have rights over your personal data. You can:"
+      - list [ref=f14e163]:
+        - listitem [ref=f14e164]: ask for a copy of your information;
+        - listitem [ref=f14e165]: ask for information to be corrected;
+        - listitem [ref=f14e166]: ask for information to be erased or deleted;
+        - listitem [ref=f14e167]: ask for us to limit or restrict processing;
+        - listitem [ref=f14e168]: object to us processing your data, in particular where we use the data for direct marketing, including profiling for direct marketing purposes. The right to object does not apply if we must process the data to meet a contractual or legal requirement;
+        - listitem [ref=f14e169]: ask us to send you a copy in a structured digital format or ask for us to send it to another party.
+      - text: Some rights, however, may be limited. We may be obliged by law or regulation to keep information. We must respect other people's privacy as well, which means we may need to redact or remove information where it includes personal data about someone else, even if it is connected to your data. On occasion there may be a compelling legitimate interest to keep processing data. If you want a copy of your data, to object to how we use your data, or ask us to delete it or restrict how we use it or, please contact the Data Protection Officer (DPO) at
+      - link "dpo@adancorporate.com" [ref=f14e171] [cursor=pointer]:
+        - /url: mailto:dpo@adancorporate.com
+      - text: . To process a request from you, we may need to confirm your identity to ensure we're accessing the right data. Where granted by local law, you may have the right to request access to the personal data that we have collected about you for the purposes of reviewing, modifying, or requesting deletion of the data. You may also have the right to request a copy of the personal data that we have collected about you and to have any inaccuracies in that data corrected. In certain circumstances, you may also request that we cease processing your personal data. We reserve the right to charge an appropriate fee for complying with your request where allowed by applicable law, and/or deny your requests where they may be manifestly unfounded, and/or excessive, or otherwise objectionable or unwarranted under applicable law. You may unsubscribe from mailing lists or any registrations on any of the Sites. To do so, please contact the Data Protection Officer (DPO) at
+      - link "dpo@adancorporate.com" [ref=f14e173] [cursor=pointer]:
+        - /url: mailto:dpo@adancorporate.com
+      - paragraph [ref=f14e174]
+      - separator [ref=f14e175]
+      - heading "10. Information security and quality" [level=4] [ref=f14e176]
+      - paragraph [ref=f14e177]: We have implemented appropriate organizational and technical measures to help us keep your information secure, current, accurate, and complete. We will make a sincere effort to respond in a timely manner to your requests to correct inaccuracies in your personal information. To correct inaccuracies in your personal information, please send the message containing the inaccuracies to the author with details of the correction requested. Adan has implemented generally accepted standards of technology and operational security to protect personal data from loss, misuse, alteration, or destruction. Only authorized Adan personnel and third party service providers are provided access to personal data, and these employees and service providers are required to treat this information as confidential. Despite these precautions however, Adan cannot guarantee that unauthorized persons will not obtain access to your personal data.
+      - heading "Children" [level=4] [ref=f14e178]
+      - text: The Sites are not designed for or directed at children 18 years of age or younger, and Adan does not intentionally collect or maintain personal data about anyone under this age.
+      - paragraph [ref=f14e179]
+      - separator [ref=f14e180]
+      - heading "11. Cookies" [level=4] [ref=f14e181]
+      - paragraph [ref=f14e182]: We sometimes collect anonymous information from visits to our Website to help us provide better customer service. For example, we keep track of the domains from which people visit and we also measure visitor activity on the Adan Website, but we do so in ways that keep the information anonymous. This anonymous information is sometimes known as "click stream data". Adan may use this data to analyze trends and statistics and to help us provide better customer service. Cookies can be used to provide you with tailored information from a Website. A cookie is an element of data that a Website can send to your browser, which may then store it on your system. Some Adan pages use cookies so that we can better serve you when you return to our site. You can set your browser to notify you when you receive a cookie, giving you the chance to decide whether to accept it.
+      - separator [ref=f14e183]
+      - heading "12. Third party links and websites from Business Relationships" [level=4] [ref=f14e184]
+      - paragraph [ref=f14e185]: Adan may provide links to third-party websites or information as a service to our users. If you use these links, you will leave the Sites. Such links do not constitute or imply an endorsement, sponsorship, or recommendation by Adan of the third party, the third- party website, or the information contained therein, and Adan shall not be responsible or liable for your use thereof. Such use shall be subject to the terms of use and privacy policies applicable to those sites. Adan is not responsible for the privacy policies of third party sites to which links are provided (including sites of other member firms not managed by Adan). The privacy policies on such sites should be checked before providing them with any personal information. The Sites may allow you to sign into and associate your social network accounts including, but not limited to, Twitter, LinkedIn, Facebook, and YouTube, with Adan.
+      - separator [ref=f14e186]
+      - heading "13. Complaints procedure" [level=4] [ref=f14e187]
+      - paragraph [ref=f14e188]:
+        - text: If you have a complaint about how we have handled your personal data, contact the Data Protection Officer (DPO) at
+        - link "dpo@adancorporate.com" [ref=f14e190] [cursor=pointer]:
+          - /url: mailto:dpo@adancorporate.com
+        - text: and we will investigate your complaint. Please contact us via email at
+        - link "privacy@adancorporate.com" [ref=f14e192] [cursor=pointer]:
+          - /url: mailto:privacy@adancorporate.com
+        - text: to instruct us to cease processing your personal data.
+      - separator [ref=f14e193]
+      - heading "14. Contacting us" [level=4] [ref=f14e194]
+      - paragraph [ref=f14e195]:
+        - text: If you have any questions or comments about our Privacy statement or practices, please contact
+        - link "privacy@adancorporate.com" [ref=f14e197] [cursor=pointer]:
+          - /url: mailto:privacy@adancorporate.com
+        - text: . Changes in technology, legislation and authorities' guidance may require us to inform you of the activities we undertake where it affects your privacy rights. Adan reserves the right to modify or update this Privacy statement at any time without notice.
+      - separator [ref=f14e198]
+  - list [ref=f14e203]:
+    - listitem [ref=f14e204]:
+      - link [ref=f14e205] [cursor=pointer]:
+        - /url: ../legal/legal.html
+        - strong [ref=f14e206]: Legal
+    - listitem [ref=f14e207]:
+      - link [ref=f14e208] [cursor=pointer]:
+        - /url: ../legal/privacy-policy.html
+        - strong [ref=f14e209]: Privacy Policy
+    - listitem [ref=f14e210]:
+      - link [ref=f14e211] [cursor=pointer]:
+        - /url: ../legal/gdpr-policy.html
+        - strong [ref=f14e212]: GDPR
+    - listitem [ref=f14e213]:
+      - link [ref=f14e214] [cursor=pointer]:
+        - /url: ../legal/diversity-policy.html
+        - strong [ref=f14e215]: Diversity Policy
+    - listitem [ref=f14e216]:
+      - link [ref=f14e217] [cursor=pointer]:
+        - /url: ../legal/cookie-policy.html
+        - strong [ref=f14e218]: Cookie Policy
+    - listitem [ref=f14e219]:
+      - link [ref=f14e220] [cursor=pointer]:
+        - /url: ../legal/accessibility.html
+        - strong [ref=f14e221]: Accessibility
+    - listitem [ref=f14e222]:
+      - link [ref=f14e223] [cursor=pointer]:
+        - /url: ../legal/sitemap.html
+        - strong [ref=f14e224]: Sitemap
+  - generic:
+    - generic [ref=f14e225]:
+      - generic [ref=f14e226]: 
+      - link "Contact us" [ref=f14e227] [cursor=pointer]:
+        - /url: ../about-us/contact-us.html
+    - generic [ref=f14e228]:
+      - generic [ref=f14e229]: 
+      - text: Share on Linkedin
+    - generic [ref=f14e230]:
+      - generic [ref=f14e231]: 
+      - text: Share on Twitter
+    - generic [ref=f14e232]:
+      - generic [ref=f14e233]: 
+      - text: Share on Facebook
+    - generic [ref=f14e234]:
+      - generic [ref=f14e235]: 
+      - text: Share on WhatsApp
+    - generic [ref=f14e236]:
+      - generic [ref=f14e237]: 
+      - text: Print page
+  - list [ref=f14e241]:
+    - listitem [ref=f14e242]:
+      - link " Contact Us" [ref=f14e243] [cursor=pointer]:
+        - /url: ../about-us/contact-us.html
+        - generic [ref=f14e244]: 
+        - text: Contact Us
+    - listitem [ref=f14e245]:
+      - link " Linkedin" [ref=f14e246] [cursor=pointer]:
+        - /url: https://www.linkedin.com/company/11209203
+        - generic [ref=f14e247]: 
+        - text: Linkedin
+    - listitem [ref=f14e248]:
+      - link " Twitter" [ref=f14e249] [cursor=pointer]:
+        - /url: https://twitter.com/AdanCorpFinance
+        - generic [ref=f14e250]: 
+        - text: Twitter
+    - listitem [ref=f14e251]:
+      - link " Facebook" [ref=f14e252] [cursor=pointer]:
+        - /url: https://www.facebook.com/AdanCorpFinance
+        - generic [ref=f14e253]: 
+        - text: Facebook
+    - listitem [ref=f14e254]:
+      - link " A Done Deal Podcast" [ref=f14e255] [cursor=pointer]:
+        - /url: https://open.spotify.com/show/2LfRgivNsxvxsWmMU4Lj3r
+        - generic [ref=f14e256]: 
+        - text: A Done Deal Podcast
+    - listitem [ref=f14e257]:
+      - link " RSS Feed" [ref=f14e258] [cursor=pointer]:
+        - /url: https://feeds.buzzsprout.com/1408666.rss
+        - generic [ref=f14e259]: 
+        - text: RSS Feed
+  - generic [ref=f14e260]:
+    - paragraph [ref=f14e262]:
+      - text: We use cookies to ensure that we give you the best experience on our website. By continuing to browse this site, you agree to the use of cookies and understand our
+      - link [ref=f14e263] [cursor=pointer]:
+        - /url: ../legal/cookie-policy.html
+        - strong [ref=f14e264]: cookie policy
+      - text: .
+    - generic [ref=f14e265] [cursor=pointer]: I understand
+  - generic [ref=f14e268]:
+    - generic [ref=f14e269]: © Adan Corporate 2013 - 2021. Conceptualised, designed, and developed by CA
+    - link "To the top " [ref=f14e274] [cursor=pointer]:
+      - /url: "#page-top"
+      - text: To the top
+      - generic [ref=f14e275]: 
+  - generic:
+    - generic:
+      - generic:
+        - paragraph [ref=f14e277]: Quick chat?
+        - button [ref=f14e278] [cursor=pointer]
+      - iframe [ref=f14e282]

@@ -1,0 +1,78 @@
+section,url,title,source,notes
+home,/en-uk/home/index.html,Adan Corporate,search,
+about-us,/en-uk/about-us/company-overview.html,Company Overview,search,"claims 19 countries / 3 continents / $1mn-$500mn deal value - UNVERIFIED"
+about-us,/en-uk/about-us/global-locations.html,Global Locations,search,
+about-us,/en-uk/about-us/contact-us.html,Contact Us,search,
+about-us,/en-uk/about-us/team.html,Team,search,"title is the generic homepage title - not page-specific"
+about-us,/en-uk/about-us/a-done-deal-adan-podcast-index.html,A Done Deal Podcast Index,search,
+team,/en-uk/team/priya-shah.html,Priya Shah,search,
+team,/en-uk/team/thomas-peutz.html,Thomas Peutz,search,"indexed on www. host - host split"
+team,/en-uk/team/ajay-mavinkurve.html,Ajay Mavinkurve,search,
+team,/en-uk/team/suresh-nambiar.html,Suresh Nambiar,search,
+team,/en-uk/team/marco-salvini.html,Marco Salvini,search,
+team,/en-uk/team/jean-bernard-tanqueray.html,Jean Bernard Tanqueray,search,
+team,/en-uk/team/keshav-adya.html,Chennakeshav (Keshav) Adya,search,
+team,/en-uk/team/suryadeep-nain.html,Suryadeep Nain,search,
+corporate-finance,/en-uk/corporate-finance/index-corporate-finance.html,Index - Corporate Finance,search,
+corporate-finance,/en-uk/corporate-finance/project-finance.html,Project Finance,search,"snippet identical to Business Strategy page - template boilerplate"
+corporate-finance,/en-uk/corporate-finance/debt-financing.html,Debt Financing,search,
+corporate-finance,/en-uk/corporate-finance/ipo.html,IPO,search,"snippet is about restructuring not IPO - wrong boilerplate"
+corporate-finance,/en-uk/corporate-finance/working-capital-and-trade-finance.html,Working Capital and Trade Finance,search,
+corporate-finance,/en-uk/corporate-finance/private-equity-venture-capital.html,Private Equity and Venture Capital,search,
+corporate-finance,/en-uk/corporate-finance/distressed-asset-management.html,Distressed Asset Management,search,
+corporate-finance,/en-uk/corporate-finance/renewable-energy-financing.html,Renewable Energy Financing,search,
+corporate-finance,/en-uk/corporate-finance/factoring.html,Factoring,search,"subset of working capital finance"
+corporate-finance,/en-uk/corporate-finance/transformation-and-restructuring.html,Transformation and Restructuring,search,
+m-and-a,/en-uk/m-and-a/index-alliances-jvs-partnerships.html,Index - Alliances JVs & Partnerships,search,"index page sitting as sibling of leaves"
+m-and-a,/en-uk/m-and-a/joint-ventures.html,Joint Ventures,search,
+m-and-a,/en-uk/m-and-a/alliances.html,Alliances,search,
+m-and-a,/en-uk/m-and-a/post-merger-integration-pmi.html,Post-Merger Integration (PMI),search,
+m-and-a,/en-uk/m-and-a/buy-a-business.html,Buy a Business M&A Buy-side,search,
+m-and-a,/en-uk/m-and-a/sell-your-business.html,Sell Your Business M&A Sell-side,search,
+m-and-a,/en-uk/m-and-a/deal-strategy.html,Deal Strategy,search,"DUPLICATE of /strategy/deal-strategy-and-planning.html"
+m-and-a,/en-uk/m-and-a/manda-synergies.html,M&A Synergies,search,
+m-and-a,/en-uk/m-and-a/leveraged-buy-outs-lbos.html,Leveraged Buy-Outs (LBOs),search,
+m-and-a,/en-uk/m-and-a/manda-company-valuation.html,Company Valuation,search,
+strategy,/en-uk/strategy/business-strategy-and-planning.html,Business Strategy,search,"snippet identical to Project Finance page"
+strategy,/en-uk/strategy/corporate-strategy-and-planning.html,Corporate Strategy,search,
+strategy,/en-uk/strategy/marketing-strategy-and-planning.html,Marketing Strategy,search,
+strategy,/en-uk/strategy/deal-strategy-and-planning.html,Deal Strategy,search,"DUPLICATE of /m-and-a/deal-strategy.html"
+strategy,/en-uk/strategy/international-expansion.html,International Expansion,search,
+strategy,/en-uk/strategy/geopolitical-strategy.html,Geopolitical Strategy,search,"war-game language overlaps Red Teaming page"
+strategy,/en-uk/strategy/devil-s-advocate-and-red-teaming.html,Devil's Advocate and Red Teaming,search,"describes Decision Facilitation as a tier of ITSELF"
+strategy,/en-uk/strategy/decision-facilitation.html,Decision Facilitation,search,"sold as a tier of the Devil's Advocate service"
+strategy,/en-uk/strategy/index-interim-management.html,Index - Interim Management,search,"index for a service family with no leaves found - misfiled under strategy"
+strategy,/en-uk/strategy/index-ned-board-advisory.html,Index - NED & Board Advisory,search,"misfiled under strategy"
+strategy,/en-uk/strategy/non-executive-directors-ned.html,Non-Executive Directors (NED),search,
+risk-management,/en-uk/risk-management/risk-management-strategy.html,Risk Management Strategy,search,
+risk-management,/en-uk/risk-management/credit-risk.html,Credit Risk,search,
+risk-management,/en-uk/risk-management/market-risk.html,Market Risk,search,
+risk-management,/en-uk/risk-management/treasury-liquidity-risk.html,Treasury and Liquidity Risk,search,
+risk-management,/en-uk/risk-management/risk-reporting.html,Risk Reporting,search,
+risk-management,/en-uk/risk-management/risk-management-training.html,Risk Management Training,search,"delivery format not a service line"
+risk-management,/en-uk/risk-management/sox-advisory.html,SOX Advisory,search,
+risk-management,/en-uk/risk-management/it-governance.html,IT Governance,search,
+digital,/en-uk/digital/analytics.html,Analytics,search,"only page found in this section"
+coaching,/en-uk/coaching/index-coaching.html,Index - Coaching,search,
+coaching,/en-uk/coaching/executive-coaching.html,Executive Coaching,search,
+coaching,/en-uk/coaching/team-coaching.html,Team Coaching,search,
+coaching,/en-uk/coaching/career-transition.html,Career Transition,search,
+startups,/en-uk/startups/startups-growth-capital.html,Startups - Growth Capital,search,"snippet identical to Financing Entrepreneurial Ventures"
+startups,/en-uk/startups/financing-entrepreneurial-ventures.html,Financing Entrepreneurial Ventures,search,"snippet identical to Startups - Growth Capital"
+startups,/en-uk/startups/applied-entrepreneurship.html,Applied Entrepreneurship,search,"training course not advisory"
+startups,/en-uk/startups/entrepreneurship-for-engineers.html,Entrepreneurship for Engineers,search,"training course"
+startups,/en-uk/startups/entrepreneurial-mindset-and-leadership.html,Entrepreneurial Mindset and Leadership,search,"training course"
+startups,/en-uk/startups/transitioning-into-an-entrepreneur.html,Transitioning into an Entrepreneur,search,"training course"
+startups,/en-uk/startups/entrepreneurial-leadership-toolbox.html,Entrepreneurial Leadership Toolbox,search,"training course"
+covid-19,/en-uk/covid-19/covid-19-cash-flow-management.html,COVID-19 Cash Flow Management,search,"dated - 2026"
+covid-19,/en-uk/covid-19/covid-19-business-impact-analysis.html,COVID-19 Business Impact Analysis,search,"dated - content is distressed restructuring"
+legal,/en-uk/legal/legal.html,Legal,search,
+legal,/en-uk/legal/privacy-policy.html,Privacy Policy,search,
+legal,/en-uk/legal/accessibility.html,Accessibility Statement,search,"exists - positive"
+careers,/en-uk/careers/careers.html,Careers Home,search,
+careers,/en-uk/careers/organisation-culture.html,Organisation Culture,search,
+careers,/en-uk/careers/interns.html,Interns,search,
+careers,/en-uk/careers/experienced-hires.html,Experienced Hires,search,
+careers,/en-uk/careers/jds/jd-uk-corpfin-int.html,JD Intern Corporate Finance,search,"indexed on www. host"
+careers,/en-uk/careers/jds/jd-ausl-fundr-ap.html,JD Associate Partner Fund Raising,search,"indexed on www. host"
+coaching,/en-uk/coaching/career-identity.html,Career Identity,search,

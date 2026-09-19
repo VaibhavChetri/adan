@@ -1,0 +1,172 @@
+- generic [active] [ref=f28e1]:
+  - link "Skip to content" [ref=f28e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f28e3]:
+    - generic [ref=f28e4]:
+      - link "ADAN Corporate" [ref=f28e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f28e6]: ADAN
+        - generic [ref=f28e7]: Corporate
+      - navigation "Primary" [ref=f28e8]:
+        - list [ref=f28e9]:
+          - listitem [ref=f28e10]:
+            - link "Corporate Finance" [ref=f28e11] [cursor=pointer]:
+              - /url: "#corporate-finance"
+          - listitem [ref=f28e12]:
+            - link "M&A" [ref=f28e13] [cursor=pointer]:
+              - /url: "#m-and-a"
+          - listitem [ref=f28e14]:
+            - link "Risk & Governance" [ref=f28e15] [cursor=pointer]:
+              - /url: "#risk"
+          - listitem [ref=f28e16]:
+            - link "Strategy & Board" [ref=f28e17] [cursor=pointer]:
+              - /url: "#strategy"
+          - listitem [ref=f28e18]:
+            - link "Coaching" [ref=f28e19] [cursor=pointer]:
+              - /url: "#coaching"
+  - main [ref=f28e20]:
+    - generic [ref=f28e22]:
+      - generic [ref=f28e23]:
+        - heading "Corporate finance, M&A and risk advisory for mid-market firms." [level=1] [ref=f28e24]
+        - paragraph [ref=f28e25]: We advise owners, boards and funds trading across borders on raising capital, buying and selling businesses, and managing the risk that comes with both. Our partners ran companies before they advised them.
+        - generic [ref=f28e26]:
+          - link "Start a conversation" [ref=f28e27] [cursor=pointer]:
+            - /url: "#contact"
+          - link "See the record" [ref=f28e28] [cursor=pointer]:
+            - /url: "#record"
+      - generic [ref=f28e29]:
+        - generic [ref=f28e30]:
+          - generic [ref=f28e31]: TKTK
+          - generic [ref=f28e32]: completed engagements, from seed funding to IPO
+        - generic [ref=f28e33]:
+          - generic [ref=f28e34]: TKTK
+          - generic [ref=f28e35]: countries where partners are based
+        - generic [ref=f28e36]:
+          - generic [ref=f28e37]: $TK–$TK
+          - generic [ref=f28e38]: typical transaction range, mid-market
+        - generic [ref=f28e39]:
+          - generic [ref=f28e40]: TKTK
+          - generic [ref=f28e41]: partners, the majority former C-suite operators of listed firms
+        - paragraph [ref=f28e42]: Figures marked TKTK are held pending partner confirmation and a recorded source. Nothing is published until it is confirmed.
+    - generic [ref=f28e45]:
+      - heading "Who we are" [level=2] [ref=f28e46]
+      - paragraph [ref=f28e47]: Adan Corporate is an international advisory firm working with owner-managed and mid-market businesses, private equity, venture capital and family offices. We are UK-registered and work through a partner network rather than a head office.
+      - paragraph [ref=f28e48]: "The people advising you have sat on the other side of the table: as chief executives, finance directors and operators who have raised the money, done the deal and lived with the consequences. That is the whole proposition."
+    - generic [ref=f28e50]:
+      - heading "What we do" [level=2] [ref=f28e51]
+      - generic [ref=f28e52]:
+        - heading [level=3] [ref=f28e53]:
+          - link "Corporate Finance" [ref=f28e54] [cursor=pointer]:
+            - /url: /en-uk/corporate-finance/
+        - paragraph [ref=f28e55]: Debt and working capital, equity and private capital, project and infrastructure finance, IPO, restructuring and growth capital.
+      - generic [ref=f28e56]:
+        - heading [level=3] [ref=f28e57]:
+          - link "Mergers & Acquisitions" [ref=f28e58] [cursor=pointer]:
+            - /url: /en-uk/m-and-a/
+        - paragraph [ref=f28e59]: Buy-side and sell-side advisory, company valuation, deal strategy, post-merger integration, joint ventures and alliances.
+      - generic [ref=f28e60]:
+        - heading [level=3] [ref=f28e61]:
+          - link "Risk & Governance" [ref=f28e62] [cursor=pointer]:
+            - /url: /en-uk/risk/
+        - paragraph [ref=f28e63]: Risk strategy and frameworks, credit, market and treasury risk, operational and enterprise risk, internal audit, SOX and technology assurance.
+      - generic [ref=f28e64]:
+        - heading [level=3] [ref=f28e65]:
+          - link "Strategy & Board" [ref=f28e66] [cursor=pointer]:
+            - /url: /en-uk/strategy/
+        - paragraph [ref=f28e67]: Corporate and business strategy, international growth, decision support, non-executive directors and interim leadership.
+      - generic [ref=f28e68]:
+        - heading [level=3] [ref=f28e69]:
+          - link "Coaching & Programmes" [ref=f28e70] [cursor=pointer]:
+            - /url: /en-uk/coaching/
+        - paragraph [ref=f28e71]: Executive and team coaching, career transition, mentoring, leadership development and entrepreneur programmes.
+    - generic [ref=f28e73]:
+      - generic [ref=f28e74]:
+        - heading "AI and automation in risk and diligence" [level=2] [ref=f28e75]
+        - paragraph [ref=f28e76]: This is a description of method, not a claim about past work.
+        - paragraph [ref=f28e77]: "Diligence has always involved reading a great deal quickly: contracts, ledgers, policies, board minutes. We use automated tooling to widen what gets read and to flag anomalies for a person to examine — inconsistent terms across a contract set, gaps in a control narrative, figures that do not reconcile between documents."
+        - paragraph [ref=f28e78]: What it does not do is form the judgement. Every flag is reviewed by a partner, every conclusion is one a named individual will defend, and nothing reaches a client that has not been checked by someone accountable for it. Where we use these tools on an engagement, we say so in the engagement letter and we explain what was automated and what was not.
+      - link "How we apply it" [ref=f28e80] [cursor=pointer]:
+        - /url: /en-uk/risk/ai-and-automation-in-risk-and-diligence
+    - generic [ref=f28e82]:
+      - heading "The people who would advise you" [level=2] [ref=f28e83]
+      - paragraph [ref=f28e84]: Partners are named, reachable and accountable for the work. There are no stock photographs on this site and no invented profiles.
+      - generic [ref=f28e85]:
+        - article [ref=f28e86]:
+          - generic [aria-hidden] [ref=f28e88]: CA
+          - heading "Chennakeshav Adya" [level=3] [ref=f28e89]
+          - paragraph [ref=f28e90]: TKTK role
+          - paragraph [ref=f28e91]: TKTK outcome — a single named engagement and its result, confirmed and approved by the partner.
+        - article [ref=f28e92]:
+          - generic [aria-hidden] [ref=f28e94]: RV
+          - heading "Raju Venkataraman" [level=3] [ref=f28e95]
+          - paragraph [ref=f28e96]: TKTK role
+          - paragraph [ref=f28e97]: TKTK outcome — a single named engagement and its result, confirmed and approved by the partner.
+        - article [ref=f28e98]:
+          - generic [aria-hidden] [ref=f28e100]: MK
+          - heading "Mike Kemball" [level=3] [ref=f28e101]
+          - paragraph [ref=f28e102]: TKTK role
+          - paragraph [ref=f28e103]: TKTK outcome — a single named engagement and its result, confirmed and approved by the partner.
+        - article [ref=f28e104]:
+          - generic [aria-hidden] [ref=f28e106]: PS
+          - heading "Priya Shah" [level=3] [ref=f28e107]
+          - paragraph [ref=f28e108]: TKTK role
+          - paragraph [ref=f28e109]: TKTK outcome — a single named engagement and its result, confirmed and approved by the partner.
+      - link "All partners" [ref=f28e111] [cursor=pointer]:
+        - /url: /en-uk/about-us/team.html
+    - generic [ref=f28e113]:
+      - heading "Start a conversation" [level=2] [ref=f28e114]
+      - paragraph [ref=f28e115]: Tell us briefly what you are considering. A partner replies directly — this is not routed to a mailbox.
+      - generic [ref=f28e116]:
+        - generic [ref=f28e117]:
+          - generic [ref=f28e118]: Your name
+          - textbox "Your name" [ref=f28e119]
+        - generic [ref=f28e120]:
+          - generic [ref=f28e121]: Email We reply here.
+          - textbox "Email We reply here." [ref=f28e122]
+        - generic [ref=f28e123]:
+          - generic [ref=f28e124]: Organisation Optional.
+          - textbox "Organisation Optional." [ref=f28e125]
+        - generic [ref=f28e126]:
+          - generic [ref=f28e127]: What are you considering? A sentence or two is enough.
+          - textbox "What are you considering? A sentence or two is enough." [ref=f28e128]
+        - button "Send enquiry" [ref=f28e129] [cursor=pointer]
+        - status
+  - contentinfo [ref=f28e130]:
+    - generic [ref=f28e131]:
+      - generic [ref=f28e132]:
+        - generic [ref=f28e133]:
+          - paragraph [ref=f28e134]: Adan Corporate
+          - paragraph [ref=f28e135]: Corporate finance, M&A, strategy, risk and coaching for mid-market firms trading across borders.
+        - list [ref=f28e137]:
+          - listitem [ref=f28e138]:
+            - link "About" [ref=f28e139] [cursor=pointer]:
+              - /url: /en-uk/about-us/company-overview.html
+          - listitem [ref=f28e140]:
+            - link "Team" [ref=f28e141] [cursor=pointer]:
+              - /url: /en-uk/about-us/team.html
+          - listitem [ref=f28e142]:
+            - link "Clients" [ref=f28e143] [cursor=pointer]:
+              - /url: /en-uk/clients/clients.html
+          - listitem [ref=f28e144]:
+            - link "Careers" [ref=f28e145] [cursor=pointer]:
+              - /url: /en-uk/careers/careers.html
+        - list [ref=f28e147]:
+          - listitem [ref=f28e148]:
+            - link "Privacy" [ref=f28e149] [cursor=pointer]:
+              - /url: /en-uk/legal/privacy-policy.html
+          - listitem [ref=f28e150]:
+            - link "Legal" [ref=f28e151] [cursor=pointer]:
+              - /url: /en-uk/legal/legal.html
+          - listitem [ref=f28e152]:
+            - link "Accessibility" [ref=f28e153] [cursor=pointer]:
+              - /url: /en-uk/legal/accessibility.html
+      - paragraph [ref=f28e154]: © 2026 Adan Corporate. Registered in the United Kingdom.
+  - region "Cookie choices" [ref=f28e155]:
+    - generic [ref=f28e156]:
+      - paragraph [ref=f28e157]:
+        - strong [ref=f28e158]: We would like to measure how this site is used.
+        - text: No measurement or marketing cookie is set unless you accept. Essential cookies keep the site working.
+      - generic [ref=f28e159]:
+        - button "Accept" [ref=f28e160] [cursor=pointer]
+        - button "Reject" [ref=f28e161] [cursor=pointer]
+  - alert [ref=f28e162]

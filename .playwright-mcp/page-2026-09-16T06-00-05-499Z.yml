@@ -1,0 +1,795 @@
+- generic [active] [ref=f10e1]:
+  - img "Loading..." [ref=f10e3]
+  - navigation [ref=f10e4]:
+    - generic [ref=f10e5]:
+      - generic [ref=f10e6]:
+        - button "Toggle navigation" [expanded] [ref=f10e7] [cursor=pointer]
+        - link [ref=f10e12] [cursor=pointer]:
+          - /url: ../home/index.html
+          - img "Adan Corporate - Logo" [ref=f10e13]
+      - text:                         
+  - generic [ref=f10e14]:
+    - iframe [ref=f10e16]:
+      - generic [ref=f11e1]:
+        - generic "YouTube Video Player" [ref=f11e3]
+        - generic [ref=f11e5]:
+          - generic:
+            - generic:
+              - generic [ref=f11e6] [cursor=pointer]
+              - button "Play video" [ref=f11e10] [cursor=pointer]
+              - button "Hide player controls" [ref=f11e14] [cursor=pointer]
+              - generic [ref=f11e16]:
+                - generic [ref=f11e21]:
+                  - generic [ref=f11e22]:
+                    - link "More Than Passion" [ref=f11e23] [cursor=pointer]:
+                      - /url: https://www.youtube.com/watch?v=MDi_Gxf61uQ
+                    - link "Grasshopper Club Zürich - Ruder Sektion" [ref=f11e24] [cursor=pointer]:
+                      - /url: /channel/UCLpwwiLlEILNL65SjDVy5GA
+                  - generic [ref=f11e26]:
+                    - button [ref=f11e27] [cursor=pointer]
+                    - generic [ref=f11e29]:
+                      - generic: Grasshopper Club Zürich - Ruder Sektion
+                      - generic: 325 subscribers
+                - generic [ref=f11e30]:
+                  - button "Share" [ref=f11e33] [cursor=pointer]
+                  - link "Watch on YouTube" [ref=f11e44] [cursor=pointer]:
+                    - /url: https://www.youtube.com/watch?v=MDi_Gxf61uQ
+                    - generic [ref=f11e45]: Watch on
+    - generic [ref=f10e18]:
+      - generic [ref=f10e20]:
+        - heading "Talent wins games, but teamwork wins championships." [level=2] [ref=f10e21]
+        - heading "No one can whistle a symphony. It takes a whole orchestra to play it." [level=2] [ref=f10e23]
+        - link "Read More About How Adan Corporate (  ) Can Assist" [ref=f10e25] [cursor=pointer]:
+          - /url: ../about-us/company-overview.html
+          - text: Read More About How Adan Corporate (
+          - generic [ref=f10e26]: 
+          - text: ) Can Assist
+      - link "scroll down " [ref=f10e27] [cursor=pointer]:
+        - /url: "#services"
+        - generic [ref=f10e28]: scroll down
+        - generic [ref=f10e29]: 
+  - generic [ref=f10e30]:
+    - generic [ref=f10e32]:
+      - generic [ref=f10e33]:
+        - heading "Our Secret Sauce? Our Team!" [level=2] [ref=f10e34]
+        - generic [ref=f10e35]: Senior multi-disciplinary corporate and finance professionals with diverse geographic, sector and transaction focuses
+      - generic [ref=f10e36]:
+        - generic [ref=f10e37]:
+          - generic [ref=f10e38]:
+            - img "Ajay Mavinkurve" [ref=f10e39]
+            - generic [ref=f10e40]: Ajay is a seasoned senior-level corporate finance executive with 30+ years of diversified experience in Global Corporate Finance, IPOs, Corporate and Tax structuring, Deal structuring, Commercial Negotiation, Valuations, Venture and Private Equity syndication, M&A, Growth Strategy, Distressed Asset Management, Working Capital and Buy-outs for Small & Mid-sized Enterprises (SMEs).
+          - generic [ref=f10e43]:
+            - heading "Ajay Mavinkurve" [level=4] [ref=f10e44]
+            - generic [ref=f10e46]: Managing Partner
+            - generic [ref=f10e47]: Corporate Finance, M&A, IPO, IB
+            - generic [ref=f10e48]: London
+            - list [ref=f10e49]:
+              - listitem [ref=f10e50]:
+                - link "" [ref=f10e51] [cursor=pointer]:
+                  - /url: mailto:ajay.mavinkurve@adancorporate.com
+              - listitem [ref=f10e53]:
+                - link "" [ref=f10e54] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/ajay-mavinkurve
+              - link [ref=f10e56] [cursor=pointer]:
+                - /url: ../team/ajay-mavinkurve.html
+                - button "Full Profile" [ref=f10e57]
+        - separator [ref=f10e58]
+        - separator [ref=f10e59]
+      - generic [ref=f10e60]:
+        - generic [ref=f10e61]:
+          - generic [ref=f10e62]:
+            - img "Chennakeshav (Keshav) Adya" [ref=f10e63]
+            - generic [ref=f10e64]: Chennakeshav (Keshav) is a seasoned business, marketing and technology executive with 20+ years of global corporate and entrepreneurial experience in building global companies from a concept and in leadership roles spanning M&A execution, deal origination, marketing, brand-building, market research and technology delivery.
+          - generic [ref=f10e66]:
+            - heading "Chennakeshav (Keshav) Adya" [level=4] [ref=f10e67]
+            - generic [ref=f10e69]: Managing Partner
+            - generic [ref=f10e70]: Corporate Finance, M&A, Growth
+            - generic [ref=f10e71]: Dubai & London
+            - list [ref=f10e72]:
+              - listitem [ref=f10e73]:
+                - link "" [ref=f10e74] [cursor=pointer]:
+                  - /url: mailto:ck.adya@adancorporate.com
+              - listitem [ref=f10e76]:
+                - link "" [ref=f10e77] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/cadya/
+              - link [ref=f10e79] [cursor=pointer]:
+                - /url: ../team/keshav-adya.html
+                - button "Full Profile" [ref=f10e80]
+        - separator [ref=f10e81]
+        - separator [ref=f10e82]
+      - generic [ref=f10e83]:
+        - generic [ref=f10e84]:
+          - generic [ref=f10e85]:
+            - img "Sabapaty (Saba) Suryanarayanan" [ref=f10e86]
+            - generic [ref=f10e87]: Saba is a seasoned commercial and finance professional with 30+ years of experience in in C-suite roles spanning varied geographies and multiple industry segments, including Manufacturing, Trading, Media and Financial Services in areas such as Deal structuring, Commercial Negotiation, Growth Strategy, Distressed Asset Management, Working Capital Funding, and Buyouts.
+          - generic [ref=f10e89]:
+            - heading "Sabapaty (Saba) Suryanarayanan" [level=4] [ref=f10e90]
+            - generic [ref=f10e92]: Managing Partner
+            - generic [ref=f10e93]: Commercial and Finance
+            - generic [ref=f10e94]: Mumbai, India
+            - list [ref=f10e95]:
+              - listitem [ref=f10e96]:
+                - link "" [ref=f10e97] [cursor=pointer]:
+                  - /url: mailto:sabapatys@adancorporate.com
+              - listitem [ref=f10e99]:
+                - link "" [ref=f10e100] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/sabapaty-suryanarayanan-96a31b4
+              - link [ref=f10e102] [cursor=pointer]:
+                - /url: ../team/sabapaty-suryanarayanan.html
+                - button "Full Profile" [ref=f10e103]
+        - separator [ref=f10e104]
+        - separator [ref=f10e105]
+      - generic [ref=f10e106]:
+        - generic [ref=f10e107]:
+          - generic [ref=f10e108]:
+            - img "Thomas Peutz" [ref=f10e109]
+            - generic [ref=f10e110]: Thomas is an innovative entrepreneurial leader with 25+ years of experience in in C-suite roles spanning international management and organisational strategy, gained within the cultural sector and the creative industries. As a social entrepreneur, he has in-depth knowledge and passion for new venture development serving on executive and non-executive boards.
+          - generic [ref=f10e112]:
+            - heading "Thomas Peutz" [level=4] [ref=f10e113]
+            - generic [ref=f10e115]: Partner
+            - generic [ref=f10e116]: Sustainable Energy
+            - generic [ref=f10e117]: Amsterdam
+            - list [ref=f10e118]:
+              - listitem [ref=f10e119]:
+                - link "" [ref=f10e120] [cursor=pointer]:
+                  - /url: mailto:thomas.peutz@adancorporate.com
+              - listitem [ref=f10e122]:
+                - link "" [ref=f10e123] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/thomas-peutz-a7a44116/
+              - link [ref=f10e125] [cursor=pointer]:
+                - /url: ../team/thomas-peutz.html
+                - button "Full Profile" [ref=f10e126]
+        - separator [ref=f10e127]
+        - separator [ref=f10e128]
+      - generic [ref=f10e129]:
+        - generic [ref=f10e130]:
+          - generic [ref=f10e131]:
+            - img "Roland Giebitz" [ref=f10e132]
+            - generic [ref=f10e133]: Roland is a seasoned executive with 30+ years of experience in managing companies and in leading operational and business development projects.
+          - generic [ref=f10e135]:
+            - heading "Roland Giebitz" [level=4] [ref=f10e136]
+            - generic [ref=f10e138]: Partner
+            - generic [ref=f10e139]: Corporate Finance
+            - generic [ref=f10e140]: Hamburg, Germany
+            - list [ref=f10e141]:
+              - listitem [ref=f10e142]:
+                - link "" [ref=f10e143] [cursor=pointer]:
+                  - /url: mailto:roland.giebitz@adancorporate.com
+              - listitem [ref=f10e145]:
+                - link "" [ref=f10e146] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/roland-giebitz-10292158
+              - link [ref=f10e148] [cursor=pointer]:
+                - /url: ../team/roland-giebitz.html
+                - button "Full Profile" [ref=f10e149]
+        - separator [ref=f10e150]
+        - separator [ref=f10e151]
+      - generic [ref=f10e152]:
+        - generic [ref=f10e153]:
+          - generic [ref=f10e154]:
+            - img "Arun Shroff" [ref=f10e155]
+            - generic [ref=f10e156]: Arun Shroff is a seasoned Commercial and Operations leader with 4 decades of experience, working across different industries like Electrical precision parts Manufacturing, Agriculture Business (Pioneering Floriculture in India),and Paper & Paperboards.He managed relationships across countries, cultures, functions, and hierarchies. He has practical expertise in managing manufacturing and trading operations and fostering synergies to provide higher efficiency, products, and customer excellence.
+          - generic [ref=f10e159]:
+            - heading "Arun Shroff" [level=4] [ref=f10e160]
+            - generic [ref=f10e162]: Partner
+            - generic [ref=f10e163]: Operations, Logistics
+            - generic [ref=f10e164]: Pune, India
+            - list [ref=f10e165]:
+              - listitem [ref=f10e166]:
+                - link "" [ref=f10e167] [cursor=pointer]:
+                  - /url: mailto:arun.shroff@adancorporate.com
+              - listitem [ref=f10e169]:
+                - link "" [ref=f10e170] [cursor=pointer]:
+                  - /url: https://in.linkedin.com/in/arun-shroff
+              - link [ref=f10e172] [cursor=pointer]:
+                - /url: ../team/arun-shroff.html
+                - button "Full Profile" [ref=f10e173]
+        - separator [ref=f10e174]
+        - separator [ref=f10e175]
+      - generic [ref=f10e176]:
+        - generic [ref=f10e177]:
+          - generic [ref=f10e178]:
+            - img "Neeraj Arora" [ref=f10e179]
+            - generic [ref=f10e180]: Neeraj, a media monetisation and storytelling expert, excels in leading digital transformations for traditional businesses and coaching high-performing teams. Renowned for mentoring leaders and complex negotiations, he drives innovation and advises startups and enterprises globally on strategy.
+          - generic [ref=f10e183]:
+            - heading "Neeraj Arora" [level=4] [ref=f10e184]
+            - generic [ref=f10e186]: Partner
+            - generic [ref=f10e187]: Media Tech Advisor and Investor
+            - generic [ref=f10e188]: London, UK
+            - list [ref=f10e189]:
+              - listitem [ref=f10e190]:
+                - link "" [ref=f10e191] [cursor=pointer]:
+                  - /url: mailto:neeraj.arora@adancorporate.com
+              - listitem [ref=f10e193]:
+                - link "" [ref=f10e194] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/neeraj-arora-16537313/
+              - link [ref=f10e196] [cursor=pointer]:
+                - /url: ../team/neeraj-arora.html
+                - button "Full Profile" [ref=f10e197]
+        - separator [ref=f10e198]
+        - separator [ref=f10e199]
+      - generic [ref=f10e200]:
+        - generic [ref=f10e201]:
+          - generic [ref=f10e202]:
+            - img "Raju Venkataraman" [ref=f10e203]
+            - generic [ref=f10e204]: Raju brings 30+ years of rich C-suite experience from the Corporate world; most recently as CFO & Head of Strategy of Walt Disney Company for South East Asia. He has rich cross-cultural experience across the APAC region and has a special interest in Asian economies. Presently, Raju is powering on senior leaders to fulfil their potential and aspirations amidst change and disruption
+          - generic [ref=f10e206]:
+            - heading "Raju Venkataraman" [level=4] [ref=f10e207]
+            - generic [ref=f10e209]: Partner
+            - generic [ref=f10e210]: Executive Coaching & Strategy
+            - generic [ref=f10e211]: Singapore
+            - list [ref=f10e212]:
+              - listitem [ref=f10e213]:
+                - link "" [ref=f10e214] [cursor=pointer]:
+                  - /url: mailto:raju.v@adancorporate.com
+              - listitem [ref=f10e216]:
+                - link "" [ref=f10e217] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/rajuvenka1/
+              - link [ref=f10e219] [cursor=pointer]:
+                - /url: ../team/raju-venkataraman.html
+                - button "Full Profile" [ref=f10e220]
+        - separator [ref=f10e221]
+        - separator [ref=f10e222]
+      - generic [ref=f10e223]:
+        - generic [ref=f10e224]:
+          - generic [ref=f10e225]:
+            - img "George Christelis" [ref=f10e226]
+            - generic [ref=f10e227]: George is an experienced finance professional with 20+ years of experience in C-suite roles for listed medium/large sized businesses in sectors such as real estate, construction, engineering and logistics.
+          - generic [ref=f10e229]:
+            - heading "George Christelis" [level=4] [ref=f10e230]
+            - generic [ref=f10e232]: Partner
+            - generic [ref=f10e233]: Southern African region
+            - generic [ref=f10e234]: Johannesburg
+            - list [ref=f10e235]:
+              - listitem [ref=f10e236]:
+                - link "" [ref=f10e237] [cursor=pointer]:
+                  - /url: mailto:george.christelis@adancorporate.com
+              - listitem [ref=f10e239]:
+                - link "" [ref=f10e240] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/george-christelis-05753545/
+              - link [ref=f10e242] [cursor=pointer]:
+                - /url: ../team/george-christelis.html
+                - button "Full Profile" [ref=f10e243]
+        - separator [ref=f10e244]
+        - separator [ref=f10e245]
+      - generic [ref=f10e246]:
+        - generic [ref=f10e247]:
+          - generic [ref=f10e248]:
+            - img "Marco Salvini" [ref=f10e249]
+            - generic [ref=f10e250]: Marco is a senior executive with 25+ years of experience in C-suite roles spanning Real Estate leadership, delivering strategy, transformational change and turnaround of underperforming portfolios, assets and companies. Previously, he was the CEO for AIG/Lincoln - AIG Global Real Estate (Italy), where he successfully navigated the 2008 financial crisis and following global recession
+          - generic [ref=f10e252]:
+            - heading "Marco Salvini" [level=4] [ref=f10e253]
+            - generic [ref=f10e255]: Partner
+            - generic [ref=f10e256]: Real Estate
+            - generic [ref=f10e257]: Milan & London
+            - list [ref=f10e258]:
+              - listitem [ref=f10e259]:
+                - link "" [ref=f10e260] [cursor=pointer]:
+                  - /url: mailto:marco.salvini@adancorporate.com
+              - listitem [ref=f10e262]:
+                - link "" [ref=f10e263] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/marcosalvini/
+              - link [ref=f10e265] [cursor=pointer]:
+                - /url: ../team/marco-salvini.html
+                - button "Full Profile" [ref=f10e266]
+        - separator [ref=f10e267]
+        - separator [ref=f10e268]
+      - generic [ref=f10e269]:
+        - generic [ref=f10e270]:
+          - generic [ref=f10e271]:
+            - img "Sandeep Bhat" [ref=f10e272]
+            - generic [ref=f10e273]: Sandeep is a multiskilled professional in the Financial Services industry with 30+ years of experience in C-Suite roles with global banks & PE companies overseeing accounting, financial control, treasury management, tax management, operational risk control, legal and compliance, optimization of IT, HR, and administrative resources helping set up businesses and leading them as a key member of the senior management team across banking, merchant banking, stockbroking, and private equity; was on the international committee for CSR and Offshoring. He keeps abreast of the global financial, commodity, and currency markets amongst which is a keen interest in Technical Analyst for the stocks markets.
+          - generic [ref=f10e275]:
+            - heading "Sandeep Bhat" [level=4] [ref=f10e276]
+            - generic [ref=f10e278]: Partner
+            - generic [ref=f10e279]: PE, Banking, CF
+            - generic [ref=f10e280]: India
+            - list [ref=f10e281]:
+              - listitem [ref=f10e282]:
+                - link "" [ref=f10e283] [cursor=pointer]:
+                  - /url: mailto:sandeep.bhat@adancorporate.com
+              - listitem [ref=f10e285]:
+                - link "" [ref=f10e286] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/sandeep-bhat-59225378/
+              - link [ref=f10e288] [cursor=pointer]:
+                - /url: ../team/sandeep-bhat.html
+                - button "Full Profile" [ref=f10e289]
+        - separator [ref=f10e290]
+        - separator [ref=f10e291]
+      - generic [ref=f10e292]:
+        - generic [ref=f10e293]:
+          - generic [ref=f10e294]:
+            - img "Freddie Tshiaba" [ref=f10e295]
+            - generic [ref=f10e296]: Freddie Tshiaba is a senior business leader with 20+ years of significant experience helping investment banks, financial institutions, enterprise software companies and multi-national corporates with strategic initiatives, business development, digital transformation, product management, liquidity risk and treasury management.
+          - generic [ref=f10e298]:
+            - heading "Freddie Tshiaba" [level=4] [ref=f10e299]
+            - generic [ref=f10e301]: Partner
+            - generic [ref=f10e302]: Corporate Finance
+            - generic [ref=f10e303]: London
+            - list [ref=f10e304]:
+              - listitem [ref=f10e305]:
+                - link "" [ref=f10e306] [cursor=pointer]:
+                  - /url: mailto:freddie.tshiaba@adancorporate.com
+              - listitem [ref=f10e308]:
+                - link "" [ref=f10e309] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/tshiaba/
+              - link [ref=f10e311] [cursor=pointer]:
+                - /url: ../team/freddie-tshiaba.html
+                - button "Full Profile" [ref=f10e312]
+        - separator [ref=f10e313]
+        - separator [ref=f10e314]
+      - generic [ref=f10e315]:
+        - generic [ref=f10e316]:
+          - generic [ref=f10e317]:
+            - img "Mike Kemball" [ref=f10e318]
+            - generic [ref=f10e319]: Mike is a sales transformation expert with 30+ years as an accomplished interim Sales Director and Managing Director in 15+ organisations across Telecom, Technology and Industrial sectors in Europe, India, Africa and the Middle East. Client companies and subsidiaries managed were typically $10m - $300m in revenue with sales teams from 10 up to 250 people.
+          - generic [ref=f10e321]:
+            - heading "Mike Kemball" [level=4] [ref=f10e322]
+            - generic [ref=f10e324]: Partner
+            - generic [ref=f10e325]: Turnaround & Growth
+            - generic [ref=f10e326]: London
+            - list [ref=f10e327]:
+              - listitem [ref=f10e328]:
+                - link "" [ref=f10e329] [cursor=pointer]:
+                  - /url: mailto:mike.kemball@adancorporate.com
+              - listitem [ref=f10e331]:
+                - link "" [ref=f10e332] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/mikekemball/
+              - link [ref=f10e334] [cursor=pointer]:
+                - /url: ../team/mike-kemball.html
+                - button "Full Profile" [ref=f10e335]
+        - separator [ref=f10e336]
+        - separator [ref=f10e337]
+      - generic [ref=f10e338]:
+        - generic [ref=f10e339]:
+          - generic [ref=f10e340]:
+            - img "Thu Nga Haskovcova" [ref=f10e341]
+            - generic [ref=f10e342]: Thu Nga is a Czech qualified lawyer with 20 years of international experience in M&A, Market Entry (Start-ups), Real Estate, Financing, Private Equity and Corporate law matters. Thu has in-depth local knowledge of the Central Eastern European (CEE) region and working experience in and in-depth knowledge of South East Asia.
+          - generic [ref=f10e344]:
+            - heading "Thu Nga Haskovcova" [level=4] [ref=f10e345]
+            - generic [ref=f10e347]: Partner
+            - generic [ref=f10e348]: Central Eastern Europe, Law
+            - generic [ref=f10e349]: Prague, Czech Rep.
+            - list [ref=f10e350]:
+              - listitem [ref=f10e351]:
+                - link "" [ref=f10e352] [cursor=pointer]:
+                  - /url: mailto:thu.nga@adancorporate.com
+              - listitem [ref=f10e354]:
+                - link "" [ref=f10e355] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/thu-nga-haskovcova-32431110/
+              - link [ref=f10e357] [cursor=pointer]:
+                - /url: ../team/thu-nga-haskovcova.html
+                - button "Full Profile" [ref=f10e358]
+        - separator [ref=f10e359]
+        - separator [ref=f10e360]
+      - generic [ref=f10e361]:
+        - generic [ref=f10e362]:
+          - generic [ref=f10e363]:
+            - img "Nav Kaplish" [ref=f10e364]
+            - generic [ref=f10e365]: Nav is a seasoned business and technology executive with 18+ years of global corporate and entrepreneurial experience in building and managing digital teams and in leadership roles spanning Governance, Risk & Compliance, Audits and conceptualisation and delivery of Blockchain products.
+          - generic [ref=f10e367]:
+            - heading "Nav Kaplish" [level=4] [ref=f10e368]
+            - generic [ref=f10e370]: Partner
+            - generic [ref=f10e371]: Digital, Blockchain & Risk
+            - generic [ref=f10e372]: London
+            - list [ref=f10e373]:
+              - listitem [ref=f10e374]:
+                - link "" [ref=f10e375] [cursor=pointer]:
+                  - /url: mailto:nav.kaplish@adancorporate.com
+              - listitem [ref=f10e377]:
+                - link "" [ref=f10e378] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/navkaplish
+              - link [ref=f10e380] [cursor=pointer]:
+                - /url: ../team/nav-kaplish.html
+                - button "Full Profile" [ref=f10e381]
+        - separator [ref=f10e382]
+        - separator [ref=f10e383]
+      - generic [ref=f10e384]:
+        - generic [ref=f10e385]:
+          - generic [ref=f10e386]:
+            - img "Edgar Garay" [ref=f10e387]
+            - generic [ref=f10e388]: Edgar is an eclectic digital nomad with 30+ years of experience in diverse asset classes across a broad spectrum of industries and geographies.
+          - generic [ref=f10e390]:
+            - heading "Edgar Garay" [level=4] [ref=f10e391]
+            - generic [ref=f10e393]: Partner
+            - generic [ref=f10e394]: Corporate Finance
+            - generic [ref=f10e395]: Bogota, Colombia
+            - list [ref=f10e396]:
+              - listitem [ref=f10e397]:
+                - link "" [ref=f10e398] [cursor=pointer]:
+                  - /url: mailto:edgar.garay@adancorporate.com
+              - listitem [ref=f10e400]:
+                - link "" [ref=f10e401] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/garayedgar
+              - link [ref=f10e403] [cursor=pointer]:
+                - /url: ../team/edgar-garay.html
+                - button "Full Profile" [ref=f10e404]
+        - separator [ref=f10e405]
+        - separator [ref=f10e406]
+      - generic [ref=f10e407]:
+        - generic [ref=f10e408]:
+          - generic [ref=f10e409]:
+            - img "Jean-Bernard (JB) Tanqueray" [ref=f10e410]
+            - generic [ref=f10e411]: Jean-Bernard is a seasoned Wealth and Asset Management executive with 20+ years of experience in investing in both businesses and public capital markets for Single Family Offices and Institutional Investors and has over the years, has developed a deep expertise in all main assets, strategies and styles (volatility & niche arbitrage strategies, event driven, systematic, global macro, deep value)
+          - generic [ref=f10e413]:
+            - heading "Jean-Bernard (JB) Tanqueray" [level=4] [ref=f10e414]
+            - generic [ref=f10e416]: Partner
+            - generic [ref=f10e417]: Family Offices
+            - generic [ref=f10e418]: Paris & London
+            - list [ref=f10e419]:
+              - listitem [ref=f10e420]:
+                - link "" [ref=f10e421] [cursor=pointer]:
+                  - /url: mailto:jean-bernard@adancorporate.com
+              - listitem [ref=f10e423]:
+                - link "" [ref=f10e424] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/jbtanqueray/
+              - link [ref=f10e426] [cursor=pointer]:
+                - /url: ../team/jean-bernard-tanqueray.html
+                - button "Full Profile" [ref=f10e427]
+        - separator [ref=f10e428]
+        - separator [ref=f10e429]
+      - generic [ref=f10e430]:
+        - generic [ref=f10e431]:
+          - generic [ref=f10e432]:
+            - img "Vernon D Cruz" [ref=f10e433]
+            - generic [ref=f10e434]: Vernon is a distinguished finance professional with 30+ years of experience in mid-sizes service organisations with demonstrated success in providing team leadership and development to foster growth. He has hands on experience in managing and running business with keen interest in Finance, Taxation, Legal, Commercial Negotiations, Commercial, Tourism & CSR.
+          - generic [ref=f10e436]:
+            - heading "Vernon D'Cruz" [level=4] [ref=f10e437]
+            - generic [ref=f10e439]: Partner
+            - generic [ref=f10e440]: Commercial, Tourism & CSR
+            - generic [ref=f10e441]: Mumbai
+            - list [ref=f10e442]:
+              - listitem [ref=f10e443]:
+                - link "" [ref=f10e444] [cursor=pointer]:
+                  - /url: mailto:vernon.dcruz@adancorporate.com
+              - listitem [ref=f10e446]:
+                - link "" [ref=f10e447] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/vernondcruz/
+              - link [ref=f10e449] [cursor=pointer]:
+                - /url: ../team/vernon-d-cruz.html
+                - button "Full Profile" [ref=f10e450]
+        - separator [ref=f10e451]
+        - separator [ref=f10e452]
+      - generic [ref=f10e453]:
+        - generic [ref=f10e454]:
+          - generic [ref=f10e455]:
+            - img "Craig Tingle" [ref=f10e456]
+            - generic [ref=f10e457]: "Craig is a board-certified real estate attorney with 25+ years of legal experience and has closed several billions of dollars in transactions. His expertise includes: shopping centers, shopping malls, apartment buildings, assisted living facilities, subdivisions, medical campuses and portfolios acquisitions of each of these."
+          - generic [ref=f10e459]:
+            - heading "Craig Tingle" [level=4] [ref=f10e460]
+            - generic [ref=f10e462]: Partner
+            - generic [ref=f10e463]: Real Estate
+            - generic [ref=f10e464]: Florida & Dubai
+            - list [ref=f10e465]:
+              - listitem [ref=f10e466]:
+                - link "" [ref=f10e467] [cursor=pointer]:
+                  - /url: mailto:craig.tingle@adancorporate.com
+              - listitem [ref=f10e469]:
+                - link "" [ref=f10e470] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/craig-tingle-tingleandassociatespa-a5b93135//
+              - link [ref=f10e472] [cursor=pointer]:
+                - /url: ../team/craig-tingle.html
+                - button "Full Profile" [ref=f10e473]
+        - separator [ref=f10e474]
+        - separator [ref=f10e475]
+      - generic [ref=f10e476]:
+        - generic [ref=f10e477]:
+          - generic [ref=f10e478]:
+            - img "Preethi Hari" [ref=f10e479]
+            - generic [ref=f10e480]: Preethi is a versatile senior-level corporate professional with 18+ years of experience in Risk Management, IT Governance, IT Security, Business Continuity, Audits, Compliance and Regulatory. She specialises in COBIT/ COSO framework, ITSM (ITIL), 6-Sigma, SOX etc in Banking, Insurance, Oil & Gas, Shipping, Mining, Logistics, Telecom and Commercial Real Estate.
+          - generic [ref=f10e482]:
+            - heading "Preethi Hari" [level=4] [ref=f10e483]
+            - generic [ref=f10e485]: Partner
+            - generic [ref=f10e486]: Risk Management
+            - generic [ref=f10e487]: London
+            - list [ref=f10e488]:
+              - listitem [ref=f10e489]:
+                - link "" [ref=f10e490] [cursor=pointer]:
+                  - /url: mailto:preethi.hari@adancorporate.com
+              - listitem [ref=f10e492]:
+                - link "" [ref=f10e493] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/preethihari/
+              - link [ref=f10e495] [cursor=pointer]:
+                - /url: ../team/preethi-hari.html
+                - button "Profile" [ref=f10e496]
+        - separator [ref=f10e497]
+        - separator [ref=f10e498]
+      - generic [ref=f10e499]:
+        - generic [ref=f10e500]:
+          - generic [ref=f10e501]:
+            - img "Suresh Nambiar" [ref=f10e502]
+            - generic [ref=f10e503]: Suresh is a senior business executive with 30+ years of extensive and diverse experience in in C-suite roles spanning General Management, Financial Management, Human Resource Management, Procurement, and Logistics across varied industries such as Packaging, Pharma, Manufacturing and Engineering in areas such as cost optimization, fraud investigation, new product development and acquisitions.
+          - generic [ref=f10e505]:
+            - heading "Suresh Nambiar" [level=4] [ref=f10e506]
+            - generic [ref=f10e508]: Partner
+            - generic [ref=f10e509]: Procurement & Logistics
+            - generic [ref=f10e510]: Manama City, Bahrain
+            - list [ref=f10e511]:
+              - listitem [ref=f10e512]:
+                - link "" [ref=f10e513] [cursor=pointer]:
+                  - /url: mailto:suresh.nambiar@adancorporate.com
+              - listitem [ref=f10e515]:
+                - link "" [ref=f10e516] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/suresh-nambiar-047a0918/
+              - link [ref=f10e518] [cursor=pointer]:
+                - /url: ../team/suresh-nambiar.html
+                - button "Full Profile" [ref=f10e519]
+        - separator [ref=f10e520]
+        - separator [ref=f10e521]
+      - generic [ref=f10e522]:
+        - generic [ref=f10e523]:
+          - generic [ref=f10e524]:
+            - img "Rauf Akhundov" [ref=f10e525]
+            - generic [ref=f10e526]: Rauf is a seasoned banker with 20+ years of international experience in C-suite roles spanning fundraising, strategic planning and budgeting, consumer, micro and corporate lending, network management, lobbying and relationship management with government officials in emerging markets.
+          - generic [ref=f10e528]:
+            - heading "Rauf Akhundov" [level=4] [ref=f10e529]
+            - generic [ref=f10e531]: Partner
+            - generic [ref=f10e532]: Central Asia
+            - generic [ref=f10e533]: Baku, Azerbaijan
+            - list [ref=f10e534]:
+              - listitem [ref=f10e535]:
+                - link "" [ref=f10e536] [cursor=pointer]:
+                  - /url: mailto:r.akhundov@adancorporate.com
+              - listitem [ref=f10e538]:
+                - link "" [ref=f10e539] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/rauf-akhundov-89495022/
+              - link [ref=f10e541] [cursor=pointer]:
+                - /url: ../team/rauf-akhundov.html
+                - button "Full Profile" [ref=f10e542]
+        - separator [ref=f10e543]
+        - separator [ref=f10e544]
+      - generic [ref=f10e545]:
+        - generic [ref=f10e546]:
+          - generic [ref=f10e547]:
+            - img "Sreeraman P.S." [ref=f10e548]
+            - generic [ref=f10e549]: Sreeraman has 15+ years of experience in capital markets and investment banking dealing with small and medium enterprises. He has worked in Sales, Private Wealth Management, Investment Banking and Equity advisory roles in companies such as Indiabulls, Motilal Oswal and Kotak Securities.
+          - generic [ref=f10e551]:
+            - heading "Sreeraman P.S." [level=4] [ref=f10e552]
+            - generic [ref=f10e554]: Director
+            - generic [ref=f10e555]: Investments
+            - generic [ref=f10e556]: Mumbai
+            - list [ref=f10e557]:
+              - listitem [ref=f10e558]:
+                - link "" [ref=f10e559] [cursor=pointer]:
+                  - /url: mailto:sreeraman.ps@adancorporate.com
+              - listitem [ref=f10e561]:
+                - link "" [ref=f10e562] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/sreeraman-p-s-6a4985127/
+              - link [ref=f10e564] [cursor=pointer]:
+                - /url: ../team/sreeraman-p-s.html
+                - button "Full Profile" [ref=f10e565]
+        - separator [ref=f10e566]
+        - separator [ref=f10e567]
+      - generic [ref=f10e568]:
+        - generic [ref=f10e569]:
+          - generic [ref=f10e570]:
+            - img "Ajay Sethi" [ref=f10e571]
+            - generic [ref=f10e572]: Ajay Sethi is an innovative professional with a strong entrepreneurial spirit, backing 35+ years of experience across management of growing businesses, sales and accountancy. Ajay has in-depth knowledge of business management, brand development, sales & marketing, product sourcing, fund-raising, accounting procedures, and risk mitigation.
+          - generic [ref=f10e574]:
+            - heading "Ajay Sethi" [level=4] [ref=f10e575]
+            - generic [ref=f10e577]: Director
+            - generic [ref=f10e578]: Market Development
+            - generic [ref=f10e579]: London
+            - list [ref=f10e580]:
+              - listitem [ref=f10e581]:
+                - link "" [ref=f10e582] [cursor=pointer]:
+                  - /url: mailto:sethi@adancorporate.com
+              - listitem [ref=f10e584]:
+                - link "" [ref=f10e585] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/ajay-sethi-91968b177/
+              - link [ref=f10e587] [cursor=pointer]:
+                - /url: ../team/ajay-sethi.html
+                - button "Full Profile" [ref=f10e588]
+        - separator [ref=f10e589]
+        - separator [ref=f10e590]
+      - generic [ref=f10e591]:
+        - generic [ref=f10e592]:
+          - generic [ref=f10e593]:
+            - img "Varun Nadkarni" [ref=f10e594]
+            - generic [ref=f10e595]: Varun having more than 2.5 years of experience in the field of accounts and finance, holds MBA degree in Finance and International Business from Amity University, India and has interest and passion for Equities and mutual funds and analysing of financial statements.
+          - generic [ref=f10e598]:
+            - heading "Varun Nadkarni" [level=4] [ref=f10e599]
+            - generic [ref=f10e601]: Financial Analyst
+            - generic [ref=f10e602]: Accounting & Finance
+            - generic [ref=f10e603]: Mumbai
+            - list [ref=f10e604]:
+              - listitem [ref=f10e605]:
+                - link "" [ref=f10e606] [cursor=pointer]:
+                  - /url: mailto:varun.nadkarni@adancorporate.com
+              - listitem [ref=f10e608]:
+                - link "" [ref=f10e609] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/varun-nadkarni-43843a104/
+              - link [ref=f10e611] [cursor=pointer]:
+                - /url: ../team/varun-nadkarni.html
+                - button "Full Profile" [ref=f10e612]
+        - separator [ref=f10e613]
+        - separator [ref=f10e614]
+      - generic [ref=f10e615]:
+        - generic [ref=f10e616]:
+          - generic [ref=f10e617]:
+            - img "Heena Tilwani" [ref=f10e618]
+            - generic [ref=f10e619]: Heena is a financial analyst and Intermediate Accountant with over 5+ years of expertise in financial accounting, analysis, and reporting. She is experienced in providing monthly/quarterly reports and performance KPIs. She is interested in financial modelling, process improvement, and data analytics.
+          - generic [ref=f10e622]:
+            - heading "Heena Tilwani" [level=4] [ref=f10e623]
+            - generic [ref=f10e625]: Financial Analyst
+            - generic [ref=f10e626]: Accounting & Finance
+            - generic [ref=f10e627]: Gurgaon, India
+            - list [ref=f10e628]:
+              - listitem [ref=f10e629]:
+                - link "" [ref=f10e630] [cursor=pointer]:
+                  - /url: mailto:heena.tilwani@adancorporate.com
+              - listitem [ref=f10e632]:
+                - link "" [ref=f10e633] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/heena-tilwani-b73a71168/
+              - link [ref=f10e635] [cursor=pointer]:
+                - /url: ../team/heena-tilwani.html
+                - button "Full Profile" [ref=f10e636]
+        - separator [ref=f10e637]
+        - separator [ref=f10e638]
+      - generic [ref=f10e639]:
+        - generic [ref=f10e640]:
+          - generic [ref=f10e641]:
+            - img "Shreyash Gandhi" [ref=f10e642]
+            - generic [ref=f10e643]: Shreyash is a Chartered Accountant specializing in business valuation, due diligence, and strategic advisory. Formerly with Deloitte, he led international engagements across Europe, Canada, and the Middle East. He focuses on transaction structuring and startup valuations to drive value in global investment decisions.
+          - generic [ref=f10e646]:
+            - heading "Shreyash Gandhi" [level=4] [ref=f10e647]
+            - generic [ref=f10e649]: Financial Analyst
+            - generic [ref=f10e650]: M&A, Accounting & Finance
+            - generic [ref=f10e651]: Mumbai
+            - list [ref=f10e652]:
+              - listitem [ref=f10e653]:
+                - link "" [ref=f10e654] [cursor=pointer]:
+                  - /url: mailto:shreyash.gandhi@adancorporate.com
+              - listitem [ref=f10e656]:
+                - link "" [ref=f10e657] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/cashreyash/
+              - link [ref=f10e659] [cursor=pointer]:
+                - /url: ../team/shreyash-gandhi.html
+                - button "Full Profile" [ref=f10e660]
+        - separator [ref=f10e661]
+        - separator [ref=f10e662]
+    - generic [ref=f10e664]:
+      - heading "Advisors" [level=2] [ref=f10e666]
+      - generic [ref=f10e667]:
+        - generic [ref=f10e668]:
+          - generic [ref=f10e669]:
+            - img "Kieran Bourke" [ref=f10e670]
+            - generic [ref=f10e671]: Kieran is a Financial Risk Management expert with 25+ years of broad global Financial Services experience across Market, Traded Credit, Operational, Regulatory, and Enterprise Risk Management protocols across 4 continents. He was a Managing Director at Standard Chartered Bank at London & Singapore, where he established the commodities market risk function from scratch.
+          - generic [ref=f10e673]:
+            - heading "Kieran Bourke" [level=4] [ref=f10e674]
+            - generic [ref=f10e676]: Advisor
+            - generic [ref=f10e677]: Risk Management
+            - generic [ref=f10e678]: Singapore
+            - list [ref=f10e679]:
+              - listitem [ref=f10e680]:
+                - link "" [ref=f10e681] [cursor=pointer]:
+                  - /url: mailto:kieran.bourke@adancorporate.com
+              - listitem [ref=f10e683]:
+                - link "" [ref=f10e684] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/kieran-bourke-006a511a/
+              - link [ref=f10e686] [cursor=pointer]:
+                - /url: ../team/kieran-bourke.html
+                - button "Full Profile" [ref=f10e687]
+        - separator [ref=f10e688]
+        - separator [ref=f10e689]
+      - generic [ref=f10e690]:
+        - generic [ref=f10e691]:
+          - generic [ref=f10e692]:
+            - img "Dipak Khot" [ref=f10e693]
+            - generic [ref=f10e694]: Dipak is an accomplished client-focused banker with nearly 3 decades of experience in Treasury/ Market risk management. He has an exceptional understanding of global financial markets, banking, FX/ IR hedging/ structuring, liquidity management and an ability to leverage the knowledge of current economic, financial, accounting, regulatory and industry climate to develop effective hedging strategies.
+          - generic [ref=f10e696]:
+            - heading "Dipak Khot" [level=4] [ref=f10e697]
+            - generic [ref=f10e699]: Advisor
+            - generic [ref=f10e700]: Risk Management
+            - generic [ref=f10e701]: London
+            - list [ref=f10e702]:
+              - listitem [ref=f10e703]:
+                - link "" [ref=f10e704] [cursor=pointer]:
+                  - /url: mailto:dipak.khot@adancorporate.com
+              - listitem [ref=f10e706]:
+                - link "" [ref=f10e707] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/dipak-khot-212623/
+              - link [ref=f10e709] [cursor=pointer]:
+                - /url: ../team/dipak-khot.html
+                - button "Full Profile" [ref=f10e710]
+        - separator [ref=f10e711]
+        - separator [ref=f10e712]
+  - generic [ref=f10e717]:
+    - generic [ref=f10e719]:
+      - heading "Latest insights from our team" [level=2] [ref=f10e720]
+      - generic [ref=f10e721]: Check out our team-blog to see what we're up to
+      - link "Browse All Insights" [ref=f10e722] [cursor=pointer]:
+        - /url: ../about-us/insights-blog.html
+    - link "Browse All Insights" [ref=f10e729] [cursor=pointer]:
+      - /url: ../about-us/insights-blog.html
+  - list [ref=f10e734]:
+    - listitem [ref=f10e735]:
+      - link [ref=f10e736] [cursor=pointer]:
+        - /url: ../legal/legal.html
+        - strong [ref=f10e737]: Legal
+    - listitem [ref=f10e738]:
+      - link [ref=f10e739] [cursor=pointer]:
+        - /url: ../legal/privacy-policy.html
+        - strong [ref=f10e740]: Privacy Policy
+    - listitem [ref=f10e741]:
+      - link [ref=f10e742] [cursor=pointer]:
+        - /url: ../legal/gdpr-policy.html
+        - strong [ref=f10e743]: GDPR
+    - listitem [ref=f10e744]:
+      - link [ref=f10e745] [cursor=pointer]:
+        - /url: ../legal/diversity-policy.html
+        - strong [ref=f10e746]: Diversity Policy
+    - listitem [ref=f10e747]:
+      - link [ref=f10e748] [cursor=pointer]:
+        - /url: ../legal/cookie-policy.html
+        - strong [ref=f10e749]: Cookie Policy
+    - listitem [ref=f10e750]:
+      - link [ref=f10e751] [cursor=pointer]:
+        - /url: ../legal/accessibility.html
+        - strong [ref=f10e752]: Accessibility
+    - listitem [ref=f10e753]:
+      - link [ref=f10e754] [cursor=pointer]:
+        - /url: ../legal/sitemap.html
+        - strong [ref=f10e755]: Sitemap
+  - generic:
+    - generic [ref=f10e756]:
+      - generic [ref=f10e757]: 
+      - link "Contact us" [ref=f10e758] [cursor=pointer]:
+        - /url: ../about-us/contact-us.html
+    - generic [ref=f10e759]:
+      - generic [ref=f10e760]: 
+      - text: Share on Linkedin
+    - generic [ref=f10e761]:
+      - generic [ref=f10e762]: 
+      - text: Share on Twitter
+    - generic [ref=f10e763]:
+      - generic [ref=f10e764]: 
+      - text: Share on Facebook
+    - generic [ref=f10e765]:
+      - generic [ref=f10e766]: 
+      - text: Share on WhatsApp
+    - generic [ref=f10e767]:
+      - generic [ref=f10e768]: 
+      - text: Print page
+  - list [ref=f10e772]:
+    - listitem [ref=f10e773]:
+      - link " Contact Us" [ref=f10e774] [cursor=pointer]:
+        - /url: ../about-us/contact-us.html
+        - generic [ref=f10e775]: 
+        - text: Contact Us
+    - listitem [ref=f10e776]:
+      - link " Linkedin" [ref=f10e777] [cursor=pointer]:
+        - /url: https://www.linkedin.com/company/11209203
+        - generic [ref=f10e778]: 
+        - text: Linkedin
+    - listitem [ref=f10e779]:
+      - link " Twitter" [ref=f10e780] [cursor=pointer]:
+        - /url: https://twitter.com/AdanCorpFinance
+        - generic [ref=f10e781]: 
+        - text: Twitter
+    - listitem [ref=f10e782]:
+      - link " Facebook" [ref=f10e783] [cursor=pointer]:
+        - /url: https://www.facebook.com/AdanCorpFinance
+        - generic [ref=f10e784]: 
+        - text: Facebook
+    - listitem [ref=f10e785]:
+      - link " A Done Deal Podcast" [ref=f10e786] [cursor=pointer]:
+        - /url: https://open.spotify.com/show/2LfRgivNsxvxsWmMU4Lj3r
+        - generic [ref=f10e787]: 
+        - text: A Done Deal Podcast
+    - listitem [ref=f10e788]:
+      - link " RSS Feed" [ref=f10e789] [cursor=pointer]:
+        - /url: https://feeds.buzzsprout.com/1408666.rss
+        - generic [ref=f10e790]: 
+        - text: RSS Feed
+  - generic [ref=f10e793]:
+    - generic [ref=f10e794]: © Adan Corporate-India 2013 - 2025. Conceptualised, designed, and developed by CA
+    - link "To the top " [ref=f10e799] [cursor=pointer]:
+      - /url: "#page-top"
+      - text: To the top
+      - generic [ref=f10e800]: 
+  - generic:
+    - generic:
+      - generic:
+        - paragraph [ref=f10e802]: Quick chat?
+        - button [ref=f10e803] [cursor=pointer]
+      - iframe [ref=f10e807]

@@ -1,0 +1,206 @@
+- generic [active] [ref=f16e1]:
+  - img "Loading..." [ref=f16e3]
+  - navigation [ref=f16e4]:
+    - generic [ref=f16e5]:
+      - generic [ref=f16e6]:
+        - button "Toggle navigation" [expanded] [ref=f16e7] [cursor=pointer]
+        - link [ref=f16e12] [cursor=pointer]:
+          - /url: ../home/index.html
+          - img "Adan Corporate - Logo" [ref=f16e13]
+      - text:                        
+  - complementary [ref=f16e16]:
+    - generic [ref=f16e17]:
+      - link [ref=f16e18] [cursor=pointer]:
+        - /url: ../about-us/team.html
+        - button "Complete List of Team Members" [ref=f16e19]
+      - heading "Areas of Expertise" [level=5] [ref=f16e20]
+      - list [ref=f16e21]:
+        - generic [ref=f16e23]:
+          - listitem [ref=f16e24]:
+            - link "Risk Management" [ref=f16e25] [cursor=pointer]:
+              - /url: ../risk-management/index-risk-management.html
+          - listitem [ref=f16e26]:
+            - link "Risk Strategy" [ref=f16e27] [cursor=pointer]:
+              - /url: ../strategy/risk-strategy-and-planning.html
+          - listitem [ref=f16e28]:
+            - link "Enterprise Risk Management" [ref=f16e29] [cursor=pointer]:
+              - /url: ../risk-management/enterprise-risk-management.html
+          - listitem [ref=f16e30]:
+            - link "M&A" [ref=f16e31] [cursor=pointer]:
+              - /url: ../m-and-a/index-m-and-a.html
+          - listitem [ref=f16e32]:
+            - link "Target Due-Diligence" [ref=f16e33] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=f16e34]:
+            - link "Company Valuation" [ref=f16e35] [cursor=pointer]:
+              - /url: ../m-and-a/manda-company-valuation.html
+          - listitem [ref=f16e36]:
+            - link "Special Situations" [ref=f16e37] [cursor=pointer]:
+              - /url: ../corporate-finance/special-situations.html
+          - listitem [ref=f16e38]:
+            - link "Transformation and Restructuring" [ref=f16e39] [cursor=pointer]:
+              - /url: ../corporate-finance/transformation-and-restructuring.html
+          - listitem [ref=f16e40]:
+            - link "Interim CRO" [ref=f16e41] [cursor=pointer]:
+              - /url: ../strategy/interim-cro.html
+          - listitem [ref=f16e42]:
+            - link "NED & Board Advisory Services" [ref=f16e43] [cursor=pointer]:
+              - /url: ../strategy/index-ned-board-advisory.html
+          - listitem [ref=f16e44]:
+            - link "Strategy & Planning" [ref=f16e45] [cursor=pointer]:
+              - /url: ../strategy/index-strategy-and-planning.html
+          - listitem [ref=f16e46]:
+            - link "Deal Strategy" [ref=f16e47] [cursor=pointer]:
+              - /url: ../m-and-a/deal-strategy.html
+          - listitem [ref=f16e48]:
+            - link "Business Strategy" [ref=f16e49] [cursor=pointer]:
+              - /url: ../strategy/business-strategy-and-planning.html
+          - listitem [ref=f16e50]:
+            - link "Corporate Strategy" [ref=f16e51] [cursor=pointer]:
+              - /url: ../strategy/corporate-strategy-and-planning.html
+    - generic [ref=f16e52]:
+      - heading "Sectors" [level=5] [ref=f16e53]
+      - list [ref=f16e54]:
+        - generic [ref=f16e56]:
+          - listitem [ref=f16e57]:
+            - link "Sovereign Investment Funds" [ref=f16e58] [cursor=pointer]:
+              - /url: ../industries/sovereign-investment-funds.html
+          - listitem [ref=f16e59]:
+            - link "Private Equity" [ref=f16e60] [cursor=pointer]:
+              - /url: ../industries/private-equity-venture-capital.html
+          - listitem [ref=f16e61]:
+            - link "Banking & Capital Markets" [ref=f16e62] [cursor=pointer]:
+              - /url: ../industries/banking-capital-markets.html
+          - listitem [ref=f16e63]:
+            - link "Capital Projects & Infra" [ref=f16e64] [cursor=pointer]:
+              - /url: ../industries/capital-projects-infrastructure.html
+          - listitem [ref=f16e65]:
+            - link "Financial Services" [ref=f16e66] [cursor=pointer]:
+              - /url: ../industries/financial-services.html
+    - generic [ref=f16e67]:
+      - heading "Geographies" [level=5] [ref=f16e68]
+      - list [ref=f16e69]:
+        - generic [ref=f16e71]:
+          - listitem [ref=f16e72]:
+            - link "UK" [ref=f16e73] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=f16e74]:
+            - link "Australia" [ref=f16e75] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=f16e76]:
+            - link "Middle East Asia" [ref=f16e77] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=f16e78]:
+            - link "India" [ref=f16e79] [cursor=pointer]:
+              - /url: "#"
+    - generic [ref=f16e80]:
+      - heading "Insights" [level=5] [ref=f16e81]
+      - link [ref=f16e83] [cursor=pointer]:
+        - /url: "#"
+        - heading "Blog Post" [level=6] [ref=f16e84]
+      - link [ref=f16e86] [cursor=pointer]:
+        - /url: "#"
+        - heading "Blog Post" [level=6] [ref=f16e87]
+      - link [ref=f16e89] [cursor=pointer]:
+        - /url: "#"
+        - heading "Blog Post" [level=6] [ref=f16e90]
+  - list [ref=f16e100]:
+    - listitem [ref=f16e101]:
+      - link [ref=f16e102] [cursor=pointer]:
+        - /url: ../legal/legal.html
+        - strong [ref=f16e103]: Legal
+    - listitem [ref=f16e104]:
+      - link [ref=f16e105] [cursor=pointer]:
+        - /url: ../legal/privacy-policy.html
+        - strong [ref=f16e106]: Privacy Policy
+    - listitem [ref=f16e107]:
+      - link [ref=f16e108] [cursor=pointer]:
+        - /url: ../legal/gdpr-policy.html
+        - strong [ref=f16e109]: GDPR
+    - listitem [ref=f16e110]:
+      - link [ref=f16e111] [cursor=pointer]:
+        - /url: ../legal/diversity-policy.html
+        - strong [ref=f16e112]: Diversity Policy
+    - listitem [ref=f16e113]:
+      - link [ref=f16e114] [cursor=pointer]:
+        - /url: ../legal/cookie-policy.html
+        - strong [ref=f16e115]: Cookie Policy
+    - listitem [ref=f16e116]:
+      - link [ref=f16e117] [cursor=pointer]:
+        - /url: ../legal/accessibility.html
+        - strong [ref=f16e118]: Accessibility
+    - listitem [ref=f16e119]:
+      - link [ref=f16e120] [cursor=pointer]:
+        - /url: ../legal/sitemap.html
+        - strong [ref=f16e121]: Sitemap
+  - generic:
+    - generic [ref=f16e122]:
+      - generic [ref=f16e123]: 
+      - link "Contact us" [ref=f16e124] [cursor=pointer]:
+        - /url: ../about-us/contact-us.html
+    - generic [ref=f16e125]:
+      - generic [ref=f16e126]: 
+      - text: Share on Linkedin
+    - generic [ref=f16e127]:
+      - generic [ref=f16e128]: 
+      - text: Share on Twitter
+    - generic [ref=f16e129]:
+      - generic [ref=f16e130]: 
+      - text: Share on Facebook
+    - generic [ref=f16e131]:
+      - generic [ref=f16e132]: 
+      - text: Share on WhatsApp
+    - generic [ref=f16e133]:
+      - generic [ref=f16e134]: 
+      - text: Print page
+  - list [ref=f16e138]:
+    - listitem [ref=f16e139]:
+      - link " Contact Us" [ref=f16e140] [cursor=pointer]:
+        - /url: ../about-us/contact-us.html
+        - generic [ref=f16e141]: 
+        - text: Contact Us
+    - listitem [ref=f16e142]:
+      - link " Linkedin" [ref=f16e143] [cursor=pointer]:
+        - /url: https://www.linkedin.com/company/11209203
+        - generic [ref=f16e144]: 
+        - text: Linkedin
+    - listitem [ref=f16e145]:
+      - link " Twitter" [ref=f16e146] [cursor=pointer]:
+        - /url: https://twitter.com/AdanCorpFinance
+        - generic [ref=f16e147]: 
+        - text: Twitter
+    - listitem [ref=f16e148]:
+      - link " Facebook" [ref=f16e149] [cursor=pointer]:
+        - /url: https://www.facebook.com/AdanCorpFinance
+        - generic [ref=f16e150]: 
+        - text: Facebook
+    - listitem [ref=f16e151]:
+      - link " A Done Deal Podcast" [ref=f16e152] [cursor=pointer]:
+        - /url: https://open.spotify.com/show/2LfRgivNsxvxsWmMU4Lj3r
+        - generic [ref=f16e153]: 
+        - text: A Done Deal Podcast
+    - listitem [ref=f16e154]:
+      - link " RSS Feed" [ref=f16e155] [cursor=pointer]:
+        - /url: https://feeds.buzzsprout.com/1408666.rss
+        - generic [ref=f16e156]: 
+        - text: RSS Feed
+  - generic [ref=f16e157]:
+    - paragraph [ref=f16e159]:
+      - text: We use cookies to ensure that we give you the best experience on our website. By continuing to browse this site, you agree to the use of cookies and understand our
+      - link [ref=f16e160] [cursor=pointer]:
+        - /url: ../legal/cookie-policy.html
+        - strong [ref=f16e161]: cookie policy
+      - text: .
+    - generic [ref=f16e162] [cursor=pointer]: I understand
+  - generic [ref=f16e165]:
+    - generic [ref=f16e166]: © Adan Corporate 2013 - 2021. Conceptualised, designed, and developed by CA
+    - link "To the top " [ref=f16e171] [cursor=pointer]:
+      - /url: "#page-top"
+      - text: To the top
+      - generic [ref=f16e172]: 
+  - generic:
+    - generic:
+      - generic:
+        - paragraph [ref=f16e174]: Quick chat?
+        - button [ref=f16e175] [cursor=pointer]
+      - iframe [ref=f16e179]

@@ -1,0 +1,1404 @@
+/* Adan Corporate — built against DESIGN.md. No value here is arbitrary. */
+
+/* ---------- 1. Primitive ---------- */
+:root {
+  --c-ink-900:#111111; --c-ink-800:#222222; --c-ink-600:#3F3F3F; --c-ink-500:#5A5A5A;
+  --c-navy-950:#000B22; --c-navy-900:#001640; --c-navy-800:#001A4D; --c-navy-700:#002060;
+  --c-navy-500:#26407F; --c-navy-300:#7C93C4; --c-navy-100:#D6DCEA;
+  --c-red-700:#C00000; --c-red-800:#A80000;
+  --c-paper-000:#FFFFFF; --c-paper-050:#F8F8F8; --c-paper-100:#ECECEC;
+  --c-paper-200:#DDDDDD; --c-paper-300:#CCCCCC;
+
+  /* ---------- 2. Semantic ---------- */
+  --surface:var(--c-paper-000); --surface-sunken:var(--c-paper-050);
+  --surface-deep:var(--c-navy-950); --surface-tile:var(--c-paper-050);
+  --surface-inverse:var(--c-navy-700); --surface-ink:var(--c-ink-900);
+  --text:var(--c-ink-800); --text-strong:var(--c-ink-900); --text-muted:var(--c-ink-500);
+  --text-on-inverse:var(--c-paper-000); --text-on-ink:var(--c-paper-100);
+  --accent:var(--c-navy-700); --action:var(--c-red-700);
+  --rule:var(--c-paper-300); --rule-strong:var(--c-ink-600);
+  --rule-on-inverse:rgba(255,255,255,.28);
+
+  /* ---------- 3. Type ---------- */
+  --font-display:var(--font-serif),Georgia,"Times New Roman",serif;
+  --font-text:var(--font-sans),"Helvetica Neue",Helvetica,sans-serif;
+  --numeric-tabular:"tnum" 1,"lnum" 1;
+  /* D07. A serif at the same px reads optically smaller than a sans - smaller
+     x-height, thinner stems - so every display step moved up. The weights moved
+     DOWN to compensate: large-and-light is what reads expensive, large-and-bold
+     is what reads like a landing page. */
+  --t-display:clamp(2.75rem,1.5rem + 5.2vw,4.75rem);
+  --t-h1:clamp(2.25rem,1.6rem + 2.9vw,3.25rem);
+  --t-h2:clamp(1.75rem,1.4rem + 1.6vw,2.5rem);
+  --t-h3:clamp(1.25rem,1.15rem + .45vw,1.5rem);
+  --t-lead:clamp(1.125rem,1.05rem + .36vw,1.3125rem);
+  --t-body:clamp(1rem,.97rem + .14vw,1.0625rem);
+  /* --t-micro stays at 14px. DESIGN.md closes the floor there and the gate
+     enforces it; dropping it to 13 while retuning the display steps failed 18
+     of 18 template/width combinations. The floor is not part of the ramp. */
+  --t-nav:.9375rem; --t-small:.9375rem; --t-micro:.875rem;
+  /* Display weight and tracking are tokens, not per-rule literals: they are the
+     difference between "editorial" and "template" and must not drift. */
+  --w-display:400; --w-heading:600;
+  --track-display:-.018em; --lead-display:1.06;
+
+  /* ---------- 4. Spacing ---------- */
+  --s-1:4px; --s-2:8px; --s-3:12px; --s-4:16px; --s-5:24px; --s-6:32px;
+  --s-7:48px; --s-8:64px; --s-9:96px; --s-10:128px; --s-11:160px;
+  --section-y:clamp(var(--s-8),4vw + 2rem,var(--s-10));
+  --section-y-major:clamp(var(--s-9),6vw + 2rem,var(--s-11));
+
+  /* ---------- 5. Container ---------- */
+  --gutter:20px; --measure-max:1280px; --measure-text:68ch;
+
+  /* ---------- 6. Radii ---------- */
+  --r-0:0; --r-1:2px; --r-2:6px; --r-3:12px; --r-pill:999px; --portrait-ratio:1/1;
+  /* Elevation. Added in D05: the hairline-only system read as unfinished next
+     to a conventional corporate site. Two steps only, both tuned on navy. */
+  --e-1:0 1px 2px rgba(0,22,64,.06), 0 2px 8px rgba(0,22,64,.06);
+  --e-2:0 2px 4px rgba(0,22,64,.08), 0 12px 32px rgba(0,22,64,.10);
+  --e-nav:0 1px 0 rgba(0,22,64,.06), 0 4px 20px rgba(0,22,64,.06);
+
+  /* ---------- 8. Target ---------- */
+  --target-min:44px; --header-h:80px;
+
+  /* ---------- 10. Motion (paired) ---------- */
+  --dur-fast:120ms; --dur-base:200ms; --dur-slow:320ms;
+  --ease:cubic-bezier(.2,0,.2,1);
+  --travel-sm:4px; --travel-md:12px;
+
+  /* ---------- 11. Component ---------- */
+  --rule-width:1px; --rule-style:solid;
+  --nav-gap:var(--s-6);
+  --z-header:100; --z-consent:200;
+}
+
+@media (prefers-reduced-motion:reduce){
+  :root{ --dur-fast:1ms; --dur-base:1ms; --dur-slow:1ms; --ease:linear;
+         --travel-sm:0px; --travel-md:0px; }
+  *,*::before,*::after{ animation-iteration-count:1!important; scroll-behavior:auto!important; }
+}
+
+/* ---------- Reset ---------- */
+*,*::before,*::after{ box-sizing:border-box; }
+[hidden]{ display:none!important; }
+html,body{ overflow-x:clip; }
+html{ -webkit-text-size-adjust:100%; }
+body{
+  margin:0; background:var(--surface); color:var(--text);
+  font-family:var(--font-text); font-size:var(--t-body); font-weight:400;
+  line-height:1.65; -webkit-font-smoothing:antialiased;
+}
+img,video,iframe,table,pre{ max-width:100%; }
+h1,h2,h3{ font-family:var(--font-display); color:var(--text-strong);
+  font-weight:var(--w-heading); text-wrap:balance; margin:0;
+  letter-spacing:-.01em; font-optical-sizing:auto; }
+p{ margin:0; text-wrap:pretty; }
+a{ color:var(--accent); text-underline-offset:.22em; text-decoration-thickness:1px; }
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
+  outline:2px solid var(--accent); outline-offset:3px; }
+
+/* ---------- Container: overflow is arithmetic, not policy ---------- */
+.container{ width:min(100% - (var(--gutter) * 2),var(--measure-max)); margin-inline:auto; }
+.prose{ max-width:var(--measure-text); }
+
+/* ---------- Target size ---------- */
+a,button,input,select,textarea,[role="button"]{
+  min-block-size:var(--target-min); min-inline-size:var(--target-min); }
+/* Inline links cannot take min-block-size, so the hit area is drawn instead.
+   Centring it on both axes and setting an explicit 44px floor makes the target
+   independent of the link's font size - an earlier version used a fixed inset
+   that assumed a 26px line box and silently shrank when type got smaller. */
+.prose a,.inline-link,.footer a,.practice__name a,.person__name a,
+.page-back a,.office__address a,.footer__address a,
+.index__name a,.index__list a,.hero__jump a{
+  position:relative; min-block-size:0; min-inline-size:0; }
+.prose a::after,.inline-link::after,.footer a::after,.practice__name a::after,
+.person__name a::after,.page-back a::after,.office__address a::after,
+.footer__address a::after,.index__name a::after,.index__list a::after,
+.hero__jump a::after{
+  content:""; position:absolute; top:50%; left:50%;
+  translate:-50% -50%;
+  inline-size:calc(100% + 16px); min-inline-size:var(--target-min);
+  block-size:var(--target-min); }
+.footer__list li{ margin-bottom:var(--s-4); }
+
+/* ---------- Skip link ---------- */
+.skip{ position:absolute; left:-9999px; top:0; background:var(--surface-inverse);
+  color:var(--text-on-inverse); padding:var(--s-3) var(--s-5); z-index:calc(var(--z-consent) + 1); }
+.skip:focus{ left:var(--gutter); top:var(--s-3); }
+
+/* ---------- Header + nav ---------- */
+.header{ min-block-size:var(--header-h);
+  border-bottom:var(--rule-width) var(--rule-style) var(--rule);
+  background:var(--surface); position:sticky; top:0; z-index:var(--z-header); }
+.header__inner{ display:flex; align-items:center; justify-content:space-between;
+  gap:var(--s-5); min-block-size:var(--target-min); padding-block:var(--s-4); }
+.brand{ display:inline-flex; align-items:center; text-decoration:none;
+  min-block-size:var(--target-min); }
+/* Measured on the firm's own live site (archived copy, its own CSS and assets):
+   the logo renders there at 160.5 x 25.2 CSS px at every width. This is LARGER
+   than the original, deliberately - the brief was "bigger", and matching the
+   original exactly would have meant shrinking it.
+   The ceiling is real and now exhaustively established: four logo files were
+   ever published (logo.png, logo.webp, logo-official.png, logo-light.png) and
+   all four are 291x36. There is no vector and no 2x raster anywhere, on disk or
+   in the web archive. 210px asks for 420 device px at 2x, a 1.44x upscale. That
+   is the trade being made, and a vector would remove it entirely. */
+.brand__logo{ width:165px; height:auto; display:block; }
+@media (min-width:1024px){ .brand__logo{ width:210px; } }
+.nav{ display:none; }
+.nav__list{ display:flex; gap:var(--nav-gap); list-style:none; margin:0; padding:0; }
+/* Sans, sentence case. Tracked-out all-caps in the display face was the most
+   dated thing on the page and it made six items 20% wider than they need to be,
+   which is what pushed the nav breakpoint out to 1180. */
+.nav__item a{ font-family:var(--font-text); font-size:var(--t-nav); font-weight:500;
+  letter-spacing:0; color:var(--text);
+  text-decoration:none; white-space:nowrap; display:inline-flex; align-items:center;
+  justify-content:center;
+  min-block-size:var(--target-min); min-inline-size:var(--target-min);
+  border-bottom:2px solid transparent;
+  transition:color var(--dur-fast) var(--ease),border-color var(--dur-fast) var(--ease); }
+.nav__item a:hover,.nav__item a[aria-current="page"]{ color:var(--accent); }
+.nav-toggle{ font-family:var(--font-text); font-size:var(--t-small); font-weight:500;
+  letter-spacing:0; background:none; color:var(--text);
+  border:var(--rule-width) var(--rule-style) var(--rule-strong); border-radius:var(--r-1);
+  padding-inline:var(--s-4); cursor:pointer; }
+/* Six items need 920px. At 1024 that left 20px of headroom, which is luck
+   rather than room - one longer label and the nav wraps. Rather than shave the
+   gap or drop below the 16px nav floor, 1024-1179 keeps the menu button. */
+@media (min-width:1060px){
+  .nav{ display:block; } .nav-toggle{ display:none; }
+}
+.nav--mobile{ display:block; border-top:var(--rule-width) var(--rule-style) var(--rule); }
+.nav--mobile .nav__list{ flex-direction:column; gap:0; }
+.nav--mobile .nav__item a{ display:flex; width:100%;
+  border-bottom:var(--rule-width) var(--rule-style) var(--rule); }
+@media (min-width:1060px){ .nav--mobile{ display:none; } }
+
+/* ---------- Sections: hairline rules, no cards ---------- */
+.section{ padding-block:var(--section-y); border-top:var(--rule-width) var(--rule-style) var(--rule); }
+.section--major{ padding-block:var(--section-y-major); }
+.section--inverse{ background:var(--surface-inverse); color:var(--text-on-inverse);
+  border-top:0; }
+.section--inverse h2,.section--inverse h3{ color:var(--text-on-inverse); }
+.section--inverse .section__title{ border-top-color:var(--rule-on-inverse); }
+.section--inverse a{ color:var(--text-on-inverse); }
+/* The rule above the heading is what gives a run of text-only sections a
+   visible start. Cheaper than a graphic and it survives at 375px. */
+.section__title{ padding-top:var(--s-5);
+  border-top:2px solid var(--c-navy-800);
+  font-size:var(--t-h2); font-weight:var(--w-display);
+  line-height:1.12; letter-spacing:var(--track-display);
+  margin-bottom:var(--s-6); max-width:22ch; }
+
+/* ---------- Hero ---------- */
+.hero{ padding-block:var(--s-8) var(--section-y-major); }
+/* The hero is the proposition and the diagram, and nothing else should be
+   visible beneath it on a laptop. It measured 562px against an 800-900px
+   viewport, so the next section always bled in. svh rather than vh so mobile
+   browser chrome is accounted for; min- rather than fixed so a short window
+   lets the content grow instead of clipping it. Two-column widths only --
+   the stacked mobile diagram is taller than a phone viewport on its own. */
+/* Homepage only. Applied to .hero it also caught PageIntro, which forced every
+   interior page to hold a full viewport for a title and one paragraph. */
+/* `align-content:center` floated the content in the middle and left ~170px of
+   dead navy above and below it. Two rows instead: the proposition takes the
+   free space, the credential strip is pinned to the base of the band. The dead
+   space becomes the thing that carries the positioning. */
+@media (min-width:1024px){
+  .hero--full{ min-block-size:calc(100svh - var(--header-h));
+    display:grid; grid-template-rows:1fr auto; padding-block:var(--s-7) var(--s-6); }
+  .hero--full .hero__grid{ align-self:center; }
+}
+@media (min-width:1024px){
+  .hero__grid{ display:grid; grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);
+    gap:var(--s-9); align-items:start; }
+  .hero .record{ margin-top:0; }
+}
+.hero__title{ font-size:var(--t-display); font-weight:var(--w-display);
+  line-height:var(--lead-display); letter-spacing:var(--track-display);
+  max-width:15ch; }
+.hero__lead{ font-size:var(--t-lead); color:var(--text); margin-top:var(--s-5);
+  max-width:52ch; line-height:1.5; }
+/* Now mixes a boxed button with a bare arrow link, so they align on the box's
+   centre rather than on a text baseline that the link alone would set. */
+.hero__actions{ display:flex; flex-wrap:wrap; align-items:center;
+  gap:var(--s-3) var(--s-6); margin-top:var(--s-7); }
+
+/* ---------- Deal record: a record, not stat cards ---------- */
+.record{ margin-top:var(--section-y); border-top:var(--rule-width) var(--rule-style) var(--rule-strong); }
+.record__row{ display:grid; grid-template-columns:auto 1fr; align-items:baseline;
+  gap:var(--s-2) var(--s-5); padding-block:var(--s-4);
+  border-bottom:var(--rule-width) var(--rule-style) var(--rule); }
+.record__figure{ font-family:var(--font-text); font-feature-settings:var(--numeric-tabular);
+  font-size:var(--t-h3); font-weight:600; color:var(--accent);
+  min-width:7ch; font-variant-numeric:tabular-nums lining-nums; }
+.record__label{ font-size:var(--t-small); color:var(--text); }
+.record__note{ font-size:var(--t-micro); color:var(--text-muted); letter-spacing:.02em;
+  padding-top:var(--s-4); max-width:46ch; }
+
+/* ---------- Practices ---------- */
+.practice{ display:grid; gap:var(--s-2) var(--s-6); padding-block:var(--s-6);
+  border-bottom:var(--rule-width) var(--rule-style) var(--rule); }
+.practice:first-of-type{ border-top:var(--rule-width) var(--rule-style) var(--rule-strong); }
+.practice__name{ font-family:var(--font-display); font-size:var(--t-h3); font-weight:600;
+  color:var(--text-strong); margin:0; }
+.practice__name a{ color:inherit; text-decoration:none; }
+.practice__name a:hover{ color:var(--accent); }
+.practice__line{ color:var(--text); max-width:62ch; }
+@media (min-width:768px){
+  .practice{ grid-template-columns:minmax(14rem,22rem) 1fr; align-items:baseline; }
+}
+
+/* ---------- Team ---------- */
+.team{ display:grid; gap:var(--s-7) var(--s-6); margin-top:var(--s-6); }
+@media (min-width:600px){ .team{ grid-template-columns:repeat(2,1fr); } }
+@media (min-width:1024px){ .team{ grid-template-columns:repeat(4,1fr); } }
+/* The frame does the circular crop now. The published headshots used to carry
+   their own circle on a white ground, so photo frames were deliberately left
+   square; the red ring has since been cropped off them and they are plain
+   square portraits, which this would otherwise show as squares. */
+.person__frame{ aspect-ratio:var(--portrait-ratio); background:var(--surface-sunken);
+  border:var(--rule-width) var(--rule-style) var(--rule); display:grid; place-items:center;
+  margin-bottom:var(--s-4); border-radius:var(--r-pill); overflow:hidden; }
+.person__frame img{ width:100%; height:100%; object-fit:cover; display:block; }
+.person__frame--photo{ background:none; border:0; }
+/* Four-up on desktop: display size would put long names on three lines. */
+.team .person__name{ font-size:var(--t-body); line-height:1.25; }
+.person__initials{ inline-size:100%; block-size:100%;
+  display:grid; place-items:center;
+  background:var(--c-navy-800); color:var(--text-on-inverse);
+  font-family:var(--font-display); font-size:var(--t-h2); font-weight:600;
+  letter-spacing:.04em; }
+.person__name{ font-family:var(--font-display); font-size:var(--t-h3); font-weight:600;
+  margin:0 0 var(--s-1); }
+.person__role{ font-size:var(--t-small); color:var(--text-muted); margin-bottom:var(--s-3); }
+.person__outcome{ font-size:var(--t-body); }
+
+/* ---------- Buttons ---------- */
+/* Sans, not the display serif: a serif set at 17px/600 inside a 44px button
+   reads as a pull-quote that someone has boxed. Square corners - the 2px radius
+   was too small to register as a decision and too large to look deliberate. */
+.btn{ display:inline-flex; align-items:center; justify-content:center; gap:var(--s-3);
+  font-family:var(--font-text); font-size:var(--t-body); font-weight:500;
+  padding:var(--s-4) var(--s-6); border-radius:var(--r-0);
+  border:var(--rule-width) var(--rule-style) transparent;
+  text-decoration:none; cursor:pointer; min-block-size:var(--target-min);
+  transition:background-color var(--dur-fast) var(--ease),
+             color var(--dur-fast) var(--ease),
+             border-color var(--dur-fast) var(--ease); }
+/* The arrow is the affordance, so it moves. `flex:none` keeps it from being
+   squeezed when the label wraps on a narrow screen. */
+.btn::after{ content:"\2192"; flex:none; font-size:1.1em; line-height:1;
+  transition:translate var(--dur-base) var(--ease); }
+.btn:hover::after{ translate:var(--travel-sm) 0; }
+/* Primary is navy, not red. The mark sets red in a small box against a navy
+   wordmark; a full-width red button inverts that ratio and reads retail. Red
+   stays the accent - kickers, rules, the figure colour. */
+.btn--primary{ background:var(--accent); color:var(--c-paper-000); }
+.btn--primary:hover{ background:var(--c-navy-900); }
+.btn--secondary{ background:transparent; color:var(--accent);
+  border-color:var(--accent); }
+.btn--secondary:hover{ background:var(--accent); color:var(--text-on-inverse);
+  box-shadow:0 2px 14px rgba(0,0,0,.16);
+  border-color:var(--accent); }
+/* On a dark ground the solid primary has nothing to be solid against, so it
+   inverts. Same pattern McKinsey uses for a white button on deep blue. */
+.hero--dark .btn--primary,.section--inverse .btn--primary{
+  background:var(--c-paper-000); color:var(--c-navy-900); }
+.hero--dark .btn--primary:hover,.section--inverse .btn--primary:hover{
+  background:var(--c-navy-100); color:var(--c-navy-900); }
+
+/* Text link with the same arrow: the tertiary action, and the one McKinsey
+   uses most. No box, so it never competes with a real button. */
+.arrow-link{ display:inline-flex; align-items:center; gap:var(--s-3);
+  font-family:var(--font-text); font-size:var(--t-body); font-weight:500;
+  color:var(--accent); text-decoration:none; min-block-size:var(--target-min); }
+.arrow-link::after{ content:"\2192"; flex:none; transition:translate var(--dur-base) var(--ease); }
+.arrow-link:hover{ text-decoration:underline; text-underline-offset:.3em; }
+.arrow-link:hover::after{ translate:var(--travel-sm) 0; }
+.section--inverse .arrow-link,.hero--dark .arrow-link{ color:var(--text-on-inverse); }
+.section--inverse .btn--secondary{ color:var(--text-on-inverse); border-color:var(--rule-on-inverse); }
+.section--inverse .btn--secondary:hover{ background:var(--text-on-inverse); color:var(--accent); }
+
+/* ---------- Form ---------- */
+.form{ margin-top:var(--s-6); max-width:40rem; }
+.field{ margin-bottom:var(--s-5); }
+.field label{ display:block; font-family:var(--font-text); font-size:var(--t-small);
+  font-weight:600; margin-bottom:var(--s-2); color:var(--text-strong); }
+.field .hint{ font-size:var(--t-micro); color:var(--text-muted); font-weight:400; }
+.field input,.field textarea,.field select{ width:100%; font-family:var(--font-text);
+  font-size:var(--t-body); color:var(--text); background:var(--surface);
+  border:var(--rule-width) var(--rule-style) var(--rule-strong); border-radius:var(--r-1);
+  padding:var(--s-3) var(--s-4); min-block-size:var(--target-min); }
+.field textarea{ min-block-size:8rem; resize:vertical; line-height:1.6; }
+/* The native arrow is drawn by the platform and ignores the border colour, so
+   the control is reset and the arrow redrawn to match the other fields. */
+.field select{ appearance:none; background-image:
+    linear-gradient(45deg,transparent 50%,currentColor 50%),
+    linear-gradient(135deg,currentColor 50%,transparent 50%);
+  background-position:calc(100% - 20px) 55%,calc(100% - 14px) 55%;
+  background-size:6px 6px,6px 6px; background-repeat:no-repeat;
+  padding-inline-end:var(--s-8); }
+.field input:invalid:not(:placeholder-shown),.field textarea:invalid:not(:placeholder-shown){
+  border-color:var(--action); }
+.field .error{ display:none; font-size:var(--t-micro); color:var(--action); margin-top:var(--s-2); }
+.field.is-invalid .error{ display:block; }
+/* The "nothing was sent" message is not a success, so it must not read like
+   one. Bordered and set apart, because a user who has just typed out a live
+   transaction needs to actually notice it. */
+.form__status{ margin-top:var(--s-4); font-size:var(--t-body); }
+.form__status--warn:not(:empty){ padding:var(--s-4) var(--s-5);
+  background:var(--surface-tile); border-left:0;
+  border-top:2px solid var(--action); font-size:var(--t-small);
+  line-height:1.55; }
+
+/* ---------- Footer ---------- */
+.footer{ background:var(--c-navy-900); color:var(--c-navy-100);
+  padding-block:0 var(--section-y); }
+.footer a{ color:var(--c-navy-100); text-decoration:none; }
+.footer a:hover{ color:var(--c-paper-000); text-decoration:underline;
+  text-underline-offset:.22em; }
+
+/* Call to action, sitting above the footer proper. Pages that already end on a
+   contact section still benefit: legal, insights and careers do not. */
+.footer__cta{ background:var(--c-navy-700); padding-block:var(--s-8);
+  margin-bottom:var(--section-y);
+  border-bottom:var(--rule-width) var(--rule-style) rgba(255,255,255,.14); }
+.footer__cta-inner{ display:grid; gap:var(--s-6); align-items:center; }
+@media (min-width:900px){
+  .footer__cta-inner{ grid-template-columns:minmax(0,1fr) auto; gap:var(--s-8); }
+}
+.footer__cta-text{ font-family:var(--font-display); font-size:var(--t-h3);
+  font-weight:600; line-height:1.3; color:var(--c-paper-000); max-width:34ch; }
+.footer__cta-text span{ display:block; margin-top:var(--s-3);
+  font-family:var(--font-text); font-size:var(--t-small); font-weight:400;
+  color:var(--c-navy-100); }
+.footer__cta-actions{ display:flex; flex-wrap:wrap; gap:var(--s-4); }
+/* .btn--secondary borders in --accent, which IS this band's background, so the
+   outline vanished. Same override the dark hero carries. */
+.footer__cta .btn--secondary{ color:var(--text-on-inverse);
+  border-color:rgba(255,255,255,.4); }
+.footer__cta .btn--secondary:hover{ background:var(--text-on-inverse);
+  color:var(--c-navy-800); border-color:var(--text-on-inverse); }
+
+.footer__grid{ display:grid; gap:var(--s-8) var(--s-6); }
+@media (min-width:640px){ .footer__grid{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (min-width:1024px){ .footer__grid{ grid-template-columns:minmax(0,1.6fr) repeat(3,minmax(0,1fr)); gap:var(--s-9) var(--s-7); } }
+
+.footer__mark{ display:inline-flex; align-items:center; gap:var(--s-4);
+  text-decoration:none; }
+.footer__mark:hover{ text-decoration:none; }
+.footer__mark img{ inline-size:56px; block-size:auto; display:block; flex:none; }
+.footer__name{ font-family:var(--font-display); font-weight:600;
+  font-size:var(--t-h3); color:var(--c-paper-000); }
+.footer__line{ margin-top:var(--s-5); max-width:34ch; font-size:var(--t-lead);
+  font-family:var(--font-display); line-height:1.35; color:var(--c-paper-000); }
+.footer__address{ margin-top:var(--s-6); font-style:normal; font-size:var(--t-body);
+  line-height:1.7; }
+.footer__addr-label{ display:block; font-family:var(--font-text);
+  font-size:var(--t-small); font-weight:600; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--c-navy-300); margin-bottom:var(--s-2); }
+.footer__tel{ display:block; margin-top:var(--s-3); }
+
+.footer__head{ font-family:var(--font-text); font-size:var(--t-small);
+  font-weight:600; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--c-navy-300); padding-bottom:var(--s-3); margin-bottom:var(--s-5);
+  border-bottom:var(--rule-width) var(--rule-style) rgba(255,255,255,.16); }
+.footer__list{ list-style:none; margin:0; padding:0; font-size:var(--t-body); }
+.footer__list li{ margin-bottom:var(--s-4); }
+
+/* The office list is the firm's strongest unglamorous proof, so it gets a band
+   of its own rather than a line inside a column. */
+.footer__offices{ margin-top:var(--section-y); padding-top:var(--s-6);
+  border-top:var(--rule-width) var(--rule-style) rgba(255,255,255,.16); }
+.footer__head--inline{ border:0; padding:0; margin-bottom:var(--s-4); }
+.footer__cities{ display:flex; flex-wrap:wrap; gap:var(--s-3) var(--s-5);
+  list-style:none; margin:0; padding:0; font-size:var(--t-body); }
+.footer__cities li{ position:relative; }
+.footer__cities li + li::before{ content:""; position:absolute;
+  inset-inline-start:calc(var(--s-5) / -2); inset-block-start:.42em;
+  inline-size:3px; block-size:3px; border-radius:var(--r-pill);
+  background:var(--c-navy-300); }
+
+.footer__base{ display:grid; gap:var(--s-5); margin-top:var(--s-8);
+  padding-top:var(--s-5);
+  border-top:var(--rule-width) var(--rule-style) rgba(255,255,255,.16); }
+@media (min-width:640px){
+  .footer__base{ grid-template-columns:minmax(0,1fr) auto; align-items:center; }
+}
+.footer__social{ display:flex; gap:var(--s-4); list-style:none; margin:0; padding:0; }
+.footer__social a{ display:grid; place-items:center; inline-size:var(--target-min);
+  block-size:var(--target-min); border-radius:var(--r-pill);
+  border:var(--rule-width) var(--rule-style) rgba(255,255,255,.22);
+  transition:background var(--dur-base) var(--ease), border-color var(--dur-base) var(--ease); }
+.footer__social a:hover{ background:var(--c-navy-700);
+  border-color:var(--c-navy-300); text-decoration:none; }
+.footer__social svg{ inline-size:18px; block-size:18px; fill:currentColor; }
+.footer__legal{ font-size:var(--t-micro); color:var(--c-navy-300);
+  font-feature-settings:var(--numeric-tabular); }
+
+
+
+/* ---------- Consent: opt-in, no trackers before choice ---------- */
+.consent{ position:fixed; inset-inline:0; bottom:0; z-index:var(--z-consent);
+  max-block-size:60svh; overflow-y:auto;
+  background:var(--surface-inverse); color:var(--text-on-inverse);
+  border-top:2px solid var(--action); padding:var(--s-4) 0; }
+.consent[hidden]{ display:none; }
+.consent__inner{ display:grid; gap:var(--s-4); }
+@media (min-width:768px){
+  .consent__inner{ grid-template-columns:1fr auto; align-items:center; gap:var(--s-6); }
+}
+.consent__text{ font-size:var(--t-micro); max-width:62ch; line-height:1.5; }
+.consent__actions{ display:flex; flex-wrap:wrap; gap:var(--s-3); }
+.consent .btn{ font-size:var(--t-small); padding:var(--s-3) var(--s-5); }
+.consent .btn--reject{ background:transparent; color:var(--text-on-inverse);
+  border-color:var(--text-on-inverse); }
+.consent .btn--reject:hover{ background:var(--text-on-inverse); color:var(--accent); }
+.tk{ font-feature-settings:var(--numeric-tabular); color:var(--text-muted);
+  border-bottom:1px dotted currentColor; }
+.section--inverse .tk{ color:var(--c-paper-300); }
+
+/* Consent re-open control (Next build: rendered as a button, not a footer link) */
+.footer__linkbutton{ background:none; border:0; padding:0; cursor:pointer;
+  /* A button, so it inherits nothing from .footer a - it has to match its
+     sibling links by hand or it is the one underlined item in the column. */
+  font-family:var(--font-text); font-size:inherit; color:var(--c-navy-100);
+  text-decoration:none; text-underline-offset:.22em; text-decoration-thickness:1px;
+  min-block-size:0; min-inline-size:0; position:relative; }
+.footer__linkbutton::after{ content:""; position:absolute; top:50%; left:50%;
+  translate:-50% -50%; inline-size:calc(100% + 16px);
+  min-inline-size:var(--target-min); block-size:var(--target-min); }
+.footer__linkbutton:hover{ color:var(--c-paper-000); text-decoration:underline; }
+
+/* ---------- Shared page primitives ---------- */
+/* Interior pages reuse the hero block at a smaller display size. */
+.hero__title--page{ font-size:var(--t-h1); max-width:24ch; }
+.page-back{ margin-bottom:var(--s-4); }
+.page-back a{ font-family:var(--font-text); font-size:var(--t-micro); font-weight:600;
+  text-transform:uppercase; letter-spacing:.08em; color:var(--text-muted);
+  text-decoration:none; position:relative; min-block-size:0; min-inline-size:0; }
+.page-back a::after{ content:""; position:absolute; inset:-13px -8px; }
+.page-back a:hover{ color:var(--accent); text-decoration:underline; }
+
+/* Single-partner layout reuses the team grid at a different column split. */
+@media (min-width:768px){
+  .team--single{ grid-template-columns:minmax(0,14rem) minmax(0,1fr); gap:var(--s-8);
+    align-items:start; }
+}
+
+/* --- Columned lists: global network, office list. Hairlines, no panels. ----- */
+.cols{ display:grid; gap:var(--s-5); margin-top:var(--s-6);
+  border-top:var(--rule-width) var(--rule-style) var(--rule-strong); padding-top:var(--s-5); }
+@media (min-width:600px){ .cols{ grid-template-columns:repeat(2,minmax(0,1fr)); gap:var(--s-6) var(--s-6); } }
+@media (min-width:1024px){ .cols{ grid-template-columns:repeat(3,minmax(0,1fr)); } }
+.cols__head{ font-family:var(--font-text); font-size:var(--t-small); font-weight:600;
+  letter-spacing:.04em; text-transform:uppercase; color:var(--text-strong);
+  padding-bottom:var(--s-3); border-bottom:var(--rule-width) var(--rule-style) var(--rule); }
+.cols__list{ list-style:none; margin:var(--s-4) 0 0; padding:0; }
+.cols__list li{ font-size:var(--t-small); padding-block:var(--s-1); }
+.section--inverse .cols{ border-top-color:var(--rule-on-inverse); }
+.section--inverse .cols__head{ color:var(--text-on-inverse); border-bottom-color:var(--rule-on-inverse); }
+
+/* --- Secondary metadata line: deal region/size, author and date. ----------- */
+.meta{ display:block; margin-top:var(--s-2); font-family:var(--font-text);
+  font-feature-settings:var(--numeric-tabular); font-size:var(--t-micro);
+  color:var(--text-muted); letter-spacing:.01em; }
+.meta--inline{ display:inline; margin-top:0; }
+.section--inverse .meta{ color:var(--c-paper-200); }
+
+/* --- Office list: contact page. Hairline rows, no panels. ----------------- */
+.offices{ display:grid; gap:var(--s-6); margin-top:var(--s-5); }
+@media (min-width:600px){ .offices{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (min-width:1024px){ .offices{ grid-template-columns:repeat(3,minmax(0,1fr)); } }
+.office{ padding-top:var(--s-5); border-top:var(--rule-width) var(--rule-style) var(--rule); }
+.office__city{ font-family:var(--font-display); font-size:var(--t-h3); font-weight:600;
+  color:var(--text-strong); }
+.office__address{ margin-top:var(--s-3); font-style:normal; font-size:var(--t-small);
+  line-height:1.7; color:var(--text); }
+
+
+/* ---------- Hero: the capital-flow diagram ---------- */
+.hero__grid--flow{ display:grid; gap:var(--s-8); align-items:center; }
+@media (min-width:1024px){
+  .hero__grid--flow{ grid-template-columns:minmax(0,1fr) minmax(0,1.05fr); gap:var(--s-9); }
+}
+
+.flow{ margin:0; }
+.flow__grid{ display:grid; align-items:center;
+  grid-template-columns:minmax(0,1fr) clamp(28px,5vw,64px) auto clamp(28px,5vw,64px) minmax(0,1fr);
+  grid-template-areas:"in wi hub wo out" "ink ink hubk outk outk"; }
+.flow__col{ list-style:none; margin:0; padding:0; grid-area:in; display:grid; }
+.flow__col--out{ grid-area:out; text-align:end; }
+.flow__col li{ font-size:var(--t-small); line-height:1.3; padding-block:var(--s-4);
+  border-bottom:var(--rule-width) var(--rule-style) var(--rule); }
+/* Outcome labels sit hard right against the wires. flex-end, not space-between:
+   these rows used to carry a leading arrowhead, and space-between only held the
+   text right because that arrow was there to take up the left slot. With one
+   child left, space-between would silently align it left instead. */
+.flow__col--out li{ display:flex; align-items:center; justify-content:flex-end;
+  gap:var(--s-3); }
+.flow__col li:first-child{ border-top:var(--rule-width) var(--rule-style) var(--rule); }
+
+.flow__wires{ grid-area:wi; inline-size:100%; block-size:100%; }
+.flow__wires--out{ grid-area:wo; }
+.flow__wires line{ stroke:var(--c-navy-500); stroke-width:1; opacity:.55; }
+.flow__wires--out line{ stroke:var(--c-navy-500); opacity:.8; }
+
+.flow__hub{ grid-area:hub; inline-size:clamp(72px,11vw,120px); }
+.flow__hub img{ inline-size:100%; block-size:auto; display:block; }
+
+.flow__key{ font-family:var(--font-text); font-size:var(--t-micro); font-weight:600;
+  letter-spacing:.1em; text-transform:uppercase; color:var(--text-muted);
+  padding-top:var(--s-4); }
+.flow__key--in{ grid-area:ink; }
+.flow__key--hub{ grid-area:hubk; text-align:center; color:var(--accent);
+  white-space:nowrap; }
+.flow__key--out{ grid-area:outk; text-align:end; }
+
+.flow__caption{ position:absolute; inline-size:1px; block-size:1px; overflow:hidden;
+  clip-path:inset(50%); white-space:nowrap; }
+
+/* Below 700px the five-to-four fan has no room: the wires are dropped and the
+   three stages stack, which is the same statement read top to bottom. */
+@media (max-width:699px){
+  .flow__grid{ grid-template-columns:1fr; grid-template-areas:"ink" "in" "hub" "hubk" "outk" "out"; }
+  .flow__wires{ display:none; }
+  .flow__col--out{ text-align:start; }
+  .flow__col--out li{ justify-content:flex-start; }
+  /* Stacked, the fan becomes a single downward run: a rule above and below the
+     hub carries the flow the wires carry on wider screens. */
+  .flow__hub{ justify-self:start; margin-block:var(--s-6); position:relative; }
+  .flow__hub::before,.flow__hub::after{ content:""; position:absolute;
+    inline-size:var(--rule-width); background:var(--c-navy-500);
+    inset-inline-start:calc(50% - (var(--rule-width) / 2)); block-size:var(--s-6); }
+  .flow__hub::before{ inset-block-end:100%; }
+  .flow__hub::after{ inset-block-start:100%; background:var(--action); }
+  .flow__key--hub,.flow__key--out{ text-align:start; }
+  .flow__key--hub{ padding-top:var(--s-4); }
+  .flow__key--out{ padding-top:var(--s-7); }
+}
+
+/* ---------- Hero record: one hairline row, below the fold-line ---------- */
+.figrow{ display:grid; gap:var(--s-5); }
+@media (min-width:768px){ .figrow{ grid-template-columns:repeat(3,1fr); gap:var(--s-6); } }
+.figrow__n{ display:block; font-family:var(--font-text);
+  font-feature-settings:var(--numeric-tabular); font-size:var(--t-h2); font-weight:600;
+  color:var(--accent); }
+.figrow__l{ display:block; margin-top:var(--s-2); font-size:var(--t-small); color:var(--text); }
+
+/* ---------- Section rail: heading left, content right ----------------------
+   Eleven consecutive full-width sections of prose measured 13.3 screens with
+   nine of them carrying no graphic at all. Moving the heading into a narrow
+   sticky column breaks that column of text without adding a card, a shadow or
+   a panel. Below 1024px it collapses back to a stacked heading. */
+.rail{ display:grid; gap:var(--s-5); }
+@media (min-width:1024px){
+  .rail{ grid-template-columns:minmax(0,4fr) minmax(0,9fr); gap:var(--s-9); }
+  .rail__head{ position:sticky; top:calc(var(--header-h) + var(--s-6)); align-self:start; }
+  .rail__head .section__title{ margin-bottom:0; }
+}
+@media (prefers-reduced-motion:reduce){ .rail__head{ position:static; } }
+
+/* ---------- Second light surface, so bands can alternate ------------------- */
+.section--sunken{ background:var(--surface-sunken); }
+/* Jump links land under the sticky header without this. */
+[id]{ scroll-margin-top:calc(var(--header-h) + var(--s-5)); }
+
+/* ---------- Practice index: name, count, services -------------------------
+   Replaces five rows of comma-separated service names. Each service is now its
+   own link, which also puts 33 real internal links on the homepage where there
+   were 5. Hairline rows, no card. */
+.index{ margin-top:var(--s-8);
+  border-top:var(--rule-width) var(--rule-style) var(--rule-strong); }
+.index__row{ display:grid; gap:var(--s-3); padding-block:var(--s-6);
+  border-bottom:var(--rule-width) var(--rule-style) var(--rule); }
+@media (min-width:768px){
+  .index__row{ grid-template-columns:minmax(0,5fr) minmax(0,7fr);
+    grid-template-areas:"name list" "count list"; column-gap:var(--s-7);
+    /* The name/count stack is two rows against a taller list, so the rows must
+       hug the top - otherwise the count drifts to the foot of the cell. */
+    /* The list spans both rows, so row 2 stretches and the count drifted to the
+       foot of the cell. Letting row 2 absorb the slack and aligning the count to
+       its start pins it directly under the name. */
+    align-items:start; grid-template-rows:auto 1fr; }
+  .index__count{ align-self:start; }
+  .index__name{ grid-area:name; } .index__count{ grid-area:count; } .index__list{ grid-area:list; }
+}
+.index__name{ font-family:var(--font-display); font-size:var(--t-h3); font-weight:600;
+  line-height:1.2; }
+.index__name a{ color:inherit; text-decoration:none; }
+.index__name a:hover{ color:var(--accent); }
+.index__count{ font-family:var(--font-text); font-feature-settings:var(--numeric-tabular);
+  font-size:var(--t-micro); color:var(--text-muted); letter-spacing:.04em;
+  text-transform:uppercase; }
+.index__list{ list-style:none; margin:0; padding:0; columns:1; }
+@media (min-width:560px){ .index__list{ columns:2; column-gap:var(--s-6); } }
+.index__list li{ font-size:var(--t-small); padding-block:var(--s-2);
+  break-inside:avoid; }
+
+/* ---------- The record: deal size leads ----------------------------------- */
+.record-list{ margin-top:var(--s-6);
+  border-top:var(--rule-width) var(--rule-style) var(--rule-on-inverse); }
+.record-list__row{ display:grid; gap:var(--s-1); padding-block:var(--s-4);
+  border-bottom:var(--rule-width) var(--rule-style) var(--rule-on-inverse); }
+@media (min-width:768px){
+  .record-list__row{ grid-template-columns:minmax(0,3fr) minmax(0,9fr);
+    grid-template-areas:"size what" "size where" "size how";
+    column-gap:var(--s-7); align-items:baseline; }
+  .record-list__size{ grid-area:size; } .record-list__what{ grid-area:what; }
+  .record-list__where{ grid-area:where; } .record-list__how{ grid-area:how; }
+}
+.record-list__size{ font-family:var(--font-text);
+  font-feature-settings:var(--numeric-tabular); font-size:var(--t-h2);
+  font-weight:600; line-height:1.1; color:var(--text-on-inverse); }
+.record-list__what{ font-family:var(--font-display); font-size:var(--t-lead);
+  font-weight:600; line-height:1.3; max-width:56ch; text-wrap:balance; }
+.record-list__where{ font-size:var(--t-small); color:var(--c-paper-200); }
+.record-list__how{ font-size:var(--t-micro); color:var(--c-paper-300);
+  letter-spacing:.03em; }
+
+/* ===========================================================================
+   D05 — depth, motion and surface. The hairline-only system produced a page
+   that read as a document rather than a site. These add elevation and movement
+   without abandoning the type scale, the palette or the spacing steps.
+   =========================================================================== */
+
+/* ---------- Dark hero ------------------------------------------------------ */
+/* navy-950, the deepest value in the palette. The hero is now the darkest thing
+   on the page and tone lifts steadily from here to the footer, instead of dark
+   bands appearing at arbitrary depths. */
+.hero--dark{ background:var(--surface-deep); color:var(--text-on-inverse);
+  position:relative; overflow:hidden; border-bottom:0; }
+/* One light source, upper right. The second radial was red at .16 over navy,
+   which composited to a muddy aubergine in the bottom-left corner - visible as
+   a bruise on the 1440 capture and not a colour in the palette. */
+.hero--dark::before{ content:""; position:absolute; inset:0; pointer-events:none;
+  background:radial-gradient(70rem 48rem at 82% 8%, rgba(38,64,127,.45), transparent 66%); }
+.hero--dark > *{ position:relative; }
+.hero--dark .hero__title{ color:var(--text-on-inverse); }
+.hero--dark .hero__lead{ color:var(--c-navy-100); max-width:52ch; }
+.hero--dark .btn--secondary{ color:var(--text-on-inverse);
+  border-color:rgba(255,255,255,.4); }
+.hero--dark .btn--secondary:hover{ background:var(--text-on-inverse);
+  color:var(--c-navy-800); border-color:var(--text-on-inverse); }
+/* Sans. A serif set at 13px with .14em tracking is fighting its own drawing. */
+.hero__eyebrow{ font-family:var(--font-text); font-size:var(--t-micro);
+  font-weight:600; letter-spacing:.12em; text-transform:uppercase;
+  color:var(--c-navy-300); margin-bottom:var(--s-5);
+  display:flex; align-items:center; gap:var(--s-4); }
+.hero__eyebrow::after{ content:""; flex:1; max-inline-size:5rem;
+  block-size:1px; background:currentColor; opacity:.5; }
+
+/* ---------- Contact: the closing section ----------------------------------
+   Was a 600px form alone in a 1280px container - 700px of empty white beside
+   it and 1081px of page height for four fields. The form keeps the reading
+   column; the aside fills the space with the routes that actually work today. */
+.contact{ display:grid; gap:var(--s-7); align-items:start; }
+@media (min-width:960px){
+  .contact{ grid-template-columns:minmax(0,7fr) minmax(0,5fr); gap:var(--s-9); }
+}
+.contact__aside{ background:var(--surface-tile); padding:var(--s-6);
+  border-top:2px solid var(--c-navy-800); }
+.section--sunken .contact__aside{ background:var(--surface); }
+.contact__grouptitle{ font-family:var(--font-text); font-size:var(--t-micro);
+  font-weight:600; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--text-muted); }
+.contact__group + .contact__group{ margin-top:var(--s-6); padding-top:var(--s-6);
+  border-top:var(--rule-width) var(--rule-style) var(--rule); }
+.contact__lead{ font-family:var(--font-display); font-size:var(--t-h3);
+  font-weight:var(--w-heading); line-height:1.25; margin-top:var(--s-2); }
+.contact__note{ margin-top:var(--s-2); font-size:var(--t-small); color:var(--text); }
+.contact__tel{ display:inline-block; margin-top:var(--s-2);
+  font-family:var(--font-display); font-size:var(--t-h3); font-weight:var(--w-heading);
+  font-feature-settings:var(--numeric-tabular); color:var(--text-strong);
+  text-decoration:none; }
+.contact__tel:hover{ color:var(--accent); }
+.contact__addr{ margin-top:var(--s-2); font-size:var(--t-small); font-style:normal;
+  color:var(--text); line-height:1.6; }
+
+/* Two fields per row where both are short. Name and email together is the pair
+   people expect; a column of four full-width boxes reads as a long form even
+   when it is not. */
+.form__row{ display:grid; gap:var(--s-5); }
+@media (min-width:560px){ .form__row{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+
+/* ---------- Split: image beside text --------------------------------------
+   The arrangement the firm already uses for "Who we are" on the live site. */
+.split{ display:grid; gap:var(--s-6); align-items:center; }
+@media (min-width:860px){
+  .split{ grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:var(--s-8); }
+}
+.split__media{ position:relative; aspect-ratio:16/10; overflow:hidden;
+  background:var(--surface-sunken); }
+.split__media img{ inline-size:100%; block-size:100%; object-fit:cover; display:block; }
+.split__body > * + *{ margin-top:var(--s-4); }
+
+/* ---------- Stat band: the parallax figure strip --------------------------
+   Ported from .number-counters on the live site: same image, same fixed
+   attachment, same dark scrim over it, figures in light type.
+   Two deliberate differences, both defensible:
+   - The scrim is navy-950 at .68, not neutral #111 at .65. Neutral black over a
+     blue sky greys it; the navy keeps the image in the palette. Worst case
+     measured, not guessed: the brightest 12px-blurred region of the photo is
+     rgb(242,240,222); under this scrim white text sits at ~7.5:1.
+   - background-attachment:fixed is desktop-and-hover only. iOS Safari ignores
+     it and renders the image zoomed and stuck, and on touch it forces a
+     full-layer repaint per scroll frame. The live site's own responsive.css
+     drops it too. */
+.statband{ position:relative; border-top:0;
+  background:var(--c-navy-800) url('/careers-network.webp') center / cover no-repeat; }
+@media (min-width:1024px) and (hover:hover) and (pointer:fine){
+  .statband{ background-attachment:fixed; }
+}
+/* Parallax is motion: a fixed background slides relative to the page. */
+@media (prefers-reduced-motion:reduce){ .statband{ background-attachment:scroll; } }
+.statband::before{ content:""; position:absolute; inset:0;
+  background:rgba(0,11,34,.68); }
+.statband__inner{ position:relative; padding-block:var(--s-9); }
+.statband__grid{ display:grid; gap:var(--s-7); text-align:center; }
+@media (min-width:640px){ .statband__grid{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (min-width:1024px){ .statband__grid{ grid-template-columns:repeat(4,minmax(0,1fr)); } }
+.statband__n{ display:block; font-family:var(--font-display);
+  font-feature-settings:var(--numeric-tabular);
+  font-size:clamp(3rem,2rem + 3.4vw,4.0625rem); font-weight:300; line-height:1;
+  letter-spacing:-.02em; color:var(--c-paper-000); }
+.statband__l{ display:block; margin-top:var(--s-4); font-size:var(--t-small);
+  line-height:1.45; color:var(--c-paper-100); }
+
+/* ---------- Centred section variant ---------------------------------------
+   The arrangement the firm uses for "What we do": heading and both paragraphs
+   centred, one above the diagram and one below it. Scoped to .prose rather than
+   set on the section, so anything else placed here keeps its own alignment.
+   The heading's left-anchored rule is replaced by a short centred one; a 22ch
+   rule hanging off the left of a centred title reads as a mistake. */
+.section--centred .section__title{ margin-inline:auto; max-width:30ch;
+  text-align:center; padding-top:0; border-top:0; }
+.section--centred .section__title::before{ content:""; display:block;
+  inline-size:4rem; block-size:2px; background:var(--c-navy-800);
+  margin:0 auto var(--s-4); }
+/* Centred text is harder to scan than ranged-left, so the measure comes in:
+   the eye has to find the start of each line without a common left edge. */
+.section--centred .prose{ margin-inline:auto; text-align:center;
+  max-width:64ch; text-wrap:balance; }
+/* The 65-75ch measure exists so the eye can find the start of the NEXT line.
+   A sentence that sits on one line has no return sweep, so the cap buys nothing
+   and only forces a wrap. Released to the container here, and it still wraps
+   normally once the viewport is too narrow to hold it. */
+.prose--wide,.section--centred .prose--wide{ max-width:none; }
+
+/* ---------- Capital flow: the "What we do" diagram ------------------------
+   A faithful redraw of the firm's published diagram. Everything is grid-placed,
+   so a connector cannot drift from the box it points at, and every label is
+   real text that never scales below the 14px floor.
+
+   Five columns: lenders, a connector gap, the enterprise column, a connector
+   gap, the funds column. Three body rows: growth stage, the arrow between
+   stages, exit stage. The lenders box spans all three because it is the branch
+   point for both lender flows - the stem the original draws above and below it.
+
+   Below 900px the 2D flow is abandoned rather than shrunk: a diagram needing
+   two axes has nowhere to go on a phone, so it becomes a labelled vertical
+   sequence and the figcaption carries the relationships in prose. */
+/* The gutters, and the overhang every connector uses to bridge them. One
+   source: if these two ever disagree, every line in the diagram breaks. */
+.cf{ --cf-node:28px; --cf-rowgap:var(--s-3); --cf-colgap:var(--s-4);
+  margin:var(--s-4) 0 var(--s-7); }
+.cf__grid{ display:grid; gap:var(--s-4);
+  grid-template-columns:minmax(0,1fr);
+  grid-template-areas:
+    "tray" "din" "dfu" "lbox" "lnt" "cl1" "sme1" "cr1" "pevc"
+    "stage" "pup" "lnb" "cl3" "sme2" "rm" "rr"; }
+@media (min-width:900px){
+  .cf__grid{ gap:var(--cf-rowgap) var(--cf-colgap);
+    /* Column 1 carries the riser, the box, both nodes AND the instrument list,
+       so it is the widest of the two left columns; column 2 is only the last
+       stretch of each lender flow and needs room for a line and an arrowhead. */
+    grid-template-columns:
+      minmax(0,1.2fr) minmax(56px,.5fr) minmax(0,1.15fr) minmax(72px,.7fr) minmax(0,.95fr);
+    grid-template-areas:
+      "tray tray  tray  tray tray"
+      ".    .     din   .    dfu"
+      "lnt  cl1   sme1  cr1  pevc"
+      "lbox .     stage .    pup"
+      "lnb  cl3   sme2  rm   rr"; }
+}
+/* Pure connector graphics; there is nothing for them to join once stacked. */
+@media (max-width:899px){ .cf__upline,.cf__corner,.cf__branch,.cf__stem{ display:none; } }
+
+/* Sources tray */
+/* A hairline all round, not a 2px rule on top. Sitting directly under a centred
+   paragraph, the heavy top rule read as an underline on that paragraph rather
+   than as the edge of a container. */
+.cf__tray{ background:none; border:0; padding:0 0 var(--s-5);
+  border-bottom:var(--rule-width) var(--rule-style) var(--rule); }
+.cf__traylabel{ font-family:var(--font-text); font-size:var(--t-micro); font-weight:600;
+  letter-spacing:.1em; text-transform:uppercase; color:var(--text-muted);
+  text-align:center; }
+/* Nine sources wrapped 8 + 1, which left one chip orphaned on a row of its own
+   and made a deliberate set look like whatever happened to fit. Ten columns
+   with every chip spanning two gives five equal chips on the first row and
+   four on the second; starting the second row one column in centres it under
+   the first, with a column of slack either side. Deterministic - it cannot
+   re-wrap into a ragged shape at a different width. */
+.cf__chips{ display:grid; grid-template-columns:repeat(10,minmax(0,1fr));
+  gap:var(--s-2); list-style:none; margin:var(--s-2) 0 0; padding:0; }
+.cf__chips li{ grid-column:span 2; display:flex; align-items:center;
+  justify-content:center; text-align:center;
+  font-size:var(--t-micro); line-height:1.25;
+  /* Just enough inset to read as a chip. The longest label is 33 characters
+     and the cell is 2/10 of the tray, so the padding is what decides whether
+     it sits on one line or wraps and makes its whole row taller. */
+  padding:var(--s-2); min-block-size:0; background:none; border:0;
+  color:var(--text); }
+.cf__chips li:nth-child(6){ grid-column:2 / span 2; }
+@media (max-width:899px){
+  /* Ten columns is meaningless at phone width; two even columns is not. */
+  .cf__chips{ grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .cf__chips li,.cf__chips li:nth-child(6){ grid-column:auto; }
+}
+
+
+/* Boxes. Three weights, mirroring the original's dark / light / plain split. */
+.cf__box{ display:flex; flex-direction:column; justify-content:center;
+  padding:var(--s-4); background:var(--surface);
+  border-top:var(--rule-width) var(--rule-style) var(--c-navy-800); }
+/* :not() rather than !important. This rule is a context override and has no
+   business repainting the boxes whose whole job is to carry a weight. */
+.section--sunken .cf__box:not(.cf__box--focus):not(.cf__box--muted){
+  background:var(--surface); }
+.cf__box--focus{ background:var(--c-navy-900); color:var(--text-on-inverse);
+  border-top-color:var(--c-red-700); }
+.cf__box--muted{ background:var(--c-navy-100); border-top-color:var(--c-navy-500); }
+/* The lenders box spans all three body rows so that it sits between its two
+   flows, but it should not be stretched to their full height - the original
+   draws it compact, centred between the two arrows. */
+.cf__box--branch{ align-self:center; }
+.cf__boxname{ font-family:var(--font-display); font-size:var(--t-lead);
+  font-weight:var(--w-heading); line-height:1.2; }
+.cf__box--focus .cf__boxname{ color:var(--text-on-inverse); }
+.cf__boxnote{ margin-top:var(--s-1); font-size:var(--t-small); color:var(--text-muted); }
+.cf__box--focus .cf__boxnote{ color:var(--c-navy-100); }
+.cf__box--muted .cf__boxnote{ color:var(--c-navy-700); }
+.cf__sub{ list-style:none; margin:var(--s-3) 0 0; padding:0; }
+.cf__sub li{ font-size:var(--t-small); color:var(--text); padding-block:var(--s-1); }
+.cf__box--focus .cf__sub li{ color:var(--c-navy-100); }
+
+/* The Adan node. Opaque, so a connector passes behind it rather than through
+   it - which is what makes it read as sitting ON the flow. */
+.cf__node{ position:relative; z-index:1; display:grid; place-items:center;
+  inline-size:var(--cf-node); block-size:var(--cf-node); flex:none;
+  background:var(--surface); border-radius:var(--r-pill); }
+.section--sunken .cf__node{ background:var(--surface-sunken); }
+.cf__node img{ inline-size:100%; block-size:auto; display:block; }
+.cf__flowlabel{ position:relative; z-index:1; text-align:center;
+  background:var(--surface-sunken); padding-inline:var(--s-3);
+  font-family:var(--font-text); font-size:var(--t-micro); font-weight:600;
+  letter-spacing:.06em; text-transform:uppercase; color:var(--accent); }
+
+/* Connectors. Each line is a pseudo-element on the connector cell itself, so it
+   spans exactly the gap the grid left between the two boxes either side. The
+   half-gap overhang closes the column gutter, which otherwise reads as a break
+   in the flow. */
+.cf__down,.cf__across{ position:relative; display:flex; align-items:center;
+  justify-content:center; }
+.cf__down{ flex-direction:column; min-block-size:64px; padding-block:var(--s-2);
+  gap:var(--s-1); }
+.cf__down::before{ content:""; position:absolute; inset-block:0; inset-inline-start:50%;
+  translate:-50% 0; inline-size:var(--rule-width); background:var(--rule-strong); }
+.cf__down::after{ content:""; position:absolute; inset-block-end:0; inset-inline-start:50%;
+  translate:-50% 0; inline-size:0; block-size:0;
+  border-inline:5px solid transparent; border-block-start:7px solid var(--rule-strong); }
+
+.cf__across{ min-block-size:64px; }
+.cf__across::before{ content:""; position:absolute;
+  inset-inline:calc(var(--cf-colgap) / -2); inset-block-start:50%;
+  translate:0 -50%; block-size:var(--rule-width); background:var(--rule-strong); }
+/* Direction is drawn, not left to colour: 1.4.1 means an arrowhead. */
+.cf__across::after{ content:""; position:absolute; inset-block-start:50%;
+  translate:0 -50%; inline-size:0; block-size:0; border-block:5px solid transparent;
+  inset-inline-end:calc(var(--cf-colgap) / -2);
+  border-inline-start:7px solid var(--rule-strong); }
+.cf__across--rev::after{ inset-inline-end:auto;
+  inset-inline-start:calc(var(--cf-colgap) / -2);
+  border-inline-start:0; border-inline-end:7px solid var(--rule-strong); }
+/* The exits line turns upward in the next cell, so it carries no head here. */
+.cf__across--plain::after{ display:none; }
+.cf__across .cf__node{ position:absolute; inset-block-start:50%; inset-inline-start:50%;
+  translate:-50% -50%; }
+.cf__across .cf__flowlabel{ margin-block-start:calc(var(--cf-node) + var(--s-4)); }
+
+/* Growth stage down to exit stage, with the work that happens in between set
+   beside the arrow - where the original puts it. */
+.cf__stage{ position:relative; min-block-size:88px; display:flex;
+  align-items:center; }
+.cf__stage::before{ content:""; position:absolute;
+  inset-block:calc(var(--cf-rowgap) * -1); inset-inline-start:50%;
+  translate:-50% 0; inline-size:var(--rule-width); background:var(--rule-strong); }
+.cf__stage::after{ content:""; position:absolute;
+  inset-block-end:calc(var(--cf-rowgap) * -1); inset-inline-start:50%;
+  translate:-50% 0; inline-size:0; block-size:0;
+  border-inline:5px solid transparent; border-block-start:7px solid var(--rule-strong); }
+.cf__stage .cf__node{ position:absolute; inset-block-start:50%; inset-inline-start:50%;
+  translate:-50% -50%; }
+/* Four stacked items were the tallest thing in this row; two columns halves it.
+   Taken out of flow so the pair can run past the column edge into the empty
+   cell beside it - constrained to the column, both labels wrapped onto two
+   lines each and the row grew back. The arrow stays at the column's 50%, which
+   is what keeps it aligned with the two boxes it joins, so the list cannot be
+   given more room by widening the cell. */
+.cf__stagelist{ position:absolute; margin:0;
+  inset-block-start:50%; translate:0 -50%;
+  inset-inline-start:calc(50% + var(--s-6));
+  display:grid; grid-template-columns:repeat(2,max-content); gap:0 var(--s-6); }
+
+/* Exits: right out of the exit-stage box, then up into the funds box. Two
+   cells, each drawing only the segment that crosses its own column, so the
+   corner lands on the column centres instead of on a guessed percentage. */
+.cf__corner,.cf__upline,.cf__branch{ position:relative; }
+.cf__corner::before{ content:""; position:absolute; inset-block-start:50%;
+  inset-inline:calc(var(--cf-colgap) / -2) 50%; block-size:var(--rule-width);
+  background:var(--rule-strong); }
+.cf__corner::after{ content:""; position:absolute;
+  inset-block:calc(var(--cf-rowgap) * -1) 50%; inset-inline-start:50%;
+  inline-size:var(--rule-width); background:var(--rule-strong); }
+/* The lenders column. The riser is one continuous vertical at the column's
+   centre, running from the upper node, behind the box, to the lower node --
+   which is how the published diagram draws it. Each of the three cells draws
+   only the stretch that crosses it, and overhangs the row gap (--cf-rowgap) so the
+   three read as one line. The box is opaque, so the riser disappears behind it
+   exactly as it does in the original. */
+.cf__lnode,.cf__lbox{ position:relative; }
+.cf__lnode{ display:flex; align-items:center; min-block-size:64px; }
+.cf__lnode .cf__node{ position:absolute; inset-block-start:50%; inset-inline-start:50%;
+  translate:-50% -50%; }
+/* The flow leaving the node, as far as this column goes; cl1/cl3 finish it. */
+.cf__lnode::before{ content:""; position:absolute; inset-block-start:50%;
+  inset-inline:50% calc(var(--cf-colgap) / -2); block-size:var(--rule-width);
+  background:var(--rule-strong); }
+.cf__lnode--top::after{ content:""; position:absolute;
+  inset-block:50% calc(var(--cf-rowgap) * -1); inset-inline-start:50%; translate:-50% 0;
+  inline-size:var(--rule-width); background:var(--rule-strong); }
+.cf__lnode--bottom::after{ content:""; position:absolute;
+  inset-block:calc(var(--cf-rowgap) * -1) 50%; inset-inline-start:50%; translate:-50% 0;
+  inline-size:var(--rule-width); background:var(--rule-strong); }
+.cf__lbox::before{ content:""; position:absolute;
+  inset-block:calc(var(--cf-rowgap) * -1); inset-inline-start:50%; translate:-50% 0;
+  inline-size:var(--rule-width); background:var(--rule-strong); }
+.cf__lbox .cf__box{ position:relative; }
+/* Debt and working capital are a list beside the lower node, not contents of
+   the box. Held to the left half so it never runs under the node. */
+/* Unbulleted. Discs put a second list grammar next to the flow labels, which
+   already read as a set, and at 14px the markers were most of what you saw. */
+.cf__lendlist{ margin:0; list-style:none; inline-size:calc(50% - var(--s-4)); }
+.cf__lendlist li{ padding-block:var(--s-1); font-size:var(--t-micro);
+  color:var(--text-muted); }
+/* The flow crosses a column boundary here. The lenders cell overhangs half the
+   gutter to the right and this cell overhangs half to the left, so the two
+   halves meet in the middle of the gutter instead of leaving a break in it. */
+.cf__across--stub::before{ inset-inline-start:calc(var(--cf-colgap) / -2); }
+
+.cf__upline::before{ content:""; position:absolute; inset-block:0;
+  inset-inline-start:50%; translate:-50% 0;
+  inline-size:var(--rule-width); background:var(--rule-strong); }
+.cf__upline::after{ content:""; position:absolute; inset-block-start:0;
+  inset-inline-start:50%; translate:-50% 0; inline-size:0; block-size:0;
+  border-inline:5px solid transparent; border-block-end:7px solid var(--rule-strong); }
+
+/* Stacked, connectors are just labelled joins and do not need the height they
+   need when spanning a gap between two columns. */
+@media (max-width:899px){
+  .cf__down,.cf__across,.cf__stage{ min-block-size:0; padding-block:var(--s-4); }
+  .cf__across{ flex-direction:column; gap:var(--s-3); }
+  .cf__across .cf__node,.cf__stage .cf__node{ position:static; translate:none; }
+  .cf__across .cf__flowlabel{ margin-block-start:0; }
+  .cf__stage{ flex-direction:column; gap:var(--s-3); }
+  .cf__stagelist{ position:static; translate:none;
+    grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .cf__grid{ gap:var(--s-3); }
+}
+
+.cf__caption{ margin-top:var(--s-4); font-size:var(--t-small); color:var(--text-muted);
+  max-width:var(--measure-text); line-height:1.6; }
+@media (min-width:900px){
+  /* On desktop the drawing says it; the prose is for assistive technology. */
+  .cf__caption{ position:absolute; inline-size:1px; block-size:1px; overflow:hidden;
+    clip-path:inset(50%); white-space:nowrap; }
+}
+
+/* ---------- Cards ---------------------------------------------------------- */
+.cards{ display:grid; gap:var(--s-5); margin-top:var(--s-7); }
+@media (min-width:640px){ .cards{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (min-width:1024px){ .cards--3{ grid-template-columns:repeat(3,minmax(0,1fr)); } }
+
+/* D07 reverses D05's elevation-on-cards. A drop shadow plus a lift on hover is
+   the single most generated card treatment there is; it says "component
+   library", not "advisory firm". A flat tonal tile separates just as well - the
+   ground does the work the shadow was doing - and the hover deepens the ground
+   instead of floating the tile off the page. Elevation survives only where
+   something genuinely floats: the sticky header. */
+.card{ display:flex; flex-direction:column; gap:var(--s-3);
+  padding:var(--s-6); background:var(--surface-tile); border-radius:var(--r-0);
+  border:0; border-top:2px solid var(--c-navy-800);
+  transition:background-color var(--dur-base) var(--ease); }
+.card:hover{ background:var(--c-paper-100); }
+/* On a sunken section a grey tile on grey is invisible, so it flips to white. */
+.section--sunken .card{ background:var(--surface); }
+.section--sunken .card:hover{ background:var(--c-paper-100); }
+.card__kicker{ font-family:var(--font-text); font-size:var(--t-micro);
+  font-weight:600; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--action); }
+.card__title{ font-family:var(--font-display); font-size:var(--t-h3);
+  font-weight:var(--w-heading); line-height:1.2; }
+.card__title a{ color:inherit; text-decoration:none; }
+.card__title a::after{ content:""; position:absolute; inset:0; border-radius:inherit; }
+.card{ position:relative; }
+.card__body{ font-size:var(--t-small); color:var(--text); }
+.card__meta{ margin-top:auto; padding-top:var(--s-4); font-size:var(--t-micro);
+  color:var(--text-muted); letter-spacing:.02em;
+  border-top:var(--rule-width) var(--rule-style) var(--c-paper-100); }
+.card__figure{ font-family:var(--font-text);
+  font-feature-settings:var(--numeric-tabular); font-size:var(--t-h2);
+  font-weight:600; line-height:1; color:var(--accent); }
+
+.card--dark{ background:var(--c-navy-800); border-top-color:var(--c-red-700);
+  color:var(--text-on-inverse); }
+.card--dark .card__title{ color:var(--text-on-inverse); }
+.card--dark .card__body{ color:var(--c-navy-100); }
+.card--dark .card__figure{ color:var(--text-on-inverse); }
+.card--dark .card__meta{ color:var(--c-paper-300); border-top-color:rgba(255,255,255,.14); }
+.card--dark:hover{ background:var(--c-navy-700); }
+
+/* ---------- Scroll reveal --------------------------------------------------
+   Content is visible by default and the class only adds the entrance, so a
+   headless renderer or a paused tab never ships a blank section. */
+.reveal{ opacity:1; }
+@media (prefers-reduced-motion:no-preference){
+  .reveal[data-reveal="pending"]{ opacity:0; transform:translateY(var(--travel-md)); }
+  .reveal[data-reveal="in"]{ opacity:1; transform:none;
+    transition:opacity var(--dur-slow) var(--ease), transform var(--dur-slow) var(--ease); }
+}
+
+/* ---------- Header gains elevation once the page scrolls ------------------- */
+.header{ position:sticky; top:0; z-index:var(--z-header); background:var(--surface);
+  transition:box-shadow var(--dur-base) var(--ease); }
+.header[data-stuck="true"]{ box-shadow:var(--e-nav); }
+
+/* ---------- Figure band, under the hero ----------------------------------- */
+/* Pinned to the foot of the hero band by .hero--full's second grid row. This is
+   what fills the dead navy the centred layout used to leave, and it puts the
+   firm's actual proof - tenure, reach, breadth - on the first screen. */
+.herometa{ border-top:var(--rule-width) var(--rule-style) rgba(255,255,255,.2);
+  padding-top:var(--s-5); display:grid; gap:var(--s-5); }
+@media (min-width:640px){ .herometa{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (min-width:1024px){ .herometa{ grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:var(--s-7); } }
+.herometa__n{ display:block; font-family:var(--font-display);
+  font-feature-settings:var(--numeric-tabular);
+  font-size:clamp(1.75rem,1.4rem + 1.4vw,2.25rem); font-weight:var(--w-display);
+  line-height:1; letter-spacing:-.02em; color:var(--text-on-inverse); }
+.herometa__l{ display:block; margin-top:var(--s-3); font-size:var(--t-small);
+  line-height:1.4; color:var(--c-navy-100); max-inline-size:22ch; }
+
+.band{ background:var(--c-navy-900); color:var(--text-on-inverse); border-top:0;
+  padding-block:var(--s-8); }
+.figrow{ display:grid; gap:var(--s-6); }
+@media (min-width:640px){ .figrow{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (min-width:1024px){ .figrow{ grid-template-columns:repeat(4,minmax(0,1fr)); gap:var(--s-7); } }
+/* A 2px coloured left-stripe is a banned pattern (impeccable: "never
+   intentional"). A rule over the figure groups it the same way and matches the
+   hairline language the rest of the page already uses. */
+.figrow__item{ padding-top:var(--s-4);
+  border-top:var(--rule-width) var(--rule-style) rgba(255,255,255,.24); }
+.figrow__n{ display:block; font-family:var(--font-text);
+  font-feature-settings:var(--numeric-tabular); font-size:var(--t-h2);
+  font-weight:600; line-height:1.05; color:var(--text-on-inverse); }
+.figrow__l{ display:block; margin-top:var(--s-2); font-size:var(--t-small);
+  color:var(--c-navy-100); }
+
+/* ---------- The flow diagram on the dark hero ----------------------------- */
+.hero--dark .flow__col li{ color:var(--c-navy-100);
+  border-bottom-color:rgba(255,255,255,.16); }
+.hero--dark .flow__col li:first-child{ border-top-color:rgba(255,255,255,.16); }
+.hero--dark .flow__key{ color:var(--c-navy-300); }
+.hero--dark .flow__key--hub{ color:var(--text-on-inverse); }
+/* #FF4D4D appeared in five rules and in no token file. Red at ~1.9:1 against
+   navy is the lowest-contrast pairing in the palette, so the outbound half of
+   the diagram was both off-system and the hardest half to see. The two
+   directions now separate by luminance instead: inbound reads back at navy-300,
+   outbound comes forward in white. Red stays where the brand puts it - the mark. */
+.hero--dark .flow__wires line{ stroke:var(--c-navy-300); opacity:.85; }
+.hero--dark .flow__wires--out line{ stroke:var(--c-paper-000); opacity:.55; }
+.hero--dark .flow__hub::before{ background:var(--c-navy-300); }
+.hero--dark .flow__hub::after{ background:var(--c-paper-000); }
+/* Outbound labels are the payoff, so they sit at full strength; the sources
+   behind them step back. */
+.hero--dark .flow__col--out li{ color:var(--text-on-inverse); }
+
+/* ---------- Team as photo cards ------------------------------------------- */
+/* Measured off mckinsey.com/in/overview, not guessed. Their tile is 405x520 in
+   a 3-up grid with a ~4px channel between tiles, 40/32 padding, a 200px avatar
+   and a 56x1px #E6E6E6 rule. Sizes below are the nearest step on our scale -
+   DESIGN.md forbids off-scale values, and 4px of difference on a 520px tile is
+   not worth a new one. */
+.people{ display:grid; gap:var(--s-1); background:var(--c-paper-100);
+  border-block:var(--rule-width) var(--rule-style) var(--c-paper-100);
+  margin-top:var(--s-7); }
+@media (min-width:560px){ .people{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (min-width:960px){ .people{ grid-template-columns:repeat(3,minmax(0,1fr)); } }
+
+/* The shadow is the whole hover effect on their card - no image zoom, no tint,
+   no lift. Measured: rgba(5,28,44,.2) 0 16px 32px -1px plus a 1px seat.
+   z-index matters more than it looks: grid items paint in DOM order, so without
+   the lift a hovered tile's shadow is drawn UNDER every tile after it and the
+   glow stops dead at the 4px channel on two sides. */
+.person-card{ position:relative; z-index:0; background:var(--surface);
+  padding:var(--s-7) var(--s-6);
+  display:flex; flex-direction:column; align-items:center; text-align:center;
+  transition:box-shadow var(--dur-slow) ease; }
+.person-card:hover,.person-card:focus-within{ z-index:1;
+  box-shadow:0 2px 14px rgba(0,0,0,.16); }
+
+.person-card__frame{ inline-size:min(180px,58%); aspect-ratio:1/1;
+  border-radius:var(--r-pill); overflow:hidden;
+  background:var(--c-paper-100); display:grid; place-items:center;
+  margin-bottom:var(--s-5);
+  transition:background-color var(--dur-base) var(--ease); }
+.person-card__frame img{ inline-size:100%; block-size:100%; object-fit:cover; display:block; }
+/* Seven people have no published photograph and never have had one, so this is
+   a permanent state rather than a loading gap. A pale grey circle reads as a
+   broken image; a navy disc with the person's initials reads as designed. The
+   span paints it, not the frame - on the frame it would flash navy behind every
+   photograph while the image decodes. */
+.person-card__initials{ inline-size:100%; block-size:100%;
+  display:grid; place-items:center;
+  background:var(--c-navy-800); color:var(--text-on-inverse);
+  font-family:var(--font-display); font-size:var(--t-h2);
+  font-weight:600; letter-spacing:.04em; }
+/* Brief calls for serif bold at 26-28px. --t-h3 tops out at 24px and the scale
+   has no 28px step, so the weight carries the difference. */
+.person-card__name{ font-family:var(--font-display); font-size:var(--t-h3);
+  font-weight:700; line-height:1.15; color:var(--text-strong); text-wrap:balance; }
+.person-card__name a{ color:inherit; text-decoration:none; }
+/* Stretched link: the whole tile is the target, so the name is not a small
+   click box floating in a large empty tile. Anything that must stay clickable
+   inside the tile has to lift itself above this overlay - see __mail. */
+.person-card__name a::after{ content:""; position:absolute; inset:0; }
+.person-card:hover .person-card__name a,
+.person-card:focus-within .person-card__name a{ color:var(--accent); }
+/* Role sits directly under the name with no rule between them. The divider
+   belongs BELOW the role, separating identity from description - that is where
+   theirs is, and putting it under the name (as this did) splits the person's
+   name from their own job title. */
+.person-card__role{ margin-top:var(--s-3); font-size:var(--t-micro);
+  font-weight:500; line-height:1.4; color:var(--text-strong); }
+.person-card__focus{ position:relative; margin-top:var(--s-5); padding-top:var(--s-5);
+  font-size:var(--t-small); line-height:1.5;
+  color:var(--text-muted); max-width:34ch; margin-bottom:var(--s-5);
+  /* Visual clamp only - the full sentence stays in the DOM, so a screen
+     reader still gets all of it. */
+  display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:3;
+  line-clamp:3; overflow:hidden; }
+.person-card__focus::before{ content:""; position:absolute; inset-block-start:0;
+  inset-inline-start:50%; translate:-50% 0; inline-size:2.5rem;
+  block-size:var(--rule-width); background:var(--c-paper-200); }
+/* The disc, tap target, hover, focus and reduced-motion behaviour all live in
+   .iconbtn now. All this needs to do is place it and keep it above the tile's
+   stretched link, which would otherwise swallow the click. */
+.person-card__mail{ position:relative; z-index:1; margin-top:auto; }
+
+/* ---------- Interior page hero -------------------------------------------- */
+.hero--page{ padding-block:var(--s-9) var(--section-y); }
+.hero--page .hero__title--page{ max-width:20ch; }
+.hero--page .hero__lead{ max-width:60ch; }
+.hero--page .page-back{ margin-bottom:var(--s-5); }
+.hero--page .page-back a{ color:var(--c-navy-100); font-size:var(--t-small); }
+.hero--page .page-back a:hover{ color:var(--text-on-inverse); }
+.hero__grid--page{ display:grid; gap:var(--s-8); align-items:end; }
+@media (min-width:1024px){
+  .hero__grid--page{ grid-template-columns:minmax(0,7fr) minmax(0,5fr); gap:var(--s-9); }
+}
+.hero__aside{ border-top:var(--rule-width) var(--rule-style) rgba(255,255,255,.22);
+  padding-top:var(--s-5); }
+.hero__aside-head{ font-family:var(--font-text); font-size:var(--t-micro);
+  font-weight:600; letter-spacing:.12em; text-transform:uppercase;
+  color:var(--c-navy-300); margin-bottom:var(--s-4); }
+.hero__jump{ list-style:none; margin:0; padding:0; columns:1; }
+@media (min-width:560px){ .hero__jump{ columns:2; column-gap:var(--s-6); } }
+.hero__jump li{ break-inside:avoid; padding-block:var(--s-2); }
+.hero__jump a{ font-size:var(--t-small); color:var(--c-navy-100); }
+.hero__jump a:hover{ color:var(--text-on-inverse); }
+
+/* ---------- Plain statement list, used for the AI limits ------------------- */
+.limits{ list-style:none; margin:var(--s-7) 0 0; padding:0;
+  border-top:var(--rule-width) var(--rule-style) var(--rule-on-inverse); }
+.limits li{ font-size:var(--t-lead); line-height:1.45; max-width:58ch;
+  padding-block:var(--s-5); padding-inline-start:var(--s-6); position:relative;
+  border-bottom:var(--rule-width) var(--rule-style) var(--rule-on-inverse); }
+.limits li::before{ content:""; position:absolute; inset-inline-start:0;
+  inset-block-start:calc(var(--s-5) + 0.62em); inline-size:var(--s-4);
+  block-size:2px; background:var(--c-red-700); }
+
+/* ---------- Hover language ------------------------------------------------ */
+/* The underline wipes in from the left rather than appearing all at once. It is
+   the most recognisable thing about McKinsey's links and it costs no markup.
+   A background gradient, NOT a positioned pseudo-element, because:
+     - ::after is already taken twice over - the arrow on .arrow-link, and the
+       invisible 44x44 tap-target expander on every name link;
+     - the obvious ::before fix needs position:relative on the anchor, and on
+       .person-card__name a that would break the stretched link. That overlay
+       only covers the whole tile BECAUSE the anchor is unpositioned, so its
+       inset:0 resolves against .person-card. Position the anchor and the tile
+       silently stops being clickable.
+   Reduced motion needs no branch here: :root already collapses --dur-base to
+   1ms, so the underline simply appears. */
+.nav__item a,.practice__name a,.index__name a,
+.person-card__name a,.person__name a,.contact__tel{
+  background-image:linear-gradient(currentColor,currentColor);
+  background-repeat:no-repeat;
+  background-size:0% 2px;
+  transition:background-size var(--dur-base) var(--ease),
+             color var(--dur-fast) var(--ease); }
+
+.practice__name a,.index__name a,.person-card__name a,.person__name a,
+.contact__tel{ background-position:0 100%; padding-bottom:.08em; }
+
+/* The nav link is a 44px flex box for tap-target reasons, so its bottom edge is
+   nowhere near the text. Anchor the rule to the text's own baseline instead. */
+.nav__item a{ background-position:0 calc(50% + .8em); }
+
+.nav__item a:hover,.nav__item a[aria-current="page"],
+.practice__name a:hover,.index__name a:hover,
+.person-card:hover .person-card__name a,.person__name a:hover,
+.contact__tel:hover{ background-size:100% 2px; }
+
+
+
+/* ---------- Icon button ---------------------------------------------------- */
+/* Reusable circular icon link. Token mapping, all read from the theme above
+   rather than hardcoded:
+     spec #051C2C  -> --c-navy-800  (#001A4D)  the nearest dark navy we own
+     spec #2251FF  -> --c-navy-800  (#001A4D)  see note below
+     spec #1a3fd6  -> --c-navy-900  (#001640)  darker, for :active
+     spec white    -> --text-on-inverse
+     spec 250ms    -> calc(--dur-base * 1.25)
+     spec cubic-bezier(.2,0,.2,1) -> --ease, which is already exactly that
+     32px circle   -> --icon-size    44px target -> --target-min
+     circle        -> --r-pill
+   The brief's cobalt is McKinsey's brand blue and this palette has no cobalt.
+   Chosen instead: the disc does NOT change colour on hover at all. The scale and
+   the glow carry the whole state, which is quieter and keeps the button one
+   brand colour in every state. --icon-bg-hover is still a property, so a colour
+   shift is one line away if it is ever wanted. */
+.iconbtn{
+  --icon-size:2rem;
+  --icon-bg:var(--c-navy-800);
+  --icon-bg-hover:var(--c-navy-800);
+  --icon-bg-active:var(--c-navy-900);
+  --icon-fg:var(--text-on-inverse);
+  --icon-scale:1.22;
+  /* Two layers: a tight seat and a wide diffuse spill, so it reads as light
+     falling off the disc rather than as a ring drawn around it. Tinted with
+     navy-800's own rgb (0,26,77) now that the disc keeps that colour on hover -
+     a glow in a colour the button never shows would read as a stray halo.
+     With no colour change, this and the scale ARE the state, so they carry more
+     weight than they did and the alphas are pulled back slightly. */
+  --icon-glow:0 2px 8px rgba(0,26,77,.30), 0 6px 20px rgba(0,26,77,.22);
+  --icon-duration:var(--dur-base);
+
+  position:relative; display:grid; place-items:center; flex:none;
+  inline-size:var(--target-min); block-size:var(--target-min);
+  color:var(--icon-fg); border-radius:var(--r-pill);
+}
+/* The visible disc. Scaling THIS rather than the anchor is what keeps the 44px
+   hit area fixed while the circle grows, and the growth stays inside the target
+   (32 x 1.22 = 39px), so nothing reflows and the target never moves. */
+.iconbtn::before{
+  content:""; position:absolute;
+  inline-size:var(--icon-size); block-size:var(--icon-size);
+  border-radius:var(--r-pill); background:var(--icon-bg);
+  will-change:transform;
+  transition:background-color var(--icon-duration) ease,
+             transform calc(var(--icon-duration) * 1.25) var(--ease),
+             box-shadow calc(var(--icon-duration) * 1.25) ease;
+}
+.iconbtn svg{
+  position:relative; inline-size:.875rem; block-size:.875rem; display:block;
+  transition:transform calc(var(--icon-duration) * 1.25) var(--ease);
+}
+
+/* Hover only where hover is real. On a touch screen :hover sticks after a tap
+   and the button stays lit until something else is tapped. */
+@media (hover:hover) and (pointer:fine){
+  .iconbtn:hover::before{
+    background:var(--icon-bg-hover);
+    transform:scale(var(--icon-scale));
+    box-shadow:var(--icon-glow);
+  }
+  .iconbtn:hover svg{ transform:scale(var(--icon-scale)); }
+}
+
+/* Keyboard parity: the same lit state, PLUS a real outline. The glow alone is
+   not a focus indicator - it is a colour change, and 2.4.7 wants a visible ring. */
+.iconbtn:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+.iconbtn:focus-visible::before{
+  background:var(--icon-bg-hover);
+  transform:scale(var(--icon-scale));
+  box-shadow:var(--icon-glow);
+}
+.iconbtn:focus-visible svg{ transform:scale(var(--icon-scale)); }
+
+.iconbtn:active::before{
+  background:var(--icon-bg-active);
+  transform:scale(1.1);
+  transition-duration:100ms;
+}
+.iconbtn:active svg{ transform:scale(1.1); transition-duration:100ms; }
+
+/* Colour still changes so the control stays responsive; only the movement goes.
+   --dur-* already collapses to 1ms globally under this query, so the remaining
+   job here is to cancel the scale. */
+@media (prefers-reduced-motion:reduce){
+  .iconbtn::before,.iconbtn svg{ will-change:auto; }
+  .iconbtn:hover::before,.iconbtn:focus-visible::before,.iconbtn:active::before,
+  .iconbtn:hover svg,.iconbtn:focus-visible svg,.iconbtn:active svg{ transform:none; }
+  .iconbtn:hover::before,.iconbtn:focus-visible::before{ box-shadow:none; }
+}
+
+/* Visually hidden, still announced and still there if the CSS never arrives. */
+.u-hidden-text{ position:absolute; inline-size:1px; block-size:1px;
+  overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
+
+/* ---------- Standfirst, notes and facets ----------------------------------- */
+/* A lead sentence that is not a heading. Larger than body so the section has a
+   way in, without a second title competing with the real one. */
+.standfirst{ font-family:var(--font-display); font-size:var(--t-h3);
+  font-weight:400; line-height:1.35; max-width:44ch; color:var(--text-strong);
+  margin:0 0 var(--s-7); text-wrap:balance; }
+
+/* Three points side by side under hairlines. Stacked, the same three paragraphs
+   read as one long argument; in columns they read as three, which is what they
+   are. No fills and no boxes - the rule is the whole device. */
+.notes{ display:grid; gap:var(--s-6); }
+@media (min-width:768px){ .notes{ grid-template-columns:repeat(3,minmax(0,1fr)); gap:var(--s-6); } }
+.notes__item{ margin:0; padding-top:var(--s-4); font-size:var(--t-small);
+  line-height:1.55; color:var(--text);
+  border-top:var(--rule-width) var(--rule-style) var(--rule-strong); }
+
+/* Four short facts across, on hairlines. These were filled tiles with a 2px
+   navy bar each: four fills and four bars to carry about twelve words apiece. */
+.facets{ display:grid; gap:var(--s-6); margin-top:var(--s-7); }
+@media (min-width:600px){ .facets{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (min-width:1024px){ .facets{ grid-template-columns:repeat(4,minmax(0,1fr)); gap:var(--s-5); } }
+.facets__item{ padding-top:var(--s-4);
+  border-top:var(--rule-width) var(--rule-style) var(--rule-strong); }
+.facets__name{ font-family:var(--font-display); font-size:var(--t-h3);
+  font-weight:600; line-height:1.2; margin:0 0 var(--s-3); text-wrap:balance; }
+.facets__line{ margin:0; font-size:var(--t-small); line-height:1.55;
+  color:var(--text-muted); }
+
+/* The deal table. Rows are list items, so the list-style has to go or the
+   markers sit in the size column. */
+.record-list{ list-style:none; padding:0; }

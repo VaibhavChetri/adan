@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Icon Button States</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Inter:wght@400;500;600&display=swap">
+<style>
+  /* ============================================================== *
+   * Tokens. Mapped from the Adan theme, not the brief's raw hex.
+   *   #051C2C -> --c-navy-800 #001A4D     #2251FF -> --c-navy-800 (no shift)
+   *   #1a3fd6 -> --c-navy-900 #001640     250ms   -> --dur-base * 1.25
+   * The disc does NOT change colour on hover: the scale and the glow carry
+   * the whole state. --icon-bg-hover is still a property, so a colour shift
+   * is one line away.
+   * ============================================================== */
+  :root{
+    --c-navy-900:#001640; --c-navy-800:#001A4D; --c-navy-700:#002060;
+    --c-navy-500:#26407F; --c-navy-100:#D6DCEA;
+    --paper:#FFFFFF; --sunken:#F8F8F8; --rule:#CCCCCC; --hairline:#ECECEC;
+    --ink:#111111; --text:#222222; --muted:#5A5A5A;
+    --r-pill:999px; --target-min:44px;
+    --dur-base:200ms; --ease:cubic-bezier(.2,0,.2,1);
+    --serif:"Newsreader",Georgia,serif;
+    --sans:"Inter","Helvetica Neue",Arial,sans-serif;
+  }
+  body{ background:var(--sunken); color:var(--text); font-family:var(--sans); }
+  .wrap{ max-width:1100px; margin-inline:auto; padding-inline:16px; padding-block:48px 64px; }
+  h1{ font-family:var(--serif); font-weight:600; font-size:clamp(26px,1.4rem+1.4vw,36px);
+      color:var(--ink); margin:0 0 8px; text-wrap:balance; }
+  .lede{ margin:0 0 40px; max-width:62ch; color:var(--muted); font-size:15px; line-height:1.55; }
+  h2{ font-family:var(--sans); font-size:13px; font-weight:600; text-transform:uppercase;
+      letter-spacing:.08em; color:var(--ink); margin:48px 0 16px;
+      padding-bottom:10px; border-bottom:1px solid var(--rule); }
+
+  /* ---------------- the component ---------------- */
+  .iconbtn{
+    --icon-size:32px;
+    --icon-bg:var(--c-navy-800);
+    --icon-bg-hover:var(--c-navy-800);
+    --icon-bg-active:var(--c-navy-900);
+    --icon-fg:#fff;
+    --icon-scale:1.22;
+    --icon-glow:0 2px 8px rgba(0,26,77,.30), 0 6px 20px rgba(0,26,77,.22);
+    --icon-duration:var(--dur-base);
+
+    position:relative; display:grid; place-items:center; flex:none;
+    inline-size:var(--target-min); block-size:var(--target-min);
+    color:var(--icon-fg); border-radius:var(--r-pill);
+  }
+  /* Scaling the DISC, not the anchor: the 44px hit area stays put while the
+     32px circle grows to 39px, entirely inside it. Nothing reflows and the
+     target never moves out from under the pointer. */
+  .iconbtn::before{
+    content:""; position:absolute;
+    inline-size:var(--icon-size); block-size:var(--icon-size);
+    border-radius:var(--r-pill); background:var(--icon-bg);
+    will-change:transform;
+    transition:background-color var(--icon-duration) ease,
+               transform calc(var(--icon-duration) * 1.25) var(--ease),
+               box-shadow calc(var(--icon-duration) * 1.25) ease;
+  }
+  .iconbtn svg{
+    position:relative; inline-size:14px; block-size:14px; display:block;
+    transition:transform calc(var(--icon-duration) * 1.25) var(--ease);
+  }
+
+  /* Hover only where hover is real - on a touch screen :hover sticks after a
+     tap and the button stays lit until something else is tapped. */
+  @media (hover:hover) and (pointer:fine){
+    .iconbtn:hover::before{
+      background:var(--icon-bg-hover);
+      transform:scale(var(--icon-scale));
+      box-shadow:var(--icon-glow);
+    }
+    .iconbtn:hover svg{ transform:scale(var(--icon-scale)); }
+  }
+
+  /* The glow is a colour change, not a focus indicator. 2.4.7 wants a ring. */
+  .iconbtn:focus-visible{ outline:2px solid var(--c-navy-700); outline-offset:2px; }
+  .iconbtn:focus-visible::before{
+    background:var(--icon-bg-hover);
+    transform:scale(var(--icon-scale));
+    box-shadow:var(--icon-glow);
+  }
+  .iconbtn:focus-visible svg{ transform:scale(var(--icon-scale)); }
+
+  .iconbtn:active::before{
+    background:var(--icon-bg-active); transform:scale(1.1); transition-duration:100ms;
+  }
+  .iconbtn:active svg{ transform:scale(1.1); transition-duration:100ms; }
+
+  @media (prefers-reduced-motion:reduce){
+    .iconbtn::before,.iconbtn svg{ will-change:auto;
+      transition:background-color 1ms linear; }
+    .iconbtn:hover::before,.iconbtn:focus-visible::before,.iconbtn:active::before,
+    .iconbtn:hover svg,.iconbtn:focus-visible svg,.iconbtn:active svg{ transform:none; }
+    .iconbtn:hover::before,.iconbtn:focus-visible::before{ box-shadow:none; }
+  }
+
+  .u-hidden-text{ position:absolute; inline-size:1px; block-size:1px;
+    overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
+
+  /* ---- QA only: freeze each state so all five sit side by side ---- */
+  .is-hover::before,.is-focus::before{
+    background:var(--icon-bg-hover); transform:scale(var(--icon-scale));
+    box-shadow:var(--icon-glow); }
+  .is-hover svg,.is-focus svg{ transform:scale(var(--icon-scale)); }
+  .is-focus{ outline:2px solid var(--c-navy-700); outline-offset:2px; }
+  .is-active::before{ background:var(--icon-bg-active); transform:scale(1.1); }
+  .is-active svg{ transform:scale(1.1); }
+  .is-reduced::before{ background:var(--icon-bg-hover); transform:none; box-shadow:none; }
+  .is-reduced svg{ transform:none; }
+
+  .states{ display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start;
+    background:var(--paper); padding:32px; }
+  .state{ display:flex; flex-direction:column; align-items:center; gap:10px; inline-size:110px; }
+  .state span{ font-size:12px; color:var(--muted); text-align:center; line-height:1.35; }
+
+  .glyphs{ display:flex; gap:24px; background:var(--paper); padding:32px; }
+
+  /* ---------------- people grid ---------------- */
+  .people{ display:grid; gap:4px; background:var(--hairline);
+    border-block:1px solid var(--hairline); grid-template-columns:1fr; }
+  @media (min-width:560px){ .people{ grid-template-columns:repeat(2,1fr); } }
+  @media (min-width:960px){ .people{ grid-template-columns:repeat(3,1fr); } }
+  .person{ background:var(--paper); padding:40px 32px; display:flex;
+    flex-direction:column; align-items:center; text-align:center; }
+  .person__portrait{ inline-size:120px; block-size:120px; max-inline-size:100%;
+    border-radius:50%; object-fit:cover; display:block; margin-bottom:20px; }
+  .person__name{ font-family:var(--serif); font-weight:600; font-size:24px;
+    line-height:1.15; color:var(--ink); margin:0; text-wrap:balance; }
+  .person__role{ font-size:14px; font-weight:500; color:var(--ink); margin:10px 0 0; }
+  .person__rule{ inline-size:40px; block-size:1px; background:var(--hairline);
+    border:0; margin:18px 0; }
+  .person__bio{ font-size:15px; line-height:1.5; color:var(--text); margin:0 0 20px;
+    max-inline-size:34ch; }
+  .person .iconbtn{ margin-top:auto; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Icon button</h1>
+  <p class="lede">A 32px disc inside a 44px tap target. Scale and glow on hover
+     and on <code>:focus-visible</code>; no movement under reduced motion; no hover state
+     at all on touch. Every value is a custom property on <code>.iconbtn</code>.</p>
+
+  <h2>All states, side by side</h2>
+  <div class="states">
+    <div class="state">
+      <a class="iconbtn" href="mailto:a@example.com" aria-label="Email, rest state">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="1.6" y="3.4" width="12.8" height="9.2" rx="0.5"/><path d="M1.6 4.2 8 8.9l6.4-4.7"/></svg>
+        <span class="u-hidden-text">Email, rest state</span></a>
+      <span>Rest<br>navy-800</span>
+    </div>
+    <div class="state">
+      <a class="iconbtn is-hover" href="mailto:a@example.com" aria-label="Email, hover state">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="1.6" y="3.4" width="12.8" height="9.2" rx="0.5"/><path d="M1.6 4.2 8 8.9l6.4-4.7"/></svg>
+        <span class="u-hidden-text">Email, hover state</span></a>
+      <span>Hover<br>×1.22 and glow, same navy</span>
+    </div>
+    <div class="state">
+      <a class="iconbtn is-focus" href="mailto:a@example.com" aria-label="Email, focus state">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="1.6" y="3.4" width="12.8" height="9.2" rx="0.5"/><path d="M1.6 4.2 8 8.9l6.4-4.7"/></svg>
+        <span class="u-hidden-text">Email, focus state</span></a>
+      <span>Focus-visible<br>same, plus 2px ring</span>
+    </div>
+    <div class="state">
+      <a class="iconbtn is-active" href="mailto:a@example.com" aria-label="Email, pressed state">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="1.6" y="3.4" width="12.8" height="9.2" rx="0.5"/><path d="M1.6 4.2 8 8.9l6.4-4.7"/></svg>
+        <span class="u-hidden-text">Email, pressed state</span></a>
+      <span>Active<br>navy-900, ×1.1</span>
+    </div>
+    <div class="state">
+      <a class="iconbtn is-reduced" href="mailto:a@example.com" aria-label="Email, reduced motion">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="1.6" y="3.4" width="12.8" height="9.2" rx="0.5"/><path d="M1.6 4.2 8 8.9l6.4-4.7"/></svg>
+        <span class="u-hidden-text">Email, reduced motion</span></a>
+      <span>Reduced motion<br>no scale, no glow</span>
+    </div>
+  </div>
+
+  <h2>Other glyphs, same component</h2>
+  <div class="glyphs">
+    <a class="iconbtn" href="mailto:a@example.com" aria-label="Email Anita Rao">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="1.6" y="3.4" width="12.8" height="9.2" rx="0.5"/><path d="M1.6 4.2 8 8.9l6.4-4.7"/></svg>
+      <span class="u-hidden-text">Email Anita Rao</span></a>
+    <a class="iconbtn" href="#" aria-label="Anita Rao on LinkedIn">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="1.6" y="1.6" width="12.8" height="12.8" rx="1"/><path d="M4.6 6.8v4.6M4.6 4.7v.01M7.6 11.4V6.8M7.6 8.6c0-1 .7-1.8 1.8-1.8s1.8.8 1.8 1.8v2.8"/></svg>
+      <span class="u-hidden-text">Anita Rao on LinkedIn</span></a>
+    <a class="iconbtn" href="#" aria-label="Read Anita Rao's profile">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2.5 8h11M9.5 4l4 4-4 4"/></svg>
+      <span class="u-hidden-text">Read Anita Rao's profile</span></a>
+  </div>
+
+  <h2>In place, on people cards</h2>
+  <div class="people">
+    <article class="person">
+      <img class="person__portrait" alt="" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' fill='%23001A4D'/%3E%3Ctext x='60' y='62' font-family='Georgia,serif' font-size='40' fill='%23fff' text-anchor='middle' dominant-baseline='central'%3EAR%3C/text%3E%3C/svg%3E">
+      <h3 class="person__name">Anita Rao</h3>
+      <p class="person__role">Senior Partner, London</p>
+      <hr class="person__rule">
+      <p class="person__bio">Counsels boards on performance transformation and corporate strategy.</p>
+      <a class="iconbtn" href="mailto:anita.rao@example.com" aria-label="Email Anita Rao">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="1.6" y="3.4" width="12.8" height="9.2" rx="0.5"/><path d="M1.6 4.2 8 8.9l6.4-4.7"/></svg>
+        <span class="u-hidden-text">Email Anita Rao</span></a>
+    </article>
+    <article class="person">
+      <img class="person__portrait" alt="" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' fill='%23001A4D'/%3E%3Ctext x='60' y='62' font-family='Georgia,serif' font-size='40' fill='%23fff' text-anchor='middle' dominant-baseline='central'%3EJT%3C/text%3E%3C/svg%3E">
+      <h3 class="person__name">Jean-Bernard Tanqueray</h3>
+      <p class="person__role">Partner, Paris</p>
+      <hr class="person__rule">
+      <p class="person__bio">Advises family offices and institutional investors across public and private markets.</p>
+      <a class="iconbtn" href="mailto:jb@example.com" aria-label="Email Jean-Bernard Tanqueray">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="1.6" y="3.4" width="12.8" height="9.2" rx="0.5"/><path d="M1.6 4.2 8 8.9l6.4-4.7"/></svg>
+        <span class="u-hidden-text">Email Jean-Bernard Tanqueray</span></a>
+    </article>
+    <article class="person">
+      <img class="person__portrait" alt="" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' fill='%23001A4D'/%3E%3Ctext x='60' y='62' font-family='Georgia,serif' font-size='40' fill='%23fff' text-anchor='middle' dominant-baseline='central'%3EMO%3C/text%3E%3C/svg%3E">
+      <h3 class="person__name">Marcus Osei</h3>
+      <p class="person__role">Partner, Johannesburg</p>
+      <hr class="person__rule">
+      <p class="person__bio">Twenty years in C-suite roles across real estate, construction and logistics.</p>
+      <a class="iconbtn" href="mailto:marcus@example.com" aria-label="Email Marcus Osei">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="1.6" y="3.4" width="12.8" height="9.2" rx="0.5"/><path d="M1.6 4.2 8 8.9l6.4-4.7"/></svg>
+        <span class="u-hidden-text">Email Marcus Osei</span></a>
+    </article>
+  </div>
+</div>
+</body>
+</html>

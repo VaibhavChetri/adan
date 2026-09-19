@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+next-env.d.ts
+
+# Environment and secrets — never commit these
+.env
+.env.*
+!.env.example
+
+# Local tooling and OS noise
+.DS_Store
+*.log
+.vercel/
+.turbo/
+coverage/
+
+# Generated audit artefacts. The register and the written findings are kept;
+# screenshots and Lighthouse runs are large, regenerable and change every run.
+audit/screenshots/
+audit/preflight/
+audit/lighthouse/
+audit/axe/
+
+# Crawl link-graph dumps: 31MB of regenerable data, rewritten every crawl.
+# audit/inventory/inventory.csv (the page inventory) is kept.
+audit/inventory/full/
+audit/inventory/edges.csv

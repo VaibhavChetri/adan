@@ -1,0 +1,73 @@
+/*Cookie Consent Begin*/
+.grt-cookie {
+	display:none;
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	padding: 8px;
+	background: #FFCD69;
+	//color: #FFFFFF;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+	z-index:9999;
+}
+
+.grt-cookie-active {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-direction: row;
+}
+
+.grt-cookie p {
+	font-size: 11px;
+	margin: 0;
+	padding-left:20px;
+	padding-top:5px;
+	line-height: 1.35;
+	color:#333;
+	font-weight: normal;
+}
+
+.grt-cookie p a {
+	color:#333;
+	text-decoration: underline;
+	font-size: 11px;
+	margin: 0;
+	padding-top:5px;
+}
+
+.grt-cookie-button {
+	display: inline-block;
+	cursor: pointer;
+	font-weight: normal;
+	font-size: 10px;
+	padding: 1px 20px;
+	margin-left:12px;
+	background: #333;
+	color: #FFFFFF;
+	text-transform: capitalize;
+	white-space: nowrap;
+}
+
+@media (max-width:650px) {
+
+	.grt-cookie {
+		flex-direction: column;
+		padding: 10px;
+	}
+
+	.grt-cookie p, .grt-cookie p a {
+		font-size:11px;
+	}
+
+	.grt-cookie-button {
+		font-size:11px;
+		padding: 1px 10px;
+		margin:20px 0 0 0;
+		background: "#c40b14";
+		color: #FFFFFF;
+	}
+
+}
+/*Cookie Consent End*/

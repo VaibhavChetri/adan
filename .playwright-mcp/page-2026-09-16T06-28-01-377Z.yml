@@ -1,0 +1,795 @@
+- generic [active] [ref=f22e1]:
+  - img "Loading..." [ref=f22e3]
+  - navigation [ref=f22e4]:
+    - generic [ref=f22e5]:
+      - generic [ref=f22e6]:
+        - button "Toggle navigation" [expanded] [ref=f22e7] [cursor=pointer]
+        - link [ref=f22e12] [cursor=pointer]:
+          - /url: ../home/index.html
+          - img "Adan Corporate - Logo" [ref=f22e13]
+      - text:                  
+  - generic [ref=f22e18]:
+    - generic [ref=f22e20]:
+      - heading "The world is changing. Embrace the speed of change." [level=2] [ref=f22e21]
+      - link "Read More About How Adan Corporate (  ) Can Assist" [ref=f22e23] [cursor=pointer]:
+        - /url: ../about-us/company-overview.html
+        - text: Read More About How Adan Corporate (
+        - generic [ref=f22e24]: 
+        - text: ) Can Assist
+    - link "scroll down " [ref=f22e25] [cursor=pointer]:
+      - /url: "#services"
+      - generic [ref=f22e26]: scroll down
+      - generic [ref=f22e27]: 
+  - generic [ref=f22e34]:
+    - generic [ref=f22e35]:
+      - heading "Our Breadth and Depth of Services" [level=2] [ref=f22e36]
+      - generic [ref=f22e37]: The spectrum of our expertise and network of decision makers helps us assist clients with innovative solutions
+    - generic [ref=f22e38]:
+      - generic [ref=f22e39]: 
+      - generic [ref=f22e40]: 
+      - generic [ref=f22e41]: 
+      - generic [ref=f22e42]: 
+  - generic [ref=f22e44]:
+    - generic [ref=f22e45]:
+      - heading "How do we do it?" [level=2] [ref=f22e46]
+      - generic [ref=f22e47]: We use our Extensive Global Network.
+    - generic [ref=f22e48]: 
+    - generic [ref=f22e49]: 
+    - generic [ref=f22e50]: 
+    - generic [ref=f22e52]: 
+    - generic [ref=f22e53]: 
+    - generic [ref=f22e54]: 
+  - generic [ref=f22e55]:
+    - generic [ref=f22e57]:
+      - generic [ref=f22e58]:
+        - heading "Our Secret Sauce? Our Team!" [level=2] [ref=f22e59]
+        - generic [ref=f22e60]: Senior multi-disciplinary corporate and finance professionals with diverse geographic, sector and transaction focuses
+      - generic [ref=f22e61]:
+        - generic [ref=f22e62]:
+          - generic [ref=f22e63]:
+            - img "Ajay Mavinkurve" [ref=f22e64]
+            - generic [ref=f22e65]: Ajay is a seasoned senior-level corporate finance executive with 30+ years of diversified experience in Global Corporate Finance, IPOs, Corporate and Tax structuring, Deal structuring, Commercial Negotiation, Valuations, Venture and Private Equity syndication, M&A, Growth Strategy, Distressed Asset Management, Working Capital and Buy-outs for Small & Mid-sized Enterprises (SMEs).
+          - generic [ref=f22e68]:
+            - heading "Ajay Mavinkurve" [level=4] [ref=f22e69]
+            - generic [ref=f22e71]: Managing Partner
+            - generic [ref=f22e72]: Corporate Finance, M&A, IPO, IB
+            - generic [ref=f22e73]: London
+            - list [ref=f22e74]:
+              - listitem [ref=f22e75]:
+                - link "" [ref=f22e76] [cursor=pointer]:
+                  - /url: mailto:ajay.mavinkurve@adancorporate.com
+              - listitem [ref=f22e78]:
+                - link "" [ref=f22e79] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/ajay-mavinkurve
+              - link [ref=f22e81] [cursor=pointer]:
+                - /url: ../team/ajay-mavinkurve.html
+                - button "Full Profile" [ref=f22e82]
+        - separator [ref=f22e83]
+        - separator [ref=f22e84]
+      - generic [ref=f22e85]:
+        - generic [ref=f22e86]:
+          - generic [ref=f22e87]:
+            - img "Sabapaty (Saba) Suryanarayanan" [ref=f22e88]
+            - generic [ref=f22e89]: Saba is a seasoned commercial and finance professional with 30+ years of experience in in C-suite roles spanning varied geographies and multiple industry segments, including Manufacturing, Trading, Media and Financial Services in areas such as Deal structuring, Commercial Negotiation, Growth Strategy, Distressed Asset Management, Working Capital Funding, and Buyouts.
+          - generic [ref=f22e91]:
+            - heading "Sabapaty (Saba) Suryanarayanan" [level=4] [ref=f22e92]
+            - generic [ref=f22e94]: Managing Partner
+            - generic [ref=f22e95]: Commercial and Finance
+            - generic [ref=f22e96]: Mumbai, India
+            - list [ref=f22e97]:
+              - listitem [ref=f22e98]:
+                - link "" [ref=f22e99] [cursor=pointer]:
+                  - /url: mailto:sabapatys@adancorporate.com
+              - listitem [ref=f22e101]:
+                - link "" [ref=f22e102] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/sabapaty-suryanarayanan-96a31b4
+              - link [ref=f22e104] [cursor=pointer]:
+                - /url: ../team/sabapaty-suryanarayanan.html
+                - button "Full Profile" [ref=f22e105]
+        - separator [ref=f22e106]
+        - separator [ref=f22e107]
+      - generic [ref=f22e108]:
+        - generic [ref=f22e109]:
+          - generic [ref=f22e110]:
+            - img "profile image" [ref=f22e111]
+            - generic [ref=f22e112]: A seasoned technology and transformation professional with 25+ years of experience in global leadership roles spanning varied geographies and multiple industry segments, including Enterprise Technology, Cloud, and IT Services in areas such as Enterprise Architecture, Cloud Modernization, Cybersecurity, GCC Transformation, Digital Platforms, and Global Delivery Leadership.
+          - generic [ref=f22e114]:
+            - heading "Vinayak Hattangadi" [level=4] [ref=f22e115]
+            - generic [ref=f22e117]: Partner
+            - generic [ref=f22e118]: Executive Director & Interim CTO
+            - generic [ref=f22e119]: Mumbai, India
+            - list [ref=f22e120]:
+              - listitem [ref=f22e121]:
+                - link "" [ref=f22e122] [cursor=pointer]:
+                  - /url: mailto:vinayak.hattangadi@adancorporate.com
+              - listitem [ref=f22e124]:
+                - link "" [ref=f22e125] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/vinayak-hattangadi/
+              - link [ref=f22e127] [cursor=pointer]:
+                - /url: ""
+                - button "Full Profile" [ref=f22e128]
+        - separator [ref=f22e129]
+        - separator [ref=f22e130]
+      - generic [ref=f22e131]:
+        - generic [ref=f22e132]:
+          - generic [ref=f22e133]:
+            - img "Thomas Peutz" [ref=f22e134]
+            - generic [ref=f22e135]: Thomas is an innovative entrepreneurial leader with 25+ years of experience in in C-suite roles spanning international management and organisational strategy, gained within the cultural sector and the creative industries. As a social entrepreneur, he has in-depth knowledge and passion for new venture development serving on executive and non-executive boards.
+          - generic [ref=f22e137]:
+            - heading "Thomas Peutz" [level=4] [ref=f22e138]
+            - generic [ref=f22e140]: Partner
+            - generic [ref=f22e141]: Sustainable Energy
+            - generic [ref=f22e142]: Amsterdam
+            - list [ref=f22e143]:
+              - listitem [ref=f22e144]:
+                - link "" [ref=f22e145] [cursor=pointer]:
+                  - /url: mailto:thomas.peutz@adancorporate.com
+              - listitem [ref=f22e147]:
+                - link "" [ref=f22e148] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/thomas-peutz-a7a44116/
+              - link [ref=f22e150] [cursor=pointer]:
+                - /url: ../team/thomas-peutz.html
+                - button "Full Profile" [ref=f22e151]
+        - separator [ref=f22e152]
+        - separator [ref=f22e153]
+      - generic [ref=f22e154]:
+        - generic [ref=f22e155]:
+          - generic [ref=f22e156]:
+            - img "Roland Giebitz" [ref=f22e157]
+            - generic [ref=f22e158]: Roland is a seasoned executive with 30+ years of experience in managing companies and in leading operational and business development projects.
+          - generic [ref=f22e160]:
+            - heading "Roland Giebitz" [level=4] [ref=f22e161]
+            - generic [ref=f22e163]: Partner
+            - generic [ref=f22e164]: Corporate Finance
+            - generic [ref=f22e165]: Hamburg, Germany
+            - list [ref=f22e166]:
+              - listitem [ref=f22e167]:
+                - link "" [ref=f22e168] [cursor=pointer]:
+                  - /url: mailto:roland.giebitz@adancorporate.com
+              - listitem [ref=f22e170]:
+                - link "" [ref=f22e171] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/roland-giebitz-10292158
+              - link [ref=f22e173] [cursor=pointer]:
+                - /url: ../team/roland-giebitz.html
+                - button "Full Profile" [ref=f22e174]
+        - separator [ref=f22e175]
+        - separator [ref=f22e176]
+      - generic [ref=f22e177]:
+        - generic [ref=f22e178]:
+          - generic [ref=f22e179]:
+            - img "Arun Shroff" [ref=f22e180]
+            - generic [ref=f22e181]: Arun Shroff is a seasoned Commercial and Operations leader with 4 decades of experience, working across different industries like Electrical precision parts Manufacturing, Agriculture Business (Pioneering Floriculture in India),and Paper & Paperboards.He managed relationships across countries, cultures, functions, and hierarchies. He has practical expertise in managing manufacturing and trading operations and fostering synergies to provide higher efficiency, products, and customer excellence.
+          - generic [ref=f22e184]:
+            - heading "Arun Shroff" [level=4] [ref=f22e185]
+            - generic [ref=f22e187]: Partner
+            - generic [ref=f22e188]: Operations, Logistics
+            - generic [ref=f22e189]: Pune, India
+            - list [ref=f22e190]:
+              - listitem [ref=f22e191]:
+                - link "" [ref=f22e192] [cursor=pointer]:
+                  - /url: mailto:arun.shroff@adancorporate.com
+              - listitem [ref=f22e194]:
+                - link "" [ref=f22e195] [cursor=pointer]:
+                  - /url: https://in.linkedin.com/in/arun-shroff
+              - link [ref=f22e197] [cursor=pointer]:
+                - /url: ../team/arun-shroff.html
+                - button "Full Profile" [ref=f22e198]
+        - separator [ref=f22e199]
+        - separator [ref=f22e200]
+      - generic [ref=f22e201]:
+        - generic [ref=f22e202]:
+          - generic [ref=f22e203]:
+            - img "Neeraj Arora" [ref=f22e204]
+            - generic [ref=f22e205]: Neeraj is a specialist and expert in media monetisation and storytelling, his expertise lies in leading transformational strategies that transition traditional business into cutting-edge digital platforms, and in building and coaching high-performing business teams and is renowned for his passion for mentoring emerging leaders, leading complex commercial negotiations and fostering innovation.
+          - generic [ref=f22e208]:
+            - heading "Neeraj Arora" [level=4] [ref=f22e209]
+            - generic [ref=f22e211]: Partner
+            - generic [ref=f22e212]: Media Tech Advisor and Investor
+            - generic [ref=f22e213]: London
+            - list [ref=f22e214]:
+              - listitem [ref=f22e215]:
+                - link "" [ref=f22e216] [cursor=pointer]:
+                  - /url: mailto:neeraj.arora@adancorporate.com
+              - listitem [ref=f22e218]:
+                - link "" [ref=f22e219] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/neeraj-arora-16537313/
+              - link [ref=f22e221] [cursor=pointer]:
+                - /url: ../team/neeraj-arora.html
+                - button "Full Profile" [ref=f22e222]
+        - separator [ref=f22e223]
+        - separator [ref=f22e224]
+      - generic [ref=f22e225]:
+        - generic [ref=f22e226]:
+          - generic [ref=f22e227]:
+            - img "Raju Venkataraman" [ref=f22e228]
+            - generic [ref=f22e229]: Raju brings 30+ years of rich C-suite experience from the Corporate world; most recently as CFO & Head of Strategy of Walt Disney Company for South East Asia. He has rich cross-cultural experience across the APAC region and has a special interest in Asian economies. Presently, Raju is powering on senior leaders to fulfil their potential and aspirations amidst change and disruption
+          - generic [ref=f22e231]:
+            - heading "Raju Venkataraman" [level=4] [ref=f22e232]
+            - generic [ref=f22e234]: Partner
+            - generic [ref=f22e235]: Executive Coaching & Strategy
+            - generic [ref=f22e236]: Singapore
+            - list [ref=f22e237]:
+              - listitem [ref=f22e238]:
+                - link "" [ref=f22e239] [cursor=pointer]:
+                  - /url: mailto:raju.v@adancorporate.com
+              - listitem [ref=f22e241]:
+                - link "" [ref=f22e242] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/rajuvenka1/
+              - link [ref=f22e244] [cursor=pointer]:
+                - /url: ../team/raju-venkataraman.html
+                - button "Full Profile" [ref=f22e245]
+        - separator [ref=f22e246]
+        - separator [ref=f22e247]
+      - generic [ref=f22e248]:
+        - generic [ref=f22e249]:
+          - generic [ref=f22e250]:
+            - img "George Christelis" [ref=f22e251]
+            - generic [ref=f22e252]: George is an experienced finance professional with 20+ years of experience in C-suite roles for listed medium/large sized businesses in sectors such as real estate, construction, engineering and logistics.
+          - generic [ref=f22e254]:
+            - heading "George Christelis" [level=4] [ref=f22e255]
+            - generic [ref=f22e257]: Partner
+            - generic [ref=f22e258]: Southern African region
+            - generic [ref=f22e259]: Johannesburg
+            - list [ref=f22e260]:
+              - listitem [ref=f22e261]:
+                - link "" [ref=f22e262] [cursor=pointer]:
+                  - /url: mailto:george.christelis@adancorporate.com
+              - listitem [ref=f22e264]:
+                - link "" [ref=f22e265] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/george-christelis-05753545/
+              - link [ref=f22e267] [cursor=pointer]:
+                - /url: ../team/george-christelis.html
+                - button "Full Profile" [ref=f22e268]
+        - separator [ref=f22e269]
+        - separator [ref=f22e270]
+      - generic [ref=f22e271]:
+        - generic [ref=f22e272]:
+          - generic [ref=f22e273]:
+            - img "Marco Salvini" [ref=f22e274]
+            - generic [ref=f22e275]: Marco is a senior executive with 25+ years of experience in C-suite roles spanning Real Estate leadership, delivering strategy, transformational change and turnaround of underperforming portfolios, assets and companies. Previously, he was the CEO for AIG/Lincoln - AIG Global Real Estate (Italy), where he successfully navigated the 2008 financial crisis and following global recession
+          - generic [ref=f22e277]:
+            - heading "Marco Salvini" [level=4] [ref=f22e278]
+            - generic [ref=f22e280]: Partner
+            - generic [ref=f22e281]: Real Estate
+            - generic [ref=f22e282]: Milan & London
+            - list [ref=f22e283]:
+              - listitem [ref=f22e284]:
+                - link "" [ref=f22e285] [cursor=pointer]:
+                  - /url: mailto:marco.salvini@adancorporate.com
+              - listitem [ref=f22e287]:
+                - link "" [ref=f22e288] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/marcosalvini/
+              - link [ref=f22e290] [cursor=pointer]:
+                - /url: ../team/marco-salvini.html
+                - button "Full Profile" [ref=f22e291]
+        - separator [ref=f22e292]
+        - separator [ref=f22e293]
+      - generic [ref=f22e294]:
+        - generic [ref=f22e295]:
+          - generic [ref=f22e296]:
+            - img "Sandeep Bhat" [ref=f22e297]
+            - generic [ref=f22e298]: Sandeep is a multiskilled professional in the Financial Services industry with 30+ years of experience in C-Suite roles with global banks & PE companies overseeing accounting, financial control, treasury management, tax management, operational risk control, legal and compliance, optimization of IT, HR, and administrative resources helping set up businesses and leading them as a key member of the senior management team across banking, merchant banking, stockbroking, and private equity; was on the international committee for CSR and Offshoring. He keeps abreast of the global financial, commodity, and currency markets amongst which is a keen interest in Technical Analyst for the stocks markets.
+          - generic [ref=f22e300]:
+            - heading "Sandeep Bhat" [level=4] [ref=f22e301]
+            - generic [ref=f22e303]: Partner
+            - generic [ref=f22e304]: PE, Banking, CF
+            - generic [ref=f22e305]: India
+            - list [ref=f22e306]:
+              - listitem [ref=f22e307]:
+                - link "" [ref=f22e308] [cursor=pointer]:
+                  - /url: mailto:sandeep.bhat@adancorporate.com
+              - listitem [ref=f22e310]:
+                - link "" [ref=f22e311] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/sandeep-bhat-59225378/
+              - link [ref=f22e313] [cursor=pointer]:
+                - /url: ../team/sandeep-bhat.html
+                - button "Full Profile" [ref=f22e314]
+        - separator [ref=f22e315]
+        - separator [ref=f22e316]
+      - generic [ref=f22e317]:
+        - generic [ref=f22e318]:
+          - generic [ref=f22e319]:
+            - img "Freddie Tshiaba" [ref=f22e320]
+            - generic [ref=f22e321]: Freddie Tshiaba is a senior business leader with 20+ years of significant experience helping investment banks, financial institutions, enterprise software companies and multi-national corporates with strategic initiatives, business development, digital transformation, product management, liquidity risk and treasury management.
+          - generic [ref=f22e323]:
+            - heading "Freddie Tshiaba" [level=4] [ref=f22e324]
+            - generic [ref=f22e326]: Partner
+            - generic [ref=f22e327]: Corporate Finance
+            - generic [ref=f22e328]: London
+            - list [ref=f22e329]:
+              - listitem [ref=f22e330]:
+                - link "" [ref=f22e331] [cursor=pointer]:
+                  - /url: mailto:freddie.tshiaba@adancorporate.com
+              - listitem [ref=f22e333]:
+                - link "" [ref=f22e334] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/tshiaba/
+              - link [ref=f22e336] [cursor=pointer]:
+                - /url: ../team/freddie-tshiaba.html
+                - button "Full Profile" [ref=f22e337]
+        - separator [ref=f22e338]
+        - separator [ref=f22e339]
+      - generic [ref=f22e340]:
+        - generic [ref=f22e341]:
+          - generic [ref=f22e342]:
+            - img "Thu Nga Haskovcova" [ref=f22e343]
+            - generic [ref=f22e344]: Thu Nga is a Czech qualified lawyer with 20 years of international experience in M&A, Market Entry (Start-ups), Real Estate, Financing, Private Equity and Corporate law matters. Thu has in-depth local knowledge of the Central Eastern European (CEE) region and working experience in and in-depth knowledge of South East Asia.
+          - generic [ref=f22e346]:
+            - heading "Thu Nga Haskovcova" [level=4] [ref=f22e347]
+            - generic [ref=f22e349]: Partner
+            - generic [ref=f22e350]: Central Eastern Europe, Law
+            - generic [ref=f22e351]: Prague, Czech Rep.
+            - list [ref=f22e352]:
+              - listitem [ref=f22e353]:
+                - link "" [ref=f22e354] [cursor=pointer]:
+                  - /url: mailto:thu.nga@adancorporate.com
+              - listitem [ref=f22e356]:
+                - link "" [ref=f22e357] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/thu-nga-haskovcova-32431110/
+              - link [ref=f22e359] [cursor=pointer]:
+                - /url: ../team/thu-nga-haskovcova.html
+                - button "Full Profile" [ref=f22e360]
+        - separator [ref=f22e361]
+        - separator [ref=f22e362]
+      - generic [ref=f22e363]:
+        - generic [ref=f22e364]:
+          - generic [ref=f22e365]:
+            - img "Nav Kaplish" [ref=f22e366]
+            - generic [ref=f22e367]: Nav is a seasoned business and technology executive with 18+ years of global corporate and entrepreneurial experience in building and managing digital teams and in leadership roles spanning Governance, Risk & Compliance, Audits and conceptualisation and delivery of Blockchain products.
+          - generic [ref=f22e369]:
+            - heading "Nav Kaplish" [level=4] [ref=f22e370]
+            - generic [ref=f22e372]: Partner
+            - generic [ref=f22e373]: Digital, Blockchain & Risk
+            - generic [ref=f22e374]: London
+            - list [ref=f22e375]:
+              - listitem [ref=f22e376]:
+                - link "" [ref=f22e377] [cursor=pointer]:
+                  - /url: mailto:nav.kaplish@adancorporate.com
+              - listitem [ref=f22e379]:
+                - link "" [ref=f22e380] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/navkaplish
+              - link [ref=f22e382] [cursor=pointer]:
+                - /url: ../team/nav-kaplish.html
+                - button "Full Profile" [ref=f22e383]
+        - separator [ref=f22e384]
+        - separator [ref=f22e385]
+      - generic [ref=f22e386]:
+        - generic [ref=f22e387]:
+          - generic [ref=f22e388]:
+            - img "Vernon D Cruz" [ref=f22e389]
+            - generic [ref=f22e390]: Vernon is a distinguished finance professional with 30+ years of experience in mid-sizes service organisations with demonstrated success in providing team leadership and development to foster growth. He has hands on experience in managing and running business with keen interest in Finance, Taxation, Legal, Commercial Negotiations, Commercial, Tourism & CSR.
+          - generic [ref=f22e392]:
+            - heading "Vernon D'Cruz" [level=4] [ref=f22e393]
+            - generic [ref=f22e395]: Partner
+            - generic [ref=f22e396]: Commercial, Tourism & CSR
+            - generic [ref=f22e397]: Mumbai
+            - list [ref=f22e398]:
+              - listitem [ref=f22e399]:
+                - link "" [ref=f22e400] [cursor=pointer]:
+                  - /url: mailto:vernon.dcruz@adancorporate.com
+              - listitem [ref=f22e402]:
+                - link "" [ref=f22e403] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/vernondcruz/
+              - link [ref=f22e405] [cursor=pointer]:
+                - /url: ../team/vernon-d-cruz.html
+                - button "Full Profile" [ref=f22e406]
+        - separator [ref=f22e407]
+        - separator [ref=f22e408]
+      - generic [ref=f22e409]:
+        - generic [ref=f22e410]:
+          - generic [ref=f22e411]:
+            - img "Sreeraman P.S." [ref=f22e412]
+            - generic [ref=f22e413]: Sreeraman has 15+ years of experience in capital markets and investment banking dealing with small and medium enterprises. He has worked in Sales, Private Wealth Management, Investment Banking and Equity advisory roles in companies such as Indiabulls, Motilal Oswal and Kotak Securities.
+          - generic [ref=f22e415]:
+            - heading "Sreeraman P.S." [level=4] [ref=f22e416]
+            - generic [ref=f22e418]: Director
+            - generic [ref=f22e419]: Investments
+            - generic [ref=f22e420]: Mumbai
+            - list [ref=f22e421]:
+              - listitem [ref=f22e422]:
+                - link "" [ref=f22e423] [cursor=pointer]:
+                  - /url: mailto:sreeraman.ps@adancorporate.com
+              - listitem [ref=f22e425]:
+                - link "" [ref=f22e426] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/sreeraman-p-s-6a4985127/
+              - link [ref=f22e428] [cursor=pointer]:
+                - /url: ../team/sreeraman-p-s.html
+                - button "Full Profile" [ref=f22e429]
+        - separator [ref=f22e430]
+        - separator [ref=f22e431]
+      - generic [ref=f22e432]:
+        - generic [ref=f22e433]:
+          - generic [ref=f22e434]:
+            - img "Varun Nadkarni" [ref=f22e435]
+            - generic [ref=f22e436]: Varun having more than 2.5 years of experience in the field of accounts and finance, holds MBA degree in Finance and International Business from Amity University, India and has interest and passion for Equities and mutual funds and analysing of financial statements.
+          - generic [ref=f22e439]:
+            - heading "Varun Nadkarni" [level=4] [ref=f22e440]
+            - generic [ref=f22e442]: Financial Analyst
+            - generic [ref=f22e443]: Accounting & Finance
+            - generic [ref=f22e444]: India
+            - list [ref=f22e445]:
+              - listitem [ref=f22e446]:
+                - link "" [ref=f22e447] [cursor=pointer]:
+                  - /url: mailto:varun.nadkarni@adancorporate.com
+              - listitem [ref=f22e449]:
+                - link "" [ref=f22e450] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/varun-nadkarni-43843a104/
+              - link [ref=f22e452] [cursor=pointer]:
+                - /url: ../team/varun-nadkarni.html
+                - button "Full Profile" [ref=f22e453]
+        - separator [ref=f22e454]
+        - separator [ref=f22e455]
+      - generic [ref=f22e456]:
+        - generic [ref=f22e457]:
+          - generic [ref=f22e458]:
+            - img "Heena Tilwani" [ref=f22e459]
+            - generic [ref=f22e460]: Heena is a financial analyst and Intermediate Accountant with over 5+ years of expertise in financial accounting, analysis, and reporting. She is experienced in providing monthly/quarterly reports and performance KPIs. She is interested in financial modelling, process improvement, and data analytics.
+          - generic [ref=f22e463]:
+            - heading "Heena Tilwani" [level=4] [ref=f22e464]
+            - generic [ref=f22e466]: Financial Analyst
+            - generic [ref=f22e467]: Accounting & Finance
+            - generic [ref=f22e468]: India
+            - list [ref=f22e469]:
+              - listitem [ref=f22e470]:
+                - link "" [ref=f22e471] [cursor=pointer]:
+                  - /url: mailto:heena.tilwani@adancorporate.com
+              - listitem [ref=f22e473]:
+                - link "" [ref=f22e474] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/heena-tilwani-b73a71168/
+              - link [ref=f22e476] [cursor=pointer]:
+                - /url: ../team/heena-tilwani.html
+                - button "Full Profile" [ref=f22e477]
+        - separator [ref=f22e478]
+        - separator [ref=f22e479]
+      - generic [ref=f22e480]:
+        - generic [ref=f22e481]:
+          - generic [ref=f22e482]:
+            - img "Shreyash Gandhi" [ref=f22e483]
+            - generic [ref=f22e484]: Shreyash is a Chartered Accountant specializing in business valuation, due diligence, and strategic advisory. Formerly with Deloitte, he led international engagements across Europe, Canada, and the Middle East. He focuses on transaction structuring and startup valuations to drive value in global investment decisions.
+          - generic [ref=f22e487]:
+            - heading "Shreyash Gandhi" [level=4] [ref=f22e488]
+            - generic [ref=f22e490]: Financial Analyst
+            - generic [ref=f22e491]: M&A, Accounting & Finance
+            - generic [ref=f22e492]: India
+            - list [ref=f22e493]:
+              - listitem [ref=f22e494]:
+                - link "" [ref=f22e495] [cursor=pointer]:
+                  - /url: mailto:shreyash.gandhi@adancorporate.com
+              - listitem [ref=f22e497]:
+                - link "" [ref=f22e498] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/cashreyash/
+              - link [ref=f22e500] [cursor=pointer]:
+                - /url: ../team/shreyash-gandhi.html
+                - button "Full Profile" [ref=f22e501]
+        - separator [ref=f22e502]
+        - separator [ref=f22e503]
+      - generic [ref=f22e504]:
+        - generic [ref=f22e505]:
+          - generic [ref=f22e506]:
+            - img "profile image" [ref=f22e507]
+            - generic [ref=f22e508]: A marketing and strategy professional with experience spanning brand campaigns, partnerships, business strategy, and market research across the education and corporate sectors, with a strong focus on consumer marketing, FMCG insights, brand building, and strategy-driven business growth.
+          - generic [ref=f22e511]:
+            - heading "Mahimaa A.B" [level=4] [ref=f22e512]
+            - generic [ref=f22e514]: Financial Analyst
+            - generic [ref=f22e515]: Marketing, Accounting & Finance
+            - generic [ref=f22e516]: London
+            - list [ref=f22e517]:
+              - listitem [ref=f22e518]:
+                - link "" [ref=f22e519] [cursor=pointer]:
+                  - /url: mailto:mahima.baindur@adancorporate.com
+              - listitem [ref=f22e521]:
+                - link "" [ref=f22e522] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/mahimaabaindur/
+              - link [ref=f22e524] [cursor=pointer]:
+                - /url: ""
+                - button "Full Profile" [ref=f22e525]
+        - separator [ref=f22e526]
+        - separator [ref=f22e527]
+      - generic [ref=f22e528]:
+        - generic [ref=f22e529]:
+          - generic [ref=f22e530]:
+            - img "profile image" [ref=f22e531]
+            - generic [ref=f22e532]: A Computer Science and Business Systems undergraduate with experience spanning Full-Stack Engineering, Distributed Systems, Blockchain Technologies, Cloud Computing, Database Architecture, Scalable Application Development, System Design, and AI-driven Solutions, with strong proficiency in Java, C/C++, JavaScript, Node.js, SQL, RESTful Architectures, and modern software engineering practices focused on building secure, high-performance, and scalable digital platforms.
+          - generic [ref=f22e535]:
+            - heading "Harsh Katiyar" [level=4] [ref=f22e536]
+            - generic [ref=f22e538]: Corporate Intern (Technology)
+            - generic [ref=f22e539]: Full-Stack Engineering, Blockchain & AI
+            - generic [ref=f22e540]: India
+            - list [ref=f22e541]:
+              - listitem [ref=f22e542]:
+                - link "" [ref=f22e543] [cursor=pointer]:
+                  - /url: mailto:katiyarh76@gmail.com
+              - listitem [ref=f22e545]:
+                - link "" [ref=f22e546] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/harsh-katiyar-46682625b/
+              - link [ref=f22e548] [cursor=pointer]:
+                - /url: ""
+                - button "Full Profile" [ref=f22e549]
+        - separator [ref=f22e550]
+        - separator [ref=f22e551]
+    - generic [ref=f22e553]:
+      - heading "Advisors" [level=2] [ref=f22e555]
+      - generic [ref=f22e556]:
+        - generic [ref=f22e557]:
+          - generic [ref=f22e558]:
+            - img "Kieran Bourke" [ref=f22e559]
+            - generic [ref=f22e560]: Kieran is a Financial Risk Management expert with 25+ years of broad global Financial Services experience across Market, Traded Credit, Operational, Regulatory, and Enterprise Risk Management protocols across 4 continents. He was a Managing Director at Standard Chartered Bank at London & Singapore, where he established the commodities market risk function from scratch.
+          - generic [ref=f22e562]:
+            - heading "Kieran Bourke" [level=4] [ref=f22e563]
+            - generic [ref=f22e565]: Advisor
+            - generic [ref=f22e566]: Risk Management
+            - generic [ref=f22e567]: Singapore
+            - list [ref=f22e568]:
+              - listitem [ref=f22e569]:
+                - link "" [ref=f22e570] [cursor=pointer]:
+                  - /url: mailto:kieran.bourke@adancorporate.com
+              - listitem [ref=f22e572]:
+                - link "" [ref=f22e573] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/kieran-bourke-006a511a/
+              - link [ref=f22e575] [cursor=pointer]:
+                - /url: ../team/kieran-bourke.html
+                - button "Full Profile" [ref=f22e576]
+        - separator [ref=f22e577]
+        - separator [ref=f22e578]
+      - generic [ref=f22e579]:
+        - generic [ref=f22e580]:
+          - generic [ref=f22e581]:
+            - img "Dipak Khot" [ref=f22e582]
+            - generic [ref=f22e583]: Dipak is an accomplished client-focused banker with nearly 3 decades of experience in Treasury/ Market risk management. He has an exceptional understanding of global financial markets, banking, FX/ IR hedging/ structuring, liquidity management and an ability to leverage the knowledge of current economic, financial, accounting, regulatory and industry climate to develop effective hedging strategies.
+          - generic [ref=f22e585]:
+            - heading "Dipak Khot" [level=4] [ref=f22e586]
+            - generic [ref=f22e588]: Advisor
+            - generic [ref=f22e589]: Risk Management
+            - generic [ref=f22e590]: London
+            - list [ref=f22e591]:
+              - listitem [ref=f22e592]:
+                - link "" [ref=f22e593] [cursor=pointer]:
+                  - /url: mailto:dipak.khot@adancorporate.com
+              - listitem [ref=f22e595]:
+                - link "" [ref=f22e596] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/dipak-khot-212623/
+              - link [ref=f22e598] [cursor=pointer]:
+                - /url: ../team/dipak-khot.html
+                - button "Full Profile" [ref=f22e599]
+        - separator [ref=f22e600]
+        - separator [ref=f22e601]
+  - link "Get in touch" [ref=f22e605] [cursor=pointer]:
+    - /url: ../about-us/contact-us.html
+  - generic [ref=f22e607]:
+    - generic [ref=f22e608]:
+      - generic [ref=f22e609]:
+        - heading "Latest insights from our team" [level=2] [ref=f22e610]
+        - generic [ref=f22e611]: Check out our team-blog to see what we're up to
+        - link "Browse All Insights" [ref=f22e612] [cursor=pointer]:
+          - /url: ../about-us/insights-blog.html
+      - generic [ref=f22e614]:
+        - link [ref=f22e615] [cursor=pointer]:
+          - /url: https://www.linkedin.com/pulse/so-what-do-you-raju-venkataraman
+          - img "Raju Venkataraman's 5 best career decisions TheZymurgistDiaries" [ref=f22e616]
+        - generic [ref=f22e617]:
+          - generic [ref=f22e618]:
+            - link " March 18. 2018" [ref=f22e619] [cursor=pointer]:
+              - /url: https://omny.fm/shows/money-fm-893/weekends-ex-disney-cfo-raju-venkataramans-5-best-c?in_playlist=money-fm-893!weekend-mornings-with-jason-dasey
+              - generic [ref=f22e620]: 
+              - generic [ref=f22e621]: March 18. 2018
+            - link " 19" [ref=f22e622] [cursor=pointer]:
+              - /url: https://omny.fm/shows/money-fm-893/weekends-ex-disney-cfo-raju-venkataramans-5-best-c?in_playlist=money-fm-893!weekend-mornings-with-jason-dasey
+              - generic [ref=f22e623]: 
+              - generic [ref=f22e624]: "19"
+          - link [ref=f22e625] [cursor=pointer]:
+            - /url: https://omny.fm/shows/money-fm-893/weekends-ex-disney-cfo-raju-venkataramans-5-best-c?in_playlist=money-fm-893!weekend-mornings-with-jason-dasey
+            - heading "Podcast on Raju's 5 best career decisions" [level=4] [ref=f22e626]
+          - separator [ref=f22e627]
+          - heading "Raju Venkataraman" [level=5] [ref=f22e628]
+          - heading "Partner, Executive Coaching" [level=6] [ref=f22e630]
+          - separator [ref=f22e631]
+          - text: Raju Venkataraman rose up through the ranks at Disney SE Asia, holding CFO and Head of Development positions, among others, before becoming an Executive Coach and Leadership Trainer. He shares the best 5 decisions he made during his 32-year career.
+          - link "Read More" [ref=f22e632] [cursor=pointer]:
+            - /url: https://omny.fm/shows/money-fm-893/weekends-ex-disney-cfo-raju-venkataramans-5-best-c?in_playlist=money-fm-893!weekend-mornings-with-jason-dasey
+      - generic [ref=f22e634]:
+        - link [ref=f22e635] [cursor=pointer]:
+          - /url: https://www.linkedin.com/pulse/few-cases-commodities-market-risk-management-kieran-bourke/?trackingId=7FuaqRoNSJKJkFTqmooR%2BQ%3D%3D
+          - img "A Few Cases in Commodities Market Risk Management" [ref=f22e636]
+        - generic [ref=f22e637]:
+          - generic [ref=f22e638]:
+            - link " January 10.2019" [ref=f22e639] [cursor=pointer]:
+              - /url: https://www.linkedin.com/pulse/few-cases-commodities-market-risk-management-kieran-bourke/?trackingId=7FuaqRoNSJKJkFTqmooR%2BQ%3D%3D
+              - generic [ref=f22e640]: 
+              - generic [ref=f22e641]: January 10.2019
+            - link " 4" [ref=f22e642] [cursor=pointer]:
+              - /url: https://www.linkedin.com/pulse/few-cases-commodities-market-risk-management-kieran-bourke/?trackingId=7FuaqRoNSJKJkFTqmooR%2BQ%3D%3D
+              - generic [ref=f22e643]: 
+              - generic [ref=f22e644]: "4"
+          - link [ref=f22e645] [cursor=pointer]:
+            - /url: https://www.linkedin.com/pulse/few-cases-commodities-market-risk-management-kieran-bourke/?trackingId=7FuaqRoNSJKJkFTqmooR%2BQ%3D%3D
+            - heading "Commodities Market Risk Management" [level=4] [ref=f22e646]
+          - separator [ref=f22e647]
+          - heading "Kieran Bourke" [level=5] [ref=f22e648]
+          - heading "Partner, Commodities" [level=6] [ref=f22e650]
+          - separator [ref=f22e651]
+          - text: This article examines some high-profile losses in Commodities trading over the years with a view to understanding their root cause and, in the process, describe the building blocks of a robust 2nd line Market Risk Management framework capable of containing such losses.
+          - link "Read More" [ref=f22e652] [cursor=pointer]:
+            - /url: https://www.linkedin.com/pulse/few-cases-commodities-market-risk-management-kieran-bourke/?trackingId=7FuaqRoNSJKJkFTqmooR%2BQ%3D%3D
+      - generic [ref=f22e654]:
+        - link [ref=f22e655] [cursor=pointer]:
+          - /url: https://www.linkedin.com/posts/cadya_thezymurgistdiaries-growthmindset-leadership-activity-6518504918066696192-0xON
+          - img "Blog Ikigai Purpose of Life TheZymurgistDiaries" [ref=f22e656]
+        - generic [ref=f22e657]:
+          - generic [ref=f22e658]:
+            - link " July 23.2019" [ref=f22e659] [cursor=pointer]:
+              - /url: https://www.linkedin.com/posts/cadya_thezymurgistdiaries-growthmindset-leadership-activity-6518504918066696192-0xON
+              - generic [ref=f22e660]: 
+              - generic [ref=f22e661]: July 23.2019
+            - link " 11" [ref=f22e662] [cursor=pointer]:
+              - /url: https://www.linkedin.com/posts/cadya_thezymurgistdiaries-growthmindset-leadership-activity-6518504918066696192-0xON
+              - generic [ref=f22e663]: 
+              - generic [ref=f22e664]: "11"
+          - link [ref=f22e665] [cursor=pointer]:
+            - /url: https://www.linkedin.com/posts/cadya_thezymurgistdiaries-growthmindset-leadership-activity-6518504918066696192-0xON
+            - heading "Purpose in life or... Ikigai" [level=4] [ref=f22e666]
+          - separator [ref=f22e667]
+          - heading "Chennakeshav (Keshav) Adya" [level=5] [ref=f22e668]
+          - heading "Managing Partner" [level=6] [ref=f22e670]
+          - separator [ref=f22e671]
+          - text: "What is your purpose in life? Or... what is your Ikigai? Finding your Ikigai is considered the key to longevity - and to happiness. Interested in hearing your thoughts, comments, and experiences. #TheZymurgistDiaries #ExecutiveCoaching"
+          - link "Read More" [ref=f22e672] [cursor=pointer]:
+            - /url: https://www.linkedin.com/posts/cadya_thezymurgistdiaries-growthmindset-leadership-activity-6518504918066696192-0xON
+      - generic [ref=f22e674]:
+        - link [ref=f22e675] [cursor=pointer]:
+          - /url: https://www.linkedin.com/pulse/negotiating-business-deals-asia-raju-venkataraman/
+          - img "Blog Negotiating Business Deals in Asia TheZymurgistDiaries" [ref=f22e676]
+        - generic [ref=f22e677]:
+          - generic [ref=f22e678]:
+            - link " August 12.2019" [ref=f22e679] [cursor=pointer]:
+              - /url: https://www.linkedin.com/pulse/negotiating-business-deals-asia-raju-venkataraman/
+              - generic [ref=f22e680]: 
+              - generic [ref=f22e681]: August 12.2019
+            - link " 33" [ref=f22e682] [cursor=pointer]:
+              - /url: https://www.linkedin.com/pulse/negotiating-business-deals-asia-raju-venkataraman/
+              - generic [ref=f22e683]: 
+              - generic [ref=f22e684]: "33"
+          - link [ref=f22e685] [cursor=pointer]:
+            - /url: https://www.linkedin.com/pulse/negotiating-business-deals-asia-raju-venkataraman/
+            - heading "Negotiating Business Deals in Asia" [level=4] [ref=f22e686]
+          - separator [ref=f22e687]
+          - heading "Raju Venkataraman" [level=5] [ref=f22e688]
+          - heading "Partner, Executive Coaching" [level=6] [ref=f22e690]
+          - separator [ref=f22e691]
+          - text: There cannot be a dull moment when you discuss facets of the rich cultural diversity that is Asia, the business etiquette dominant in different countries, and explore the implications for how one should conduct business negotiations.
+          - link "Read More" [ref=f22e692] [cursor=pointer]:
+            - /url: https://www.linkedin.com/pulse/negotiating-business-deals-asia-raju-venkataraman/
+      - generic [ref=f22e694]:
+        - link [ref=f22e695] [cursor=pointer]:
+          - /url: https://www.linkedin.com/posts/cadya_thezymurgistdiaries-growthmindset-leadership-activity-6549368857109245952-lwaO/
+          - img "Change Management TheZymurgistDiaries" [ref=f22e696]
+        - generic [ref=f22e697]:
+          - generic [ref=f22e698]:
+            - link " June 23.2019" [ref=f22e699] [cursor=pointer]:
+              - /url: https://www.linkedin.com/posts/cadya_thezymurgistdiaries-growthmindset-leadership-activity-6549368857109245952-lwaO/
+              - generic [ref=f22e700]: 
+              - generic [ref=f22e701]: June 23.2019
+            - link " 1" [ref=f22e702] [cursor=pointer]:
+              - /url: https://www.linkedin.com/posts/cadya_thezymurgistdiaries-growthmindset-leadership-activity-6549368857109245952-lwaO/
+              - generic [ref=f22e703]: 
+              - generic [ref=f22e704]: "1"
+          - link [ref=f22e705] [cursor=pointer]:
+            - /url: https://www.linkedin.com/posts/cadya_thezymurgistdiaries-growthmindset-leadership-activity-6549368857109245952-lwaO/
+            - heading "Change is the heartbeat of growth" [level=4] [ref=f22e706]
+          - separator [ref=f22e707]
+          - heading "Chennakeshav (Keshav) Adya" [level=5] [ref=f22e708]
+          - heading "Managing Partner" [level=6] [ref=f22e710]
+          - separator [ref=f22e711]
+          - text: "Change is a normal part of our lives, but it's uncomfortable for the vast majority of people because it makes them feel like they have lost control. #TheZymurgistDiaries #GrowthMindset #EntrepreneurialChallenges #ExecutiveCoaching"
+          - link "Read More" [ref=f22e712] [cursor=pointer]:
+            - /url: https://www.linkedin.com/posts/cadya_thezymurgistdiaries-growthmindset-leadership-activity-6549368857109245952-lwaO/
+      - generic [ref=f22e714]:
+        - link [ref=f22e715] [cursor=pointer]:
+          - /url: https://www.linkedin.com/pulse/so-what-do-you-raju-venkataraman
+          - img "Raju Venkataraman's talk at MasterCard TheZymurgistDiaries" [ref=f22e716]
+        - generic [ref=f22e717]:
+          - generic [ref=f22e718]:
+            - link " July 5. 2019" [ref=f22e719] [cursor=pointer]:
+              - /url: https://www.linkedin.com/pulse/abcn-anybody-can-negotiate-raju-venkataraman
+              - generic [ref=f22e720]: 
+              - generic [ref=f22e721]: July 5. 2019
+            - link " 35" [ref=f22e722] [cursor=pointer]:
+              - /url: https://www.linkedin.com/pulse/abcn-anybody-can-negotiate-raju-venkataraman
+              - generic [ref=f22e723]: 
+              - generic [ref=f22e724]: "35"
+          - link [ref=f22e725] [cursor=pointer]:
+            - /url: https://www.linkedin.com/pulse/abcn-anybody-can-negotiate-raju-venkataraman
+            - heading "ABCN ( Anybody can negotiate)" [level=4] [ref=f22e726]
+          - separator [ref=f22e727]
+          - heading "Raju Venkataraman" [level=5] [ref=f22e728]
+          - heading "Partner, Executive Coaching" [level=6] [ref=f22e730]
+          - separator [ref=f22e731]
+          - text: ABCN ( Anybody can negotiate) was the theme of Raju Venkataraman's talk at the Annual Conference of MasterCard's 70+ member APAC Legal, Franchise & Integrity (LFI) team in Singapore.
+          - link "Read More" [ref=f22e732] [cursor=pointer]:
+            - /url: https://www.linkedin.com/pulse/abcn-anybody-can-negotiate-raju-venkataraman
+    - link "Browse All Insights" [ref=f22e733] [cursor=pointer]:
+      - /url: ../about-us/insights-blog.html
+  - list [ref=f22e738]:
+    - listitem [ref=f22e739]:
+      - link [ref=f22e740] [cursor=pointer]:
+        - /url: ../legal/legal.html
+        - strong [ref=f22e741]: Legal
+    - listitem [ref=f22e742]:
+      - link [ref=f22e743] [cursor=pointer]:
+        - /url: ../legal/privacy-policy.html
+        - strong [ref=f22e744]: Privacy Policy
+    - listitem [ref=f22e745]:
+      - link [ref=f22e746] [cursor=pointer]:
+        - /url: ../legal/gdpr-policy.html
+        - strong [ref=f22e747]: GDPR
+    - listitem [ref=f22e748]:
+      - link [ref=f22e749] [cursor=pointer]:
+        - /url: ../legal/diversity-policy.html
+        - strong [ref=f22e750]: Diversity Policy
+    - listitem [ref=f22e751]:
+      - link [ref=f22e752] [cursor=pointer]:
+        - /url: ../legal/cookie-policy.html
+        - strong [ref=f22e753]: Cookie Policy
+    - listitem [ref=f22e754]:
+      - link [ref=f22e755] [cursor=pointer]:
+        - /url: ../legal/accessibility.html
+        - strong [ref=f22e756]: Accessibility
+    - listitem [ref=f22e757]:
+      - link [ref=f22e758] [cursor=pointer]:
+        - /url: ../legal/sitemap.html
+        - strong [ref=f22e759]: Sitemap
+  - generic:
+    - generic [ref=f22e760]:
+      - generic [ref=f22e761]: 
+      - link "Contact us" [ref=f22e762] [cursor=pointer]:
+        - /url: ../about-us/contact-us.html
+    - generic [ref=f22e763]:
+      - generic [ref=f22e764]: 
+      - text: Share on Linkedin
+    - generic [ref=f22e765]:
+      - generic [ref=f22e766]: 
+      - text: Share on Twitter
+    - generic [ref=f22e767]:
+      - generic [ref=f22e768]: 
+      - text: Share on Facebook
+    - generic [ref=f22e769]:
+      - generic [ref=f22e770]: 
+      - text: Share on WhatsApp
+    - generic [ref=f22e771]:
+      - generic [ref=f22e772]: 
+      - text: Print page
+  - list [ref=f22e776]:
+    - listitem [ref=f22e777]:
+      - link " Contact Us" [ref=f22e778] [cursor=pointer]:
+        - /url: ../about-us/contact-us.html
+        - generic [ref=f22e779]: 
+        - text: Contact Us
+    - listitem [ref=f22e780]:
+      - link " Linkedin" [ref=f22e781] [cursor=pointer]:
+        - /url: https://www.linkedin.com/company/11209203
+        - generic [ref=f22e782]: 
+        - text: Linkedin
+    - listitem [ref=f22e783]:
+      - link " Twitter" [ref=f22e784] [cursor=pointer]:
+        - /url: https://twitter.com/AdanCorpFinance
+        - generic [ref=f22e785]: 
+        - text: Twitter
+    - listitem [ref=f22e786]:
+      - link " Facebook" [ref=f22e787] [cursor=pointer]:
+        - /url: https://www.facebook.com/AdanCorpFinance
+        - generic [ref=f22e788]: 
+        - text: Facebook
+    - listitem [ref=f22e789]:
+      - link " A Done Deal Podcast" [ref=f22e790] [cursor=pointer]:
+        - /url: https://open.spotify.com/show/2LfRgivNsxvxsWmMU4Lj3r
+        - generic [ref=f22e791]: 
+        - text: A Done Deal Podcast
+    - listitem [ref=f22e792]:
+      - link " RSS Feed" [ref=f22e793] [cursor=pointer]:
+        - /url: https://feeds.buzzsprout.com/1408666.rss
+        - generic [ref=f22e794]: 
+        - text: RSS Feed
+  - generic [ref=f22e797]:
+    - generic [ref=f22e798]: © Adan Corporate 2013 - 2024. Conceptualised, designed, and developed by CA
+    - link "To the top " [ref=f22e803] [cursor=pointer]:
+      - /url: "#page-top"
+      - text: To the top
+      - generic [ref=f22e804]: 

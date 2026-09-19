@@ -1,0 +1,785 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.adancorporate.com"
+        }
+      ],
+      "destination": "https://adancorporate.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/coaching/applied-entrepreneurship.html",
+      "destination": "/en-uk/coaching/entrepreneur-programmes.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/coaching/assess-and-improve-business-relationships.html",
+      "destination": "/en-uk/coaching/team-coaching.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/coaching/building-coaching-cultures.html",
+      "destination": "/en-uk/coaching/team-coaching.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/coaching/career-identity.html",
+      "destination": "/en-uk/coaching/career-transition.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/coaching/cultural-intelligence-cq.html",
+      "destination": "/en-uk/coaching/leadership-development.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/coaching/entrepreneurial-leadership-toolbox.html",
+      "destination": "/en-uk/coaching/entrepreneur-programmes.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/coaching/entrepreneurial-mindset-and-leadership.html",
+      "destination": "/en-uk/coaching/entrepreneur-programmes.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/coaching/entrepreneurship-for-engineers.html",
+      "destination": "/en-uk/coaching/entrepreneur-programmes.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/coaching/financing-entrepreneurial-ventures.html",
+      "destination": "/en-uk/corporate-finance/growth-capital.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/coaching/index-careers.html",
+      "destination": "/en-uk/coaching/career-transition.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/coaching/index-coaching.html",
+      "destination": "/en-uk/coaching/",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/coaching/index-executive-coaching.html",
+      "destination": "/en-uk/coaching/executive-coaching.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/coaching/index-leadership.html",
+      "destination": "/en-uk/coaching/leadership-development.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/coaching/innovation-from-concept-to-product.html",
+      "destination": "/en-uk/coaching/entrepreneur-programmes.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/coaching/leadership-and-business-values.html",
+      "destination": "/en-uk/coaching/leadership-development.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/coaching/leadership-assessment.html",
+      "destination": "/en-uk/coaching/leadership-development.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/coaching/leadership-identity.html",
+      "destination": "/en-uk/coaching/leadership-development.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/coaching/managing-growing-businesses.html",
+      "destination": "/en-uk/coaching/entrepreneur-programmes.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/coaching/marketing-management.html",
+      "destination": "/en-uk/coaching/entrepreneur-programmes.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/coaching/principled-negotiation-skills.html",
+      "destination": "/en-uk/coaching/leadership-development.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/coaching/purpose-assessment-and-facilitation.html",
+      "destination": "/en-uk/coaching/executive-coaching.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/coaching/transitioning-into-an-entrepreneur.html",
+      "destination": "/en-uk/coaching/entrepreneur-programmes.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/corporate-finance/commercial-mediation.html",
+      "destination": "/en-uk/risk/commercial-mediation.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/corporate-finance/credit-ratings-assistance.html",
+      "destination": "/en-uk/corporate-finance/debt-and-working-capital.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/corporate-finance/debt-financing.html",
+      "destination": "/en-uk/corporate-finance/debt-and-working-capital.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/corporate-finance/distressed-asset-management.html",
+      "destination": "/en-uk/corporate-finance/restructuring-and-distressed.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/corporate-finance/divestments-and-exit-planning.html",
+      "destination": "/en-uk/m-and-a/sell-side.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/corporate-finance/factoring.html",
+      "destination": "/en-uk/corporate-finance/debt-and-working-capital.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/corporate-finance/family-offices-investments.html",
+      "destination": "/en-uk/corporate-finance/equity-and-private-capital.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/corporate-finance/fund-placement.html",
+      "destination": "/en-uk/corporate-finance/equity-and-private-capital.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/corporate-finance/government-grants.html",
+      "destination": "/en-uk/corporate-finance/debt-and-working-capital.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/corporate-finance/index-alternative-financing.html",
+      "destination": "/en-uk/corporate-finance/debt-and-working-capital.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/corporate-finance/index-corporate-finance.html",
+      "destination": "/en-uk/corporate-finance/",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/corporate-finance/index-debt-financing.html",
+      "destination": "/en-uk/corporate-finance/debt-and-working-capital.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/corporate-finance/index-equity-financing.html",
+      "destination": "/en-uk/corporate-finance/equity-and-private-capital.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/corporate-finance/index-other-categories.html",
+      "destination": "/en-uk/corporate-finance/",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/corporate-finance/index-other-services.html",
+      "destination": "/en-uk/corporate-finance/",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/corporate-finance/index-working-capital.html",
+      "destination": "/en-uk/corporate-finance/debt-and-working-capital.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/corporate-finance/investors-performance-enhancement.html",
+      "destination": "/en-uk/corporate-finance/equity-and-private-capital.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/corporate-finance/invoice-discounting.html",
+      "destination": "/en-uk/corporate-finance/debt-and-working-capital.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/corporate-finance/ipo.html",
+      "destination": "/en-uk/corporate-finance/ipo-and-public-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/corporate-finance/private-equity-venture-capital.html",
+      "destination": "/en-uk/corporate-finance/equity-and-private-capital.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/corporate-finance/project-finance.html",
+      "destination": "/en-uk/corporate-finance/project-and-infrastructure-finance.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/corporate-finance/renewable-energy-financing.html",
+      "destination": "/en-uk/corporate-finance/project-and-infrastructure-finance.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/corporate-finance/special-situations.html",
+      "destination": "/en-uk/corporate-finance/restructuring-and-distressed.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/corporate-finance/startups-growth-capital.html",
+      "destination": "/en-uk/corporate-finance/growth-capital.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/corporate-finance/transformation-and-restructuring.html",
+      "destination": "/en-uk/corporate-finance/restructuring-and-distressed.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/corporate-finance/working-capital-and-trade-finance.html",
+      "destination": "/en-uk/corporate-finance/debt-and-working-capital.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/covid-19/covid-19-business-continuity-and-resilience.html",
+      "destination": "/en-uk/corporate-finance/restructuring-and-distressed.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/covid-19/covid-19-business-impact-analysis.html",
+      "destination": "/en-uk/corporate-finance/restructuring-and-distressed.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/covid-19/covid-19-cash-flow-management.html",
+      "destination": "/en-uk/corporate-finance/restructuring-and-distressed.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/covid-19/covid-19-restructuring.html",
+      "destination": "/en-uk/corporate-finance/restructuring-and-distressed.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/covid-19/covid-19-risk-management.html",
+      "destination": "/en-uk/corporate-finance/restructuring-and-distressed.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/covid-19/covid-19-technology-it-continuity.html",
+      "destination": "/en-uk/corporate-finance/restructuring-and-distressed.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/covid-19/covid-19-uk-cbils-coronavirus-business-interruption-loan-scheme.html",
+      "destination": "/en-uk/corporate-finance/restructuring-and-distressed.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/covid-19/index-covid-19-services.html",
+      "destination": "/en-uk/corporate-finance/restructuring-and-distressed.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/digital/analytics.html",
+      "destination": "/en-uk/risk/ai-and-automation-in-risk-and-diligence.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/digital/artificial-intelligence.html",
+      "destination": "/en-uk/risk/ai-and-automation-in-risk-and-diligence.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/digital/robotic-process-automation-rpa.html",
+      "destination": "/en-uk/risk/ai-and-automation-in-risk-and-diligence.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/digital/visyond.html",
+      "destination": "/en-uk/about-us/partners-and-alliances.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/m-and-a/alliances.html",
+      "destination": "/en-uk/m-and-a/joint-ventures-and-alliances.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/m-and-a/buy-a-business.html",
+      "destination": "/en-uk/m-and-a/buy-side.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/m-and-a/index-alliances-jvs-partnerships.html",
+      "destination": "/en-uk/m-and-a/joint-ventures-and-alliances.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/m-and-a/index-buy-a-business.html",
+      "destination": "/en-uk/m-and-a/buy-side.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/m-and-a/index-m-and-a.html",
+      "destination": "/en-uk/m-and-a/",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/m-and-a/index-mergers.html",
+      "destination": "/en-uk/m-and-a/post-merger-integration.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/m-and-a/index-sell-your-business.html",
+      "destination": "/en-uk/m-and-a/sell-side.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/m-and-a/joint-ventures.html",
+      "destination": "/en-uk/m-and-a/joint-ventures-and-alliances.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/m-and-a/leveraged-buy-outs-lbos.html",
+      "destination": "/en-uk/m-and-a/joint-ventures-and-alliances.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/m-and-a/manda-company-valuation.html",
+      "destination": "/en-uk/m-and-a/company-valuation.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/m-and-a/manda-synergies.html",
+      "destination": "/en-uk/m-and-a/post-merger-integration.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/m-and-a/mbos-and-mbis.html",
+      "destination": "/en-uk/m-and-a/joint-ventures-and-alliances.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/m-and-a/mergers.html",
+      "destination": "/en-uk/m-and-a/post-merger-integration.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/m-and-a/partnerships.html",
+      "destination": "/en-uk/m-and-a/joint-ventures-and-alliances.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/m-and-a/post-merger-integration-pmi.html",
+      "destination": "/en-uk/m-and-a/post-merger-integration.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/m-and-a/sell-your-business.html",
+      "destination": "/en-uk/m-and-a/sell-side.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/risk-management/business-continuity.html",
+      "destination": "/en-uk/risk/technology-risk-and-assurance.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/risk-management/cloud-risk.html",
+      "destination": "/en-uk/risk/operational-and-enterprise-risk.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/risk-management/credit-risk.html",
+      "destination": "/en-uk/risk/credit-market-and-treasury-risk.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/risk-management/data-assurance.html",
+      "destination": "/en-uk/risk/technology-risk-and-assurance.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/risk-management/disaster-recovery-and-resilience.html",
+      "destination": "/en-uk/risk/technology-risk-and-assurance.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/risk-management/enterprise-risk-management.html",
+      "destination": "/en-uk/risk/operational-and-enterprise-risk.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/risk-management/erp-control-and-assurance.html",
+      "destination": "/en-uk/risk/technology-risk-and-assurance.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/risk-management/geopolitical-risk.html",
+      "destination": "/en-uk/strategy/decision-support.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/risk-management/grc-governance-risk-and-compliance.html",
+      "destination": "/en-uk/risk/governance-sox-and-it-controls.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/risk-management/index-business-risk-management.html",
+      "destination": "/en-uk/risk/risk-strategy-and-framework.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/risk-management/index-compliance-and-regulatory.html",
+      "destination": "/en-uk/risk/governance-sox-and-it-controls.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/risk-management/index-enterprise-risk.html",
+      "destination": "/en-uk/risk/operational-and-enterprise-risk.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/risk-management/index-financial-risk-management.html",
+      "destination": "/en-uk/risk/risk-strategy-and-framework.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/risk-management/index-internal-audit.html",
+      "destination": "/en-uk/risk/internal-audit.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/risk-management/index-risk-management.html",
+      "destination": "/en-uk/risk/risk-strategy-and-framework.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/risk-management/internal-audit.html",
+      "destination": "/en-uk/risk/internal-audit.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/risk-management/iso-27001.html",
+      "destination": "/en-uk/risk/technology-risk-and-assurance.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/risk-management/it-governance.html",
+      "destination": "/en-uk/risk/governance-sox-and-it-controls.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/risk-management/market-risk.html",
+      "destination": "/en-uk/risk/credit-market-and-treasury-risk.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/risk-management/operational-risk.html",
+      "destination": "/en-uk/risk/operational-and-enterprise-risk.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/risk-management/regulatory-risk.html",
+      "destination": "/en-uk/risk/governance-sox-and-it-controls.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/risk-management/risk-management-for-pe-funds.html",
+      "destination": "/en-uk/risk/operational-and-enterprise-risk.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/risk-management/risk-management-for-smes.html",
+      "destination": "/en-uk/risk/operational-and-enterprise-risk.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/risk-management/risk-management-strategy.html",
+      "destination": "/en-uk/risk/risk-strategy-and-framework.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/risk-management/risk-management-training.html",
+      "destination": "/en-uk/risk/risk-strategy-and-framework.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/risk-management/risk-reporting.html",
+      "destination": "/en-uk/risk/risk-reporting-and-analytics.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/risk-management/soc1-and-soc2.html",
+      "destination": "/en-uk/risk/technology-risk-and-assurance.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/risk-management/sox-advisory.html",
+      "destination": "/en-uk/risk/governance-sox-and-it-controls.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/risk-management/sox-implementation.html",
+      "destination": "/en-uk/risk/governance-sox-and-it-controls.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/risk-management/treasury-liquidity-risk.html",
+      "destination": "/en-uk/risk/credit-market-and-treasury-risk.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/risk-management/vendor-risk.html",
+      "destination": "/en-uk/risk/technology-risk-and-assurance.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/startups/applied-entrepreneurship.html",
+      "destination": "/en-uk/coaching/entrepreneur-programmes.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/startups/career-transition.html",
+      "destination": "/en-uk/coaching/career-transition.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/startups/entrepreneurial-leadership-toolbox.html",
+      "destination": "/en-uk/coaching/entrepreneur-programmes.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/startups/entrepreneurial-mindset-and-leadership.html",
+      "destination": "/en-uk/coaching/entrepreneur-programmes.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/startups/entrepreneurship-for-engineers.html",
+      "destination": "/en-uk/coaching/entrepreneur-programmes.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/startups/financing-entrepreneurial-ventures.html",
+      "destination": "/en-uk/corporate-finance/growth-capital.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/startups/index-entrepreneurship.html",
+      "destination": "/en-uk/coaching/entrepreneur-programmes.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/startups/index-startup-financing.html",
+      "destination": "/en-uk/corporate-finance/growth-capital.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/startups/index-startups.html",
+      "destination": "/en-uk/corporate-finance/growth-capital.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/startups/index-transitioning.html",
+      "destination": "/en-uk/coaching/entrepreneur-programmes.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/startups/innovation-from-concept-to-product.html",
+      "destination": "/en-uk/coaching/entrepreneur-programmes.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/startups/managing-growing-businesses.html",
+      "destination": "/en-uk/coaching/entrepreneur-programmes.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/startups/marketing-management.html",
+      "destination": "/en-uk/coaching/entrepreneur-programmes.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/startups/startups-growth-capital.html",
+      "destination": "/en-uk/corporate-finance/growth-capital.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/startups/transitioning-into-an-entrepreneur.html",
+      "destination": "/en-uk/coaching/entrepreneur-programmes.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/strategy/board-advisors.html",
+      "destination": "/en-uk/strategy/non-executive-directors-and-board.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/strategy/business-strategy-and-planning.html",
+      "destination": "/en-uk/strategy/corporate-and-business-strategy.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/strategy/corporate-strategy-and-planning.html",
+      "destination": "/en-uk/strategy/corporate-and-business-strategy.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/strategy/deal-strategy-and-planning.html",
+      "destination": "/en-uk/m-and-a/deal-strategy.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/strategy/decision-facilitation.html",
+      "destination": "/en-uk/strategy/decision-support.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/strategy/devil-s-advocate-and-red-teaming.html",
+      "destination": "/en-uk/strategy/decision-support.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/strategy/future-visioning.html",
+      "destination": "/en-uk/strategy/decision-support.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/strategy/geopolitical-strategy.html",
+      "destination": "/en-uk/strategy/decision-support.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/strategy/growth-strategy-and-planning.html",
+      "destination": "/en-uk/strategy/growth-and-international-expansion.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/strategy/index-executive-transition.html",
+      "destination": "/en-uk/strategy/corporate-and-business-strategy.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/strategy/index-interim-management.html",
+      "destination": "/en-uk/strategy/interim-management.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/strategy/index-ned-board-advisory.html",
+      "destination": "/en-uk/strategy/non-executive-directors-and-board.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/strategy/index-strategy-and-planning.html",
+      "destination": "/en-uk/strategy/corporate-and-business-strategy.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/strategy/index-strategy-services.html",
+      "destination": "/en-uk/strategy/corporate-and-business-strategy.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/strategy/index-strategy.html",
+      "destination": "/en-uk/strategy/corporate-and-business-strategy.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/strategy/interim-ceo-managing-director.html",
+      "destination": "/en-uk/strategy/interim-management.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/strategy/interim-cfo.html",
+      "destination": "/en-uk/strategy/interim-management.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/strategy/interim-cmo.html",
+      "destination": "/en-uk/strategy/interim-management.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/strategy/interim-coo.html",
+      "destination": "/en-uk/strategy/interim-management.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/strategy/interim-cro.html",
+      "destination": "/en-uk/strategy/interim-management.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/strategy/interim-cto.html",
+      "destination": "/en-uk/strategy/interim-management.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/strategy/interim-sales-head.html",
+      "destination": "/en-uk/strategy/interim-management.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/strategy/international-expansion.html",
+      "destination": "/en-uk/strategy/growth-and-international-expansion.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/strategy/marketing-strategy-and-planning.html",
+      "destination": "/en-uk/strategy/growth-and-international-expansion.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/strategy/mentors.html",
+      "destination": "/en-uk/strategy/non-executive-directors-and-board.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/strategy/non-executive-directors-ned.html",
+      "destination": "/en-uk/strategy/non-executive-directors-and-board.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/strategy/pitch-preparation-king-s-speech.html",
+      "destination": "/en-uk/strategy/corporate-and-business-strategy.html",
+      "permanent": true
+    },
+    {
+      "source": "/en-uk/strategy/risk-strategy-and-planning.html",
+      "destination": "/en-uk/risk/risk-strategy-and-framework.html",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        }
+      ]
+    }
+  ]
+}

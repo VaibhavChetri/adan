@@ -1,0 +1,361 @@
+==============================================================================
+1. SERVICE PAGES BY WORD COUNT, ASCENDING
+==============================================================================
+Chrome (mega-menu + footer) measured at ~517 words and present on every page.
+'content' = crawler word_count minus that constant. Estimate, not a measurement.
+
+   raw  content  flag   url
+   368     -149  THIN   /en-uk/corporate-finance/index-working-capital.html
+   372     -145  THIN   /en-uk/corporate-finance/index-alternative-financing.html
+   614       97  THIN   /en-uk/strategy/index-executive-transition.html
+   623      106  THIN   /en-uk/risk-management/index-internal-audit.html
+   624      107  THIN   /en-uk/m-and-a/index-mergers.html
+   625      108  THIN   /en-uk/m-and-a/index-alliances-jvs-partnerships.html
+   627      110  THIN   /en-uk/coaching/index-careers.html
+   627      110  THIN   /en-uk/industries/hospitality-leisure.html
+   627      110  THIN   /en-uk/industries/media-entertainment.html
+   627      110  THIN   /en-uk/industries/insurance.html
+   627      110  THIN   /en-uk/industries/technology.html
+   627      110  THIN   /en-uk/industries/green-energy.html
+   627      110  THIN   /en-uk/industries/oil-gas.html
+   627      110  THIN   /en-uk/industries/metals-mining.html
+   627      110  THIN   /en-uk/industries/chemicals-polymers.html
+   627      110  THIN   /en-uk/industries/industrial-manufacturing.html
+   627      110  THIN   /en-uk/industries/healthcare-systems-services.html
+   627      110  THIN   /en-uk/industries/retail.html
+   627      110  THIN   /en-uk/industries/pharma-life-sciences.html
+   627      110  THIN   /en-uk/industries/agriculture.html
+   627      110  THIN   /en-uk/industries/financial-services.html
+   627      110  THIN   /en-uk/industries/engineering-construction.html
+   627      110  THIN   /en-uk/industries/banking-capital-markets.html
+   627      110  THIN   /en-uk/industries/real-estate.html
+   627      110  THIN   /en-uk/industries/government-public-services.html
+   627      110  THIN   /en-uk/industries/social-sector.html
+   627      110  THIN   /en-uk/industries/capital-projects-infrastructure.html
+   627      110  THIN   /en-uk/industries/energy-utilities.html
+   627      110  THIN   /en-uk/industries/advanced-electronics.html
+   627      110  THIN   /en-uk/industries/semiconductors.html
+   627      110  THIN   /en-uk/industries/travel-transport-logistics.html
+   627      110  THIN   /en-uk/industries/sovereign-investment-funds.html
+   627      110  THIN   /en-uk/industries/asset-wealth-management.html
+   627      110  THIN   /en-uk/industries/telecommunications.html
+   627      110  THIN   /en-uk/industries/public-sector.html
+   628      111  THIN   /en-uk/strategy/index-ned-board-advisory.html
+   629      112  THIN   /en-uk/risk-management/index-compliance-and-regulatory.html
+   629      112  THIN   /en-uk/startups/index-startup-financing.html
+   630      113  THIN   /en-uk/strategy/index-strategy-services.html
+   630      113  THIN   /en-uk/strategy/interim-ceo-managing-director.html
+   630      113  THIN   /en-uk/strategy/interim-cfo.html
+   630      113  THIN   /en-uk/strategy/interim-sales-head.html
+   630      113  THIN   /en-uk/strategy/interim-cmo.html
+   630      113  THIN   /en-uk/strategy/interim-coo.html
+   630      113  THIN   /en-uk/strategy/interim-cto.html
+   630      113  THIN   /en-uk/strategy/interim-cro.html
+   630      113  THIN   /en-uk/risk-management/index-financial-risk-management.html
+   630      113  THIN   /en-uk/risk-management/risk-management-for-pe-funds.html
+   630      113  THIN   /en-uk/risk-management/risk-management-for-smes.html
+   630      113  THIN   /en-uk/risk-management/cloud-risk.html
+   632      115  THIN   /en-uk/m-and-a/index-sell-your-business.html
+   632      115  THIN   /en-uk/risk-management/index-enterprise-risk.html
+   633      116  THIN   /en-uk/corporate-finance/index-equity-financing.html
+   633      116  THIN   /en-uk/corporate-finance/index-other-categories.html
+   633      116  THIN   /en-uk/startups/index-transitioning.html
+   634      117  THIN   /en-uk/corporate-finance/index-debt-financing.html
+   634      117  THIN   /en-uk/strategy/index-strategy-and-planning.html
+   634      117  THIN   /en-uk/risk-management/index-business-risk-management.html
+   634      117  THIN   /en-uk/startups/index-entrepreneurship.html
+   637      120  THIN   /en-uk/corporate-finance/index-other-services.html
+   637      120  THIN   /en-uk/strategy/index-interim-management.html
+   638      121  THIN   /en-uk/m-and-a/index-buy-a-business.html
+   639      122  THIN   /en-uk/coaching/index-leadership.html
+   646      129  THIN   /en-uk/coaching/index-executive-coaching.html
+   649      132  THIN   /en-uk/covid-19/index-covid-19-services.html
+   669      152  THIN   /en-uk/startups/index-startups.html
+   676      159  THIN   /en-uk/coaching/index-coaching.html
+   679      162  THIN   /en-uk/m-and-a/index-m-and-a.html
+   687      170  THIN   /en-uk/strategy/index-strategy.html
+   688      171  THIN   /en-uk/corporate-finance/index-corporate-finance.html
+   722      205  THIN   /en-uk/risk-management/index-risk-management.html
+   803      286  THIN   /en-uk/digital/products-and-solutions.html
+  1035      518         /en-uk/coaching/applied-entrepreneurship.html
+  1042      525         /en-uk/digital/visyond.html
+  1075      558         /en-uk/digital/internet-of-things-iot.html
+  1104      587         /en-uk/strategy/mentors.html
+  1104      587         /en-uk/coaching/mentoring.html
+  1124      607         /en-uk/risk-management/iso-27001.html
+  1127      610         /en-uk/coaching/entrepreneurship-for-engineers.html
+  1217      700         /en-uk/digital/robotic-process-automation-rpa.html
+  1248      731         /en-uk/coaching/entrepreneurial-mindset-and-leadership.html
+  1250      733         /en-uk/coaching/entrepreneurial-leadership-toolbox.html
+  1252      735         /en-uk/coaching/transitioning-into-an-entrepreneur.html
+  1259      742         /en-uk/coaching/managing-growing-businesses.html
+  1290      773         /en-uk/coaching/executive-coaching.html
+  1295      778         /en-uk/startups/applied-entrepreneurship.html
+  1311      794         /en-uk/corporate-finance/credit-ratings-assistance.html
+  1339      822         /en-uk/coaching/financing-entrepreneurial-ventures.html
+  1387      870         /en-uk/startups/entrepreneurship-for-engineers.html
+  1394      877         /en-uk/coaching/marketing-management.html
+  1420      903         /en-uk/digital/analytics.html
+  1443      926         /en-uk/corporate-finance/fund-placement.html
+  1462      945         /en-uk/risk-management/geopolitical-risk.html
+  1476      959         /en-uk/corporate-finance/startups-growth-capital.html
+  1476      959         /en-uk/startups/startups-growth-capital.html
+  1485      968         /en-uk/coaching/leadership-identity.html
+  1486      969         /en-uk/coaching/career-identity.html
+  1508      991         /en-uk/risk-management/soc1-and-soc2.html
+  1508      991         /en-uk/startups/entrepreneurial-mindset-and-leadership.html
+  1509      992         /en-uk/strategy/international-expansion.html
+  1510      993         /en-uk/startups/entrepreneurial-leadership-toolbox.html
+  1512      995         /en-uk/startups/transitioning-into-an-entrepreneur.html
+  1514      997         /en-uk/coaching/principled-negotiation-skills.html
+  1517     1000         /en-uk/risk-management/data-assurance.html
+  1519     1002         /en-uk/startups/managing-growing-businesses.html
+  1527     1010         /en-uk/coaching/building-coaching-cultures.html
+  1528     1011         /en-uk/coaching/team-coaching.html
+  1532     1015         /en-uk/strategy/geopolitical-strategy.html
+  1533     1016         /en-uk/risk-management/risk-management-strategy.html
+  1537     1020         /en-uk/startups/financing-entrepreneurial-ventures.html
+  1545     1028         /en-uk/strategy/corporate-strategy-and-planning.html
+  1556     1039         /en-uk/startups/innovation-from-concept-to-product.html
+  1556     1039         /en-uk/coaching/innovation-from-concept-to-product.html
+  1557     1040         /en-uk/digital/artificial-intelligence.html
+  1591     1074         /en-uk/strategy/business-strategy-and-planning.html
+  1591     1074         /en-uk/strategy/growth-strategy-and-planning.html
+  1592     1075         /en-uk/strategy/risk-strategy-and-planning.html
+  1592     1075         /en-uk/startups/marketing-management.html
+  1608     1091         /en-uk/digital/blockchain-advisory.html
+  1622     1105         /en-uk/industries/private-equity-venture-capital.html
+  1634     1117         /en-uk/strategy/decision-facilitation.html
+  1654     1137         /en-uk/risk-management/erp-control-and-assurance.html
+  1662     1145         /en-uk/risk-management/operational-risk.html
+  1663     1146         /en-uk/risk-management/risk-management-training.html
+  1677     1160         /en-uk/corporate-finance/ipo.html
+  1706     1189         /en-uk/corporate-finance/private-equity-venture-capital.html
+  1706     1189         /en-uk/strategy/marketing-strategy-and-planning.html
+  1754     1237         /en-uk/coaching/purpose-assessment-and-facilitation.html
+  1766     1249         /en-uk/coaching/cultural-intelligence-cq.html
+  1774     1257         /en-uk/strategy/pitch-preparation-king-s-speech.html
+  1805     1288         /en-uk/corporate-finance/factoring.html
+  1806     1289         /en-uk/corporate-finance/commercial-mediation.html
+  1812     1295         /en-uk/m-and-a/alliances.html
+  1816     1299         /en-uk/corporate-finance/transformation-and-restructuring.html
+  1824     1307         /en-uk/coaching/leadership-assessment.html
+  1824     1307         /en-uk/risk-management/regulatory-risk.html
+  1828     1311         /en-uk/strategy/board-advisors.html
+  1842     1325         /en-uk/coaching/career-transition.html
+  1842     1325         /en-uk/startups/career-transition.html
+  1862     1345         /en-uk/corporate-finance/working-capital-and-trade-finance.html
+  1877     1360         /en-uk/risk-management/market-risk.html
+  1886     1369         /en-uk/corporate-finance/invoice-discounting.html
+  1896     1379         /en-uk/risk-management/business-continuity.html
+  1901     1384         /en-uk/strategy/future-visioning.html
+  1907     1390         /en-uk/m-and-a/leveraged-buy-outs-lbos.html
+  1914     1397         /en-uk/coaching/assess-and-improve-business-relationships.html
+  1932     1415         /en-uk/m-and-a/partnerships.html
+  1935     1418         /en-uk/m-and-a/manda-company-valuation.html
+  1948     1431         /en-uk/risk-management/enterprise-risk-management.html
+  1951     1434         /en-uk/m-and-a/mbos-and-mbis.html
+  1962     1445         /en-uk/covid-19/covid-19-uk-cbils-coronavirus-business-interruption-loan-scheme.html
+  1969     1452         /en-uk/corporate-finance/divestments-and-exit-planning.html
+  2000     1483         /en-uk/risk-management/vendor-risk.html
+  2011     1494         /en-uk/corporate-finance/distressed-asset-management.html
+  2044     1527         /en-uk/corporate-finance/transfer-pricing.html
+  2068     1551         /en-uk/m-and-a/joint-ventures.html
+  2069     1552         /en-uk/risk-management/it-governance.html
+  2126     1609         /en-uk/risk-management/internal-audit.html
+  2143     1626         /en-uk/risk-management/treasury-liquidity-risk.html
+  2148     1631         /en-uk/covid-19/covid-19-restructuring.html
+  2156     1639         /en-uk/corporate-finance/special-situations.html
+  2162     1645         /en-uk/corporate-finance/family-offices-investments.html
+  2162     1645         /en-uk/strategy/non-executive-directors-ned.html
+  2172     1655         /en-uk/risk-management/grc-governance-risk-and-compliance.html
+  2197     1680         /en-uk/m-and-a/deal-strategy.html
+  2197     1680         /en-uk/m-and-a/deal-strategy
+  2222     1705         /en-uk/covid-19/covid-19-business-impact-analysis.html
+  2235     1718         /en-uk/risk-management/sox-implementation.html
+  2242     1725         /en-uk/corporate-finance/debt-financing.html
+  2250     1733         /en-uk/m-and-a/post-merger-integration-pmi.html
+  2252     1735         /en-uk/strategy/deal-strategy-and-planning.html
+  2302     1785         /en-uk/corporate-finance/project-finance.html
+  2305     1788         /en-uk/m-and-a/manda-synergies.html
+  2319     1802         /en-uk/m-and-a/buy-a-business.html
+  2332     1815         /en-uk/strategy/devil-s-advocate-and-red-teaming.html
+  2335     1818         /en-uk/covid-19/covid-19-cash-flow-management.html
+  2349     1832         /en-uk/risk-management/credit-risk.html
+  2390     1873         /en-uk/corporate-finance/investors-performance-enhancement.html
+  2424     1907         /en-uk/risk-management/disaster-recovery-and-resilience.html
+  2438     1921         /en-uk/m-and-a/mergers.html
+  2475     1958         /en-uk/corporate-finance/renewable-energy-financing.html
+  2509     1992         /en-uk/risk-management/risk-reporting.html
+  2529     2012         /en-uk/risk-management/sox-advisory.html
+  2702     2185         /en-uk/covid-19/covid-19-risk-management.html
+  2718     2201         /en-uk/coaching/leadership-and-business-values.html
+  2798     2281         /en-uk/m-and-a/sell-your-business.html
+  2833     2316         /en-uk/covid-19/covid-19-business-continuity-and-resilience.html
+  2970     2453         /en-uk/covid-19/covid-19-technology-it-continuity.html
+  3024     2507         /en-uk/coaching/leadership-development.html
+ 18408    17891         /en-uk/corporate-finance/government-grants.html
+
+Raw under 300: 0 of 190
+Content-adjusted under 300: 72 of 190
+
+==============================================================================
+2. NEAR-DUPLICATE CLUSTERS (shingle_hash)
+==============================================================================
+9 clusters covering 54 of 190 service pages
+
+  [046e69dfef8ced2a]  28 pages
+        /en-uk/industries/advanced-electronics.html
+        /en-uk/industries/agriculture.html
+        /en-uk/industries/asset-wealth-management.html
+        /en-uk/industries/banking-capital-markets.html
+        /en-uk/industries/capital-projects-infrastructure.html
+        /en-uk/industries/chemicals-polymers.html
+        /en-uk/industries/energy-utilities.html
+        /en-uk/industries/engineering-construction.html
+        /en-uk/industries/financial-services.html
+        /en-uk/industries/government-public-services.html
+        /en-uk/industries/green-energy.html
+        /en-uk/industries/healthcare-systems-services.html
+        /en-uk/industries/hospitality-leisure.html
+        /en-uk/industries/industrial-manufacturing.html
+        /en-uk/industries/insurance.html
+        /en-uk/industries/media-entertainment.html
+        /en-uk/industries/metals-mining.html
+        /en-uk/industries/oil-gas.html
+        /en-uk/industries/pharma-life-sciences.html
+        /en-uk/industries/public-sector.html
+        /en-uk/industries/real-estate.html
+        /en-uk/industries/retail.html
+        /en-uk/industries/semiconductors.html
+        /en-uk/industries/social-sector.html
+        /en-uk/industries/sovereign-investment-funds.html
+        /en-uk/industries/technology.html
+        /en-uk/industries/telecommunications.html
+        /en-uk/industries/travel-transport-logistics.html
+  [83a326228ede07c0]  10 pages
+        /en-uk/risk-management/cloud-risk.html
+        /en-uk/risk-management/risk-management-for-pe-funds.html
+        /en-uk/risk-management/risk-management-for-smes.html
+        /en-uk/strategy/interim-ceo-managing-director.html
+        /en-uk/strategy/interim-cfo.html
+        /en-uk/strategy/interim-cmo.html
+        /en-uk/strategy/interim-coo.html
+        /en-uk/strategy/interim-cro.html
+        /en-uk/strategy/interim-cto.html
+        /en-uk/strategy/interim-sales-head.html
+  [27473b62209944e3]  4 pages
+        /en-uk/risk-management/index-compliance-and-regulatory.html
+        /en-uk/risk-management/index-internal-audit.html
+        /en-uk/startups/index-transitioning.html
+        /en-uk/strategy/index-strategy-services.html
+  [ae991dd13d24c378]  2 pages
+        /en-uk/corporate-finance/startups-growth-capital.html
+        /en-uk/startups/startups-growth-capital.html
+  [75f638748c10c919]  2 pages
+        /en-uk/m-and-a/index-sell-your-business.html
+        /en-uk/startups/index-entrepreneurship.html
+  [8876b3d0f5323374]  2 pages
+        /en-uk/m-and-a/deal-strategy
+        /en-uk/m-and-a/deal-strategy.html
+  [227fd90076fd8a1d]  2 pages
+        /en-uk/coaching/mentoring.html
+        /en-uk/strategy/mentors.html
+  [1e535c51974d27eb]  2 pages
+        /en-uk/coaching/career-transition.html
+        /en-uk/startups/career-transition.html
+  [c2437c5d4adf828e]  2 pages
+        /en-uk/coaching/innovation-from-concept-to-product.html
+        /en-uk/startups/innovation-from-concept-to-product.html
+
+EXACT content_hash matches: 5 clusters
+  [ae5e617868311bc0] 2: /en-uk/m-and-a/deal-strategy, /en-uk/m-and-a/deal-strategy.html
+  [5083ed6aa92bc6f6] 10: /en-uk/risk-management/cloud-risk.html, /en-uk/risk-management/risk-management-for-pe-funds.html, /en-uk/risk-management/risk-management-for-smes.html, /en-uk/strategy/interim-ceo-managing-director.html
+  [d46289ba2ef72445] 2: /en-uk/coaching/career-transition.html, /en-uk/startups/career-transition.html
+  [2024c0b69c904332] 2: /en-uk/coaching/innovation-from-concept-to-product.html, /en-uk/startups/innovation-from-concept-to-product.html
+  [1dc3ff69bd3b2cc1] 28: /en-uk/industries/advanced-electronics.html, /en-uk/industries/agriculture.html, /en-uk/industries/asset-wealth-management.html, /en-uk/industries/banking-capital-markets.html
+
+==============================================================================
+3. PAGES REACHABLE FROM MORE THAN ONE NAV PARENT
+==============================================================================
+159 service pages have >1 nav parent
+
+ parents  url
+     261  /en-uk/strategy/risk-strategy-and-planning.html
+     261  /en-uk/strategy/non-executive-directors-ned.html
+     261  /en-uk/strategy/mentors.html
+     261  /en-uk/strategy/marketing-strategy-and-planning.html
+     261  /en-uk/strategy/international-expansion.html
+     261  /en-uk/strategy/interim-cto.html
+     261  /en-uk/strategy/interim-cro.html
+     261  /en-uk/strategy/interim-coo.html
+     261  /en-uk/strategy/interim-cmo.html
+     261  /en-uk/strategy/interim-cfo.html
+     261  /en-uk/strategy/interim-ceo-managing-director.html
+     261  /en-uk/strategy/growth-strategy-and-planning.html
+     261  /en-uk/strategy/deal-strategy-and-planning.html
+     261  /en-uk/strategy/corporate-strategy-and-planning.html
+     261  /en-uk/strategy/business-strategy-and-planning.html
+     261  /en-uk/strategy/board-advisors.html
+     261  /en-uk/risk-management/sox-implementation.html
+     261  /en-uk/risk-management/sox-advisory.html
+     261  /en-uk/risk-management/risk-management-strategy.html
+     261  /en-uk/risk-management/operational-risk.html
+     261  /en-uk/risk-management/internal-audit.html
+     261  /en-uk/risk-management/enterprise-risk-management.html
+     261  /en-uk/m-and-a/sell-your-business.html
+     261  /en-uk/m-and-a/post-merger-integration-pmi.html
+     261  /en-uk/m-and-a/partnerships.html
+     261  /en-uk/m-and-a/mergers.html
+     261  /en-uk/m-and-a/mbos-and-mbis.html
+     261  /en-uk/m-and-a/manda-synergies.html
+     261  /en-uk/m-and-a/manda-company-valuation.html
+     261  /en-uk/m-and-a/leveraged-buy-outs-lbos.html
+
+  probe 'devil': /en-uk/strategy/devil-s-advocate-and-red-teaming.html (251 parents)
+
+  probe 'decision-facilitation': /en-uk/strategy/decision-facilitation.html (251 parents)
+
+==============================================================================
+4. ORPHANS AND DEPTH
+==============================================================================
+depth distribution: {'0': 1, '1': 187, '2': 84, '3': 4}
+pages at depth >=4: 0
+
+pages with zero inbound edges in crawl: 0
+
+service pages with NO nav parent (reachable only from body links): 33
+    /en-uk/corporate-finance/index-alternative-financing.html
+    /en-uk/corporate-finance/index-working-capital.html
+    /en-uk/industries/advanced-electronics.html
+    /en-uk/industries/agriculture.html
+    /en-uk/industries/asset-wealth-management.html
+    /en-uk/industries/banking-capital-markets.html
+    /en-uk/industries/capital-projects-infrastructure.html
+    /en-uk/industries/chemicals-polymers.html
+    /en-uk/industries/energy-utilities.html
+    /en-uk/industries/engineering-construction.html
+    /en-uk/industries/financial-services.html
+    /en-uk/industries/government-public-services.html
+    /en-uk/industries/green-energy.html
+    /en-uk/industries/healthcare-systems-services.html
+    /en-uk/industries/hospitality-leisure.html
+    /en-uk/industries/industrial-manufacturing.html
+    /en-uk/industries/insurance.html
+    /en-uk/industries/media-entertainment.html
+    /en-uk/industries/metals-mining.html
+    /en-uk/industries/oil-gas.html
+
+NOTE: a BFS crawl cannot find true orphans - every discovered page has a parent.
+True orphans need a sitemap.xml diff, which would require a new request.
+
+==============================================================================
+5. DISTINCT VS TEMPLATE REWRITE
+==============================================================================
+service pages                      : 190
+in a near-duplicate cluster        : 54
+unique shingle_hash values         : 145
+=> genuinely distinct (upper bound): 145
+=> template rewrites (lower bound) : 45
+
+content-adjusted thin pages (<300) : 72

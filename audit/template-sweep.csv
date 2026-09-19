@@ -1,0 +1,7 @@
+template,url,h1_count,overflow_375,tap_targets_under_24px,text_under_12px,axe_violations
+home,/en-uk/home/index.html,?,380px OVERFLOW,82,306,button-name:1 link-name:46 list:23
+service leaf,/en-uk/m-and-a/deal-strategy.html,0,none,21,287,button-name:1 link-name:26 list:13
+team index,/en-uk/about-us/team.html,0,none,100,331,button-name:1 link-name:58 list:29
+team member,/en-uk/team/priya-shah.html,0,none,14,216,button-name:1 list:3 listitem:23
+contact,/en-uk/about-us/contact-us.html,0,none,44,207,button-name:1
+legal,/en-uk/legal/privacy-policy.html,0,none,24,188,button-name:1
