@@ -30,6 +30,20 @@ import {
 
 const SME = 'Small & medium-sized enterprises (SMEs)';
 
+/** Drops a list item's leading capital so it can sit mid-sentence, WITHOUT
+ *  touching acronyms. `.toLowerCase()` on the whole string turned "M&A" into
+ *  "m&a" and "Alliances & JVs" into "alliances & jvs" in the caption below.
+ *  The test is "capital followed by a lower-case letter" - ordinary sentence
+ *  case - so M&A is left alone and only the A of "Alliances" drops. */
+const midSentence = (s: string) =>
+  (/^[A-Z][a-z]/.test(s) ? s[0].toLowerCase() + s.slice(1) : s);
+
+/** British style does not open a sentence with a numeral. Spelled below ten,
+ *  figures at ten and above, which is where the convention sits. */
+const NUMBER_WORDS = ['Zero', 'One', 'Two', 'Three', 'Four',
+                      'Five', 'Six', 'Seven', 'Eight', 'Nine'];
+const spelled = (n: number) => NUMBER_WORDS[n] ?? String(n);
+
 /** The Adan node. Sits on a flow, never inside a box. */
 function Node() {
   return (
@@ -53,6 +67,10 @@ export default function CapitalFlow() {
         <div className="cf__down" style={{ gridArea: 'din' }}>
           <Node />
           <span className="cf__flowlabel">Investments</span>
+          {/* Stacked only. This flow leaves the tray at the top of the column,
+              not the funds immediately above it, and sits here because the
+              growth-stage box below is what it reaches. */}
+          <span className="cf__return">direct from capital sources</span>
         </div>
         <div className="cf__down" style={{ gridArea: 'dfu' }}>
           <Node />
@@ -107,6 +125,11 @@ export default function CapitalFlow() {
             {LENDER_INSTRUMENTS.map((i) => <li key={i}>{i}</li>)}
           </ul>
           <Node />
+          {/* Stacked only, and the same case as the secondary-exits note: both
+              enterprise boxes this reaches sit several blocks up the column, so
+              the drawing cannot point at them and the words have to. Taken from
+              the figcaption below, which already states it. */}
+          <span className="cf__return">to firms at both stages</span>
         </div>
         <div className="cf__across cf__across--stub" style={{ gridArea: 'cl3' }}
              aria-hidden="true" />
@@ -121,6 +144,14 @@ export default function CapitalFlow() {
         <div className="cf__across cf__across--plain" style={{ gridArea: 'rm' }}>
           <Node />
           <span className="cf__flowlabel">Secondary exits</span>
+          {/* The diagram is a cycle - funds to firms to exits and back to the
+              funds - and one column can only ever break a cycle at one edge.
+              This is that edge: its arrow points back up the page rather than
+              at the block beneath it, so it is the one flow whose destination
+              the drawing cannot show. Naming it costs a line and removes the
+              only ambiguity left in the stacked layout. Hidden on the 2D
+              diagram, where the connector reaches the funds box itself. */}
+          <span className="cf__return">back to the funds</span>
         </div>
         <div className="cf__corner" style={{ gridArea: 'rr' }} aria-hidden="true" />
       </div>
@@ -129,12 +160,12 @@ export default function CapitalFlow() {
           equivalent. Visible on narrow screens where the connectors are dropped;
           read by assistive technology everywhere. */}
       <figcaption className="cf__caption">
-        {SOURCE_COUNT} kinds of capital source reach mid-market firms two ways:
-        invested directly, or placed with private equity and venture capital funds.
-        Lenders provide {LENDER_INSTRUMENTS.join(' and ').toLowerCase()} at both the
-        growth and exit stages, and the funds provide primary raises. Between those
-        two stages sit {VALUE_CREATION.join(', ').toLowerCase()}. Firms then return
-        capital to the funds through secondary exits. Adan sits on every one of
+        {spelled(SOURCE_COUNT)} kinds of capital source reach mid-market firms two
+        ways: invested directly, or placed with private equity and venture capital
+        funds. Lenders provide {LENDER_INSTRUMENTS.map(midSentence).join(' and ')} at
+        both the growth and exit stages, and the funds provide primary raises. Between
+        those two stages sit {VALUE_CREATION.map(midSentence).join(', ')}. Firms then
+        return capital to the funds through secondary exits. Adan sits on every one of
         those flows.
       </figcaption>
     </figure>

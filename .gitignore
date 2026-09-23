@@ -29,3 +29,9 @@ audit/axe/
 # audit/inventory/inventory.csv (the page inventory) is kept.
 audit/inventory/full/
 audit/inventory/edges.csv
+
+# Mobile probe captures: 7MB of regenerable full-page PNGs, one per run.
+audit/mobile/
+
+# Playwright MCP session captures.
+.playwright-mcp/

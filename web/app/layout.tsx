@@ -6,7 +6,7 @@ import Header from './components/Header';
 import Consent from './components/Consent';
 import ConsentReopen from './components/ConsentReopen';
 import Reveal from './components/Reveal';
-import { PRACTICES, ADVANTAGE_LINE, OFFICES, OFFICE_COUNT } from './lib/content';
+import { PRACTICES, ADVANTAGE_LINE, OFFICES, OFFICE_COUNT, FIRM_NAV } from './lib/content';
 import badge from '@/public/logo-round.png';
 
 // The pairing McKinsey uses is a high-contrast editorial serif for names and
@@ -105,10 +105,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <nav className="footer__col" aria-labelledby="f-firm">
                 <h2 className="footer__head" id="f-firm">Firm</h2>
                 <ul className="footer__list">
-                  <li><a href="/en-uk/about-us/team">Team</a></li>
-                  <li><a href="/en-uk/insights">Insights</a></li>
-                  <li><a href="/en-uk/careers">Careers</a></li>
-                  <li><a href="/en-uk/contact">Contact and offices</a></li>
+                  {FIRM_NAV.map((f) => (
+                    <li key={f.href}><a href={f.href}>{f.label}</a></li>
+                  ))}
                 </ul>
               </nav>
 

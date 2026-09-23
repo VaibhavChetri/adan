@@ -96,6 +96,18 @@ if (!NAV.some((n) => n.href === AI_NAV.href)) {
   );
 }
 
+// The firm-level routes, as opposed to the practice routes in NAV. The footer
+// has always listed them; the mobile menu now repeats them because on a phone
+// the footer sits roughly 2,400px down an 18,000px homepage, which made the
+// menu the only realistic way to reach Team, Insights, Careers or Contact -
+// and the menu did not offer them. One source, so the two lists cannot drift.
+export const FIRM_NAV = [
+  { href: '/en-uk/about-us/team', label: 'Team' },
+  { href: '/en-uk/insights', label: 'Insights' },
+  { href: '/en-uk/careers', label: 'Careers' },
+  { href: '/en-uk/contact', label: 'Contact and offices' },
+];
+
 export type Partner = {
   slug: string; initials: string; name: string; role: string;
   focus: string; city: string; email: string; linkedin?: string; photo?: string; bio?: string;

@@ -170,10 +170,39 @@ a,button,input,select,textarea,[role="button"]{
 @media (min-width:1060px){
   .nav{ display:block; } .nav-toggle{ display:none; }
 }
-.nav--mobile{ display:block; border-top:var(--rule-width) var(--rule-style) var(--rule); }
+/* The panel scrolls inside itself, and must. The header is position:sticky, so
+   once the panel makes it taller than the viewport its bottom is pinned off
+   screen and NO amount of page scrolling brings it back - measured on a 568px
+   phone, where the last item sat 4px below the fold and was unreachable. The
+   cap keeps the whole header inside one viewport; the overflow makes the rest
+   of the list reachable. overscroll-behavior stops a flick at the end of the
+   list from scrolling the page underneath it.
+   svh, not vh: vh is the tallest-chrome value on mobile Safari, which would
+   size the panel to a viewport the user cannot actually see all of. */
+.nav--mobile{ display:block; border-top:var(--rule-width) var(--rule-style) var(--rule);
+  max-block-size:calc(100vh - var(--header-h));
+  max-block-size:calc(100svh - var(--header-h));
+  overflow-y:auto; overscroll-behavior:contain; }
 .nav--mobile .nav__list{ flex-direction:column; gap:0; }
 .nav--mobile .nav__item a{ display:flex; width:100%;
   border-bottom:var(--rule-width) var(--rule-style) var(--rule); }
+/* Separates the practice routes from the firm routes. A label rather than a
+   heading: the panel is already one labelled nav landmark, and a second <h2>
+   inside the header would put a stray node in the document outline of every
+   page for the sake of a visual divider. */
+.nav__grouphead{ font-family:var(--font-text); font-size:var(--t-micro);
+  font-weight:600; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--text-muted); padding-block:var(--s-5) var(--s-2); }
+/* On a first visit the consent banner is fixed to the foot of the screen and
+   sits above the header, so on a short phone it covers the bottom of this
+   panel - the Firm links. This is scroll ROOM, not height: the panel is
+   already capped, so the padding only lengthens its scrollable content and
+   lets those items be brought clear of the banner. :has() rather than a class
+   from the Consent component, so the two need no shared state; it withdraws
+   itself the moment the banner is dismissed, and a browser without :has()
+   simply keeps the previous behaviour. */
+body:has(.consent:not([hidden])) .nav--mobile > .container{
+  padding-bottom:min(60svh, 280px); }
 @media (min-width:1060px){ .nav--mobile{ display:none; } }
 
 /* ---------- Sections: hairline rules, no cards ---------- */
@@ -568,17 +597,42 @@ a,button,input,select,textarea,[role="button"]{
   .flow__wires{ display:none; }
   .flow__col--out{ text-align:start; }
   .flow__col--out li{ justify-content:flex-start; }
-  /* Stacked, the fan becomes a single downward run: a rule above and below the
-     hub carries the flow the wires carry on wider screens. */
-  .flow__hub{ justify-self:start; margin-block:var(--s-6); position:relative; }
-  .flow__hub::before,.flow__hub::after{ content:""; position:absolute;
-    inline-size:var(--rule-width); background:var(--c-navy-500);
-    inset-inline-start:calc(50% - (var(--rule-width) / 2)); block-size:var(--s-6); }
-  .flow__hub::before{ inset-block-end:100%; }
-  .flow__hub::after{ inset-block-start:100%; background:var(--action); }
-  .flow__key--hub,.flow__key--out{ text-align:start; }
-  .flow__key--hub{ padding-top:var(--s-4); }
-  .flow__key--out{ padding-top:var(--s-7); }
+  /* Stacked, the fan becomes one centred spine: sources, badge, ADAN, arrow,
+     outcomes - the same "everything passes through Adan" the wires carry at
+     full width, read top to bottom.
+
+     Centred, NOT justify-self:start. Pinned left, the badge's own centre line
+     fell at about 52px, which lines up with neither the list text at 0 nor the
+     column centre, so its two stubs read as stray marks beside the list rather
+     than as the axis every row passes through. */
+  .flow__hub{ justify-self:center; margin-block-start:var(--s-6);
+    position:relative; }
+  /* Exactly fills the margin above, so it meets the last source's hairline. */
+  .flow__hub::before{ content:""; position:absolute; inset-block-end:100%;
+    inset-inline-start:calc(50% - (var(--rule-width) / 2));
+    inline-size:var(--rule-width); block-size:var(--s-6);
+    background:var(--c-navy-500); }
+  /* The badge and its label are one unit, as the node and flow label are in
+     the capital-flow diagram. The run continues below the label, not between
+     the two - a stub there would push them apart and break the pairing. */
+  .flow__hub::after{ display:none; }
+
+  .flow__key--in{ text-align:start; }
+  .flow__key--hub{ position:relative; text-align:center;
+    padding-top:var(--s-3); padding-bottom:var(--s-8); }
+  /* Runs from under the label to the arrowhead, inside that padding: the whole
+     second half of the spine lives in this one cell, so it cannot drift from
+     the label it hangs off. 7px short of the bottom leaves room for the head. */
+  .flow__key--hub::before{ content:""; position:absolute;
+    inset-block:calc(100% - var(--s-8)) 7px;
+    inset-inline-start:calc(50% - (var(--rule-width) / 2));
+    inline-size:var(--rule-width); background:var(--c-navy-500); }
+  /* Direction is drawn, not implied: 1.4.1 wants a head, not just a line. */
+  .flow__key--hub::after{ content:""; position:absolute; inset-block-end:0;
+    inset-inline-start:50%; translate:-50% 0; inline-size:0; block-size:0;
+    border-inline:5px solid transparent;
+    border-block-start:7px solid var(--c-navy-500); }
+  .flow__key--out{ text-align:start; }
 }
 
 /* ---------- Hero record: one hairline row, below the fold-line ---------- */
@@ -799,19 +853,34 @@ a,button,input,select,textarea,[role="button"]{
    stages, exit stage. The lenders box spans all three because it is the branch
    point for both lender flows - the stem the original draws above and below it.
 
-   Below 900px the 2D flow is abandoned rather than shrunk: a diagram needing
-   two axes has nowhere to go on a phone, so it becomes a labelled vertical
+   Below 1200px the 2D flow is abandoned rather than shrunk: a diagram needing
+   two axes has nowhere to go on a phone OR a tablet - measured, not guessed:
+   at 1024 the two side flow labels wrap to two lines and collide with their
+   badges - so it becomes a labelled vertical
    sequence and the figcaption carries the relationships in prose. */
 /* The gutters, and the overhang every connector uses to bridge them. One
    source: if these two ever disagree, every line in the diagram breaks. */
 .cf{ --cf-node:28px; --cf-rowgap:var(--s-3); --cf-colgap:var(--s-4);
   margin:var(--s-4) 0 var(--s-7); }
+/* Stacked, the order is the capital's own route, so that every arrow points at
+   something it genuinely reaches.
+
+   Investments and Fund placement are the two parallel routes out of the tray,
+   and stacking them adjacent (tray, din, dfu, pevc) made them read as a CHAIN:
+   sources feed investments, which feed fund placement, which feeds the funds.
+   None of that is true. Fund placement alone reaches the funds, so it goes
+   first; Investments is moved down to sit directly above the growth-stage box
+   it actually reaches, alongside Primary raises. Two arrows converging on one
+   box is a shape a single column can show honestly - a fork is not - and the
+   note on Investments says where it comes from.
+
+   The lenders strand is an aside and sits last, where it reads as one. */
 .cf__grid{ display:grid; gap:var(--s-4);
   grid-template-columns:minmax(0,1fr);
   grid-template-areas:
-    "tray" "din" "dfu" "lbox" "lnt" "cl1" "sme1" "cr1" "pevc"
-    "stage" "pup" "lnb" "cl3" "sme2" "rm" "rr"; }
-@media (min-width:900px){
+    "tray" "dfu" "pevc" "cr1" "din" "sme1"
+    "stage" "sme2" "rm" "lbox" "lnb"; }
+@media (min-width:1200px){
   .cf__grid{ gap:var(--cf-rowgap) var(--cf-colgap);
     /* Column 1 carries the riser, the box, both nodes AND the instrument list,
        so it is the widest of the two left columns; column 2 is only the last
@@ -825,8 +894,14 @@ a,button,input,select,textarea,[role="button"]{
       "lbox .     stage .    pup"
       "lnb  cl3   sme2  rm   rr"; }
 }
-/* Pure connector graphics; there is nothing for them to join once stacked. */
-@media (max-width:899px){ .cf__upline,.cf__corner,.cf__branch,.cf__stem{ display:none; } }
+/* Pure connector graphics; there is nothing for them to join once stacked, and
+   a line that joins nothing is the thing that made the phone layout look
+   broken - three full-width rules running to the edge and stopping. Every cell
+   dropped here is either empty or holds only a decorative badge (alt=""), so
+   nothing readable and nothing announced is lost. The cells NOT in
+   grid-template-areas above must be listed here: an unplaced grid item is
+   auto-placed at the end rather than dropped. */
+@media (max-width:1199px){ .cf__upline,.cf__corner,.cf__branch,.cf__stem{ display:none; } }
 
 /* Sources tray */
 /* A hairline all round, not a 2px rule on top. Sitting directly under a centred
@@ -854,10 +929,16 @@ a,button,input,select,textarea,[role="button"]{
   padding:var(--s-2); min-block-size:0; background:none; border:0;
   color:var(--text); }
 .cf__chips li:nth-child(6){ grid-column:2 / span 2; }
-@media (max-width:899px){
+@media (max-width:1199px){
   /* Ten columns is meaningless at phone width; two even columns is not. */
   .cf__chips{ grid-template-columns:repeat(2,minmax(0,1fr)); }
   .cf__chips li,.cf__chips li:nth-child(6){ grid-column:auto; }
+}
+/* Nine sources divide exactly by three. Two columns in a 984px tablet
+   container strands each chip against an outer edge with a dead channel down
+   the middle; three fills the row and still lands three clean rows. */
+@media (min-width:600px) and (max-width:1199px){
+  .cf__chips{ grid-template-columns:repeat(3,minmax(0,1fr)); }
 }
 
 
@@ -888,7 +969,12 @@ a,button,input,select,textarea,[role="button"]{
 
 /* The Adan node. Opaque, so a connector passes behind it rather than through
    it - which is what makes it read as sitting ON the flow. */
-.cf__node{ position:relative; z-index:1; display:grid; place-items:center;
+/* z-index 2, above the flow label's z-index 1. Both sat at 1, and the label
+   comes later in the DOM, so the label's opaque background won and painted
+   over the badge - invisible at full width, but the moment a label wrapped to
+   two lines it sliced 9px off the bottom of the disc. The badge is the whole
+   argument of the diagram; it outranks the caption for it. */
+.cf__node{ position:relative; z-index:2; display:grid; place-items:center;
   inline-size:var(--cf-node); block-size:var(--cf-node); flex:none;
   background:var(--surface); border-radius:var(--r-pill); }
 .section--sunken .cf__node{ background:var(--surface-sunken); }
@@ -929,6 +1015,13 @@ a,button,input,select,textarea,[role="button"]{
 .cf__across .cf__node{ position:absolute; inset-block-start:50%; inset-inline-start:50%;
   translate:-50% -50%; }
 .cf__across .cf__flowlabel{ margin-block-start:calc(var(--cf-node) + var(--s-4)); }
+/* Stacked-only; the stacked block below turns it back on. Declared HERE and
+   not beside that block: at equal specificity the later declaration wins, so a
+   base `display:none` written after the media query would hide it at every
+   width and the span would simply never appear. On the 2D diagram the
+   connector reaches the funds box itself, so naming the destination there
+   would only repeat what the drawing already says. */
+.cf__return{ display:none; }
 
 /* Growth stage down to exit stage, with the work that happens in between set
    beside the arrow - where the original puts it. */
@@ -1009,7 +1102,7 @@ a,button,input,select,textarea,[role="button"]{
 
 /* Stacked, connectors are just labelled joins and do not need the height they
    need when spanning a gap between two columns. */
-@media (max-width:899px){
+@media (max-width:1199px){
   .cf__down,.cf__across,.cf__stage{ min-block-size:0; padding-block:var(--s-4); }
   .cf__across{ flex-direction:column; gap:var(--s-3); }
   .cf__across .cf__node,.cf__stage .cf__node{ position:static; translate:none; }
@@ -1018,11 +1111,88 @@ a,button,input,select,textarea,[role="button"]{
   .cf__stagelist{ position:static; translate:none;
     grid-template-columns:repeat(2,minmax(0,1fr)); }
   .cf__grid{ gap:var(--s-3); }
+
+  /* The three cells left out of the stacked grid-template-areas: two empty
+     connector stubs and the upper lender badge. They MUST be hidden here, at
+     the bottom of the sheet, and not next to the areas that drop them - the
+     base `.cf__across{display:flex}` and `.cf__lnode{display:flex}` rules sit
+     further down the file at identical specificity, so an earlier
+     `display:none` loses on source order and the cells come back as zero-width
+     columns hanging off the right edge. A media query adds no specificity. */
+  .cf__across--stub,.cf__lnode--top{ display:none; }
+
+  /* One column means one axis: a sideways connector has nothing to reach, so
+     every "across" flow is redrawn as the same vertical run the "down" flows
+     already use. The whole rule is rewritten rather than patched - the desktop
+     version sets inline insets, a block-size and a side-pointing border, and
+     any one of those left behind draws half an arrow. */
+  .cf__across::before{ inset-inline:auto; inset-block:0; inset-inline-start:50%;
+    translate:-50% 0; inline-size:var(--rule-width); block-size:auto; }
+  .cf__across::after,.cf__across--rev::after{
+    inset-block:auto 0; inset-inline:auto; inset-inline-start:50%;
+    translate:-50% 0; border:0;
+    border-inline:5px solid transparent;
+    border-block-start:7px solid var(--rule-strong); }
+  /* Secondary exits is the one flow that runs back up the page: it returns
+     capital to the funds listed above, so it keeps its head and points at
+     them. Must follow the rule above - same specificity, later wins. */
+  .cf__across--plain::after{ display:block; inset-block:0 auto;
+    border-block-start:0; border-block-end:7px solid var(--rule-strong); }
+  /* Its line runs UP to that head, so it ends at the label instead of at the
+     cell floor - otherwise it dangles into the gap below and joins nothing,
+     which is the defect this whole block exists to remove. */
+  .cf__across--plain::before{ inset-block:0 var(--s-4); }
+  /* Opaque like the flow label, so the riser passes behind it rather than
+     through the words. The negative margin cancels most of the column gap:
+     this is a second line of the label, not a third item in the cell. */
+  /* The negative margin cancels the column gap ENTIRELY (-12px against a 12px
+     gap), so this box begins exactly where the label above it ends and the
+     riser has no slot to show through. At -8px it left a 4px window and the
+     line appeared as a stray dash between the two lines of text. The breathing
+     room is padding INSIDE the opaque box, which the line cannot cross. */
+  .cf__return{ display:block; position:relative; z-index:1;
+    margin-block-start:calc(var(--s-3) * -1); padding-block-start:var(--s-1);
+    font-size:var(--t-micro); line-height:1.4; color:var(--text-muted);
+    background:var(--surface-sunken); padding-inline:var(--s-3); }
+  /* The margin above cancels its parent's column gap exactly, and .cf__down
+     uses a 4px gap where .cf__across uses 12px. Left shared, the -12px
+     over-pulls by 8px here and the note climbs onto the label. */
+  .cf__down .cf__return{ margin-block-start:calc(var(--s-1) * -1); }
+
+  /* The lenders strand, stacked last as the aside it is, and drawn like every
+     other flow on the page rather than as loose parts: a line out of the
+     Lenders box, the badge sitting on it, the instruments as the flow's name,
+     and the destination in words. Previously the badge sat at the far left
+     margin with two words beside it and no line at all - the same orphaned
+     badge this block exists to remove everywhere else.
+     No arrowhead: the firms it reaches are several blocks up the column, so
+     there is nothing adjacent to point at and a head would aim at the caption.
+     The note carries the direction instead. */
+  .cf__lbox{ margin-block-start:var(--s-5); }
+  .cf__lbox::before,.cf__lnode--bottom::after{ display:none; }
+  .cf__lnode--bottom{ min-block-size:0; position:relative;
+    flex-direction:column; align-items:center; gap:var(--s-3);
+    padding-block:var(--s-4) 0; }
+  /* Bridges the row gap as well as its own top padding, so it starts on the
+     Lenders box above rather than floating below it. */
+  .cf__lnode--bottom::before{ display:block;
+    inset-block-start:calc(var(--s-3) * -1); inset-block-end:auto;
+    inset-inline:auto; inset-inline-start:50%; translate:-50% 0;
+    inline-size:var(--rule-width); block-size:calc(var(--s-3) + var(--s-4));
+    background:var(--rule-strong); }
+  .cf__lnode--bottom .cf__node{ position:static; translate:none; order:-1; }
+  /* Set as this flow's label, the way PRIMARY RAISES and SECONDARY EXITS are:
+     on the stacked diagram these two words ARE the flow, not a footnote. */
+  .cf__lendlist{ inline-size:auto; margin:0; display:flex; flex-wrap:wrap;
+    justify-content:center; gap:0 var(--s-4); }
+  .cf__lendlist li{ padding-block:0; font-family:var(--font-text);
+    font-size:var(--t-micro); font-weight:600; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); }
 }
 
 .cf__caption{ margin-top:var(--s-4); font-size:var(--t-small); color:var(--text-muted);
   max-width:var(--measure-text); line-height:1.6; }
-@media (min-width:900px){
+@media (min-width:1200px){
   /* On desktop the drawing says it; the prose is for assistive technology. */
   .cf__caption{ position:absolute; inline-size:1px; block-size:1px; overflow:hidden;
     clip-path:inset(50%); white-space:nowrap; }
@@ -1131,8 +1301,13 @@ a,button,input,select,textarea,[role="button"]{
    outbound comes forward in white. Red stays where the brand puts it - the mark. */
 .hero--dark .flow__wires line{ stroke:var(--c-navy-300); opacity:.85; }
 .hero--dark .flow__wires--out line{ stroke:var(--c-paper-000); opacity:.55; }
+/* The stacked spine takes the same two values the desktop wires do: navy-300
+   coming in from the sources, white at .55 going out to the firms. Keeping
+   them identical is what makes the phone layout read as the same diagram
+   rather than a different drawing that happens to share a badge. */
 .hero--dark .flow__hub::before{ background:var(--c-navy-300); }
-.hero--dark .flow__hub::after{ background:var(--c-paper-000); }
+.hero--dark .flow__key--hub::before{ background:rgba(255,255,255,.55); }
+.hero--dark .flow__key--hub::after{ border-block-start-color:rgba(255,255,255,.55); }
 /* Outbound labels are the payoff, so they sit at full strength; the sources
    behind them step back. */
 .hero--dark .flow__col--out li{ color:var(--text-on-inverse); }
